@@ -1,0 +1,8 @@
+  /home/umrigar/projects/cs471/labs/lab1/exercises:
+  total used in directory 24 available 393580372
+  drwxrwxr-x 6 umrigar umrigar 4096 Jan 28 16:08 .
+  drwxrwxr-x 4 umrigar umrigar 4096 Jan 31 19:04 ..
+  lrwxrwxrwx 1 umrigar umrigar    5 Jan 28 16:08 01 -> regex
+  lrwxrwxrwx 1 umrigar umrigar    5 Jan 28 16:08 02 -> lexer
+  drwxrwxr-x 2 umrigar umrigar 4096 Jan 28 16:08 lexer
+  drwxrwxr-x 2 umrigar umrigar 4096 Jan 31 18:56 regex
