@@ -1,0 +1,1031 @@
+Script started on 2022-02-10 14:39:49-05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="93" LINES="50"]
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2$ ls
+[?2004lexercises  lab2.LOG
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2$ cde[K[Kd exercises/
+[?2004l[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises$ ls
+[?2004l01  02	ast  calc
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises$ clear
+[?2004l[H[2J[3J[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises$ ls
+[?2004l01  02	ast  calc
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises$ cd calc
+[?2004l[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/calc$ ls
+[?2004lcalc.mjs  calc.py  data.txt  expn-data.txt
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/calc$ cd [K[K[K./calc.[K[K[K[K[K[K[Kpython [K2 [K[K3 v[Kcalc.py data.txt 
+[?2004l[0, 3]
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/calc$ python3 calc.py data.txt [1@e[1@x[1@p[10@n-data.txt[1@n[1Pls[Kpython3 calc.py expn-data.txtdata.txt [K[K[K[K[K[K[K[K[K
+[?2004lexpecting ; at *
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/calc$ gedit expn-data.txt 
+[?2004l[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/calc$ gedit expn-data.txt 
+[?2004l[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/calc$ gedit expn-data.txt 
+[?2004l[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/calc$ gedit expn-data.txt python3 calc.py expn-data.txt
+[?2004lexpecting ; at *
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/calc$ python3 calc.py expn-data.txt
+[?2004lexpecting ; at *
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/calc$ python3 calc.py expn-data.txt
+[?2004lTraceback (most recent call last):
+  File "/home/rgeary1/projects/i471a/submit/lab2/exercises/calc/calc.py", line 140, in <module>
+    main()
+  File "/home/rgeary1/projects/i471a/submit/lab2/exercises/calc/calc.py", line 126, in main
+    print(parse(contents))
+  File "/home/rgeary1/projects/i471a/submit/lab2/exercises/calc/calc.py", line 94, in parse
+    tokens = scan(text)
+  File "/home/rgeary1/projects/i471a/submit/lab2/exercises/calc/calc.py", line 117, in scan
+    (match, kind) = next_match(text)
+  File "/home/rgeary1/projects/i471a/submit/lab2/exercises/calc/calc.py", line 109, in next_match
+    m = re.compule(r'**'.math(text))
+AttributeError: module 're' has no attribute 'compule'
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/calc$ python3 calc.py expn-data.txt
+[?2004lTraceback (most recent call last):
+  File "/home/rgeary1/projects/i471a/submit/lab2/exercises/calc/calc.py", line 140, in <module>
+    main()
+  File "/home/rgeary1/projects/i471a/submit/lab2/exercises/calc/calc.py", line 126, in main
+    print(parse(contents))
+  File "/home/rgeary1/projects/i471a/submit/lab2/exercises/calc/calc.py", line 94, in parse
+    tokens = scan(text)
+  File "/home/rgeary1/projects/i471a/submit/lab2/exercises/calc/calc.py", line 117, in scan
+    (match, kind) = next_match(text)
+  File "/home/rgeary1/projects/i471a/submit/lab2/exercises/calc/calc.py", line 109, in next_match
+    m = re.compile(r'**'.math(text))
+AttributeError: 'str' object has no attribute 'math'
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/calc$ python3 calc.py expn-data.txt
+[?2004lTraceback (most recent call last):
+  File "/home/rgeary1/projects/i471a/submit/lab2/exercises/calc/calc.py", line 140, in <module>
+    main()
+  File "/home/rgeary1/projects/i471a/submit/lab2/exercises/calc/calc.py", line 126, in main
+    print(parse(contents))
+  File "/home/rgeary1/projects/i471a/submit/lab2/exercises/calc/calc.py", line 94, in parse
+    tokens = scan(text)
+  File "/home/rgeary1/projects/i471a/submit/lab2/exercises/calc/calc.py", line 117, in scan
+    (match, kind) = next_match(text)
+  File "/home/rgeary1/projects/i471a/submit/lab2/exercises/calc/calc.py", line 109, in next_match
+    m = re.compile(r'**'.match(text))
+AttributeError: 'str' object has no attribute 'match'
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/calc$ python3 calc.py expn-data.txt
+[?2004l  File "/home/rgeary1/projects/i471a/submit/lab2/exercises/calc/calc.py", line 109
+    m = re.compile(r'**').match(text))
+                                     ^
+SyntaxError: unmatched ')'
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/calc$ python3 calc.py expn-data.txt
+[?2004lTraceback (most recent call last):
+  File "/home/rgeary1/projects/i471a/submit/lab2/exercises/calc/calc.py", line 140, in <module>
+    main()
+  File "/home/rgeary1/projects/i471a/submit/lab2/exercises/calc/calc.py", line 126, in main
+    print(parse(contents))
+  File "/home/rgeary1/projects/i471a/submit/lab2/exercises/calc/calc.py", line 94, in parse
+    tokens = scan(text)
+  File "/home/rgeary1/projects/i471a/submit/lab2/exercises/calc/calc.py", line 117, in scan
+    (match, kind) = next_match(text)
+  File "/home/rgeary1/projects/i471a/submit/lab2/exercises/calc/calc.py", line 109, in next_match
+    m = re.compile(r'**').match(text)
+  File "/usr/lib/python3.9/re.py", line 252, in compile
+    return _compile(pattern, flags)
+  File "/usr/lib/python3.9/re.py", line 304, in _compile
+    p = sre_compile.compile(pattern, flags)
+  File "/usr/lib/python3.9/sre_compile.py", line 764, in compile
+    p = sre_parse.parse(p, flags)
+  File "/usr/lib/python3.9/sre_parse.py", line 948, in parse
+    p = _parse_sub(source, state, flags & SRE_FLAG_VERBOSE, 0)
+  File "/usr/lib/python3.9/sre_parse.py", line 443, in _parse_sub
+    itemsappend(_parse(source, state, verbose, nested + 1,
+  File "/usr/lib/python3.9/sre_parse.py", line 668, in _parse
+    raise source.error("nothing to repeat",
+re.error: nothing to repeat at position 0
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/calc$ python3 calc.py expn-data.txt
+[?2004lexpecting ; at **
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/calc$ python3 calc.py expn-data.txt
+[?2004lexpecting ; at **
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/calc$ python3 calc.py expn-data.txt
+[?2004lexpecting ; at **
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/calc$ python3 calc.py expn-data.txt
+[?2004lexpecting ; at **
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/calc$ python3 calc.py expn-data.txt
+[?2004lexpecting ; at **
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/calc$ python3 calc.py expn-data.txt
+[?2004lexpecting ; at **
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/calc$ python3 calc.py expn-data.txt
+[?2004lexpecting ; at **
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/calc$ -python3 calc.py expn-data.txt
+[?2004lexpecting ; at **
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/calc$ python3 calc.py expn-data.txt
+[?2004lexpecting ; at **
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/calc$ python3 calc.py expn-data.txt
+[?2004lexpecting ; at **
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/calc$ python3 calc.py expn-data.txt
+[?2004lexpecting ; at **
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/calc$ python3 calc.py expn-data.txt
+[?2004l  File "/home/rgeary1/projects/i471a/submit/lab2/exercises/calc/calc.py", line 74
+    match('**')
+TabError: inconsistent use of tabs and spaces in indentation
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/calc$ python3 calc.py expn-data.txt
+[?2004l  File "/home/rgeary1/projects/i471a/submit/lab2/exercises/calc/calc.py", line 74
+    match('**')
+TabError: inconsistent use of tabs and spaces in indentation
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/calc$ python3 calc.py expn-data.txt
+[?2004l  File "/home/rgeary1/projects/i471a/submit/lab2/exercises/calc/calc.py", line 74
+    match('**')
+TabError: inconsistent use of tabs and spaces in indentation
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/calc$ python3 calc.py expn-data.txt
+[?2004l  File "/home/rgeary1/projects/i471a/submit/lab2/exercises/calc/calc.py", line 74
+    match('**')
+TabError: inconsistent use of tabs and spaces in indentation
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/calc$ python3 calc.py expn-data.txt
+[?2004l  File "/home/rgeary1/projects/i471a/submit/lab2/exercises/calc/calc.py", line 76
+    else:
+TabError: inconsistent use of tabs and spaces in indentation
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/calc$ python3 calc.py expn-data.txt
+[?2004lexpecting ; at **
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/calc$ python3 calc.py expn-data.txt
+[?2004lexpecting ; at **
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/calc$ python3 calc.py expn-data.txt
+[?2004lexpecting ; at **
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/calc$ python3 calc.py expn-data.txt
+[?2004lexpecting ; at **
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/calc$ python3 calc.py expn-data.txt
+[?2004l[-256, 9, -7]
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/calc$ cdf[K ..
+[?2004l[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises$ ls
+[?2004l01  02	ast  calc
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises$ cd ast/
+[?2004l[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ clear
+[?2004l[H[2J[3J[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ ls
+[?2004last.mjs  ast.py  data.json  data.txt  expn-data.json  expn-data.txt
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ gedit data.json \
+[?2004l[?2004h> 
+[?2004l[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ gedit data.json \[C[C[K[K[1P data.json[1P data.json[1P data.json[1P data.json[1P data.json[C[1Pdata.json[C[C[C[C[C[C[C[C[C | json_pp
+[?2004lbash: data.json: command not found
+malformed JSON string, neither array, object, number, string or atom, at character offset 0 (before "(end of string)") at /usr/bin/json_pp line 59.
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ data.json | json_pp[1@c[1@a[1@t[1@ 
+[?2004l[
+   {
+      "tag" : "-",
+      "xkids" : [
+         {
+            "tag" : "+",
+            "xkids" : [
+               {
+                  "tag" : "INT",
+                  "value" : 1,
+                  "xkids" : []
+               },
+               {
+                  "tag" : "INT",
+                  "value" : 2,
+                  "xkids" : []
+               }
+            ]
+         },
+         {
+            "tag" : "INT",
+            "value" : 3,
+            "xkids" : []
+         }
+      ]
+   },
+   {
+      "tag" : "-",
+      "xkids" : [
+         {
+            "tag" : "-",
+            "xkids" : [
+               {
+                  "tag" : "-",
+                  "xkids" : [
+                     {
+                        "tag" : "INT",
+                        "value" : 2,
+                        "xkids" : []
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "tag" : "-",
+            "xkids" : [
+               {
+                  "tag" : "INT",
+                  "value" : 3,
+                  "xkids" : []
+               },
+               {
+                  "tag" : "INT",
+                  "value" : 4,
+                  "xkids" : []
+               }
+            ]
+         }
+      ]
+   }
+]
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ clear
+[?2004l[H[2J[3J[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ ls
+[?2004last.mjs  ast.py  data.json  data.txt  expn-data.json  expn-data.txt
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ gest[Kit [K[K[K[Kdit ast.py
+[?2004l[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ cp [K[K[Kcat expn-data.json | json_pp
+[?2004l[
+   {
+      "tag" : "-",
+      "xkids" : [
+         {
+            "tag" : "**",
+            "xkids" : [
+               {
+                  "tag" : "INT",
+                  "value" : 2,
+                  "xkids" : []
+               },
+               {
+                  "tag" : "**",
+                  "xkids" : [
+                     {
+                        "tag" : "INT",
+                        "value" : 2,
+                        "xkids" : []
+                     },
+                     {
+                        "tag" : "INT",
+                        "value" : 3,
+                        "xkids" : []
+                     }
+                  ]
+               }
+            ]
+         }
+      ]
+   },
+   {
+      "tag" : "+",
+      "xkids" : [
+         {
+            "tag" : "INT",
+            "value" : 1,
+            "xkids" : []
+         },
+         {
+            "tag" : "**",
+            "xkids" : [
+               {
+                  "tag" : "INT",
+                  "value" : 2,
+                  "xkids" : []
+               },
+               {
+                  "tag" : "+",
+                  "xkids" : [
+                     {
+                        "tag" : "INT",
+                        "value" : 1,
+                        "xkids" : []
+                     },
+                     {
+                        "tag" : "INT",
+                        "value" : 2,
+                        "xkids" : []
+                     }
+                  ]
+               }
+            ]
+         }
+      ]
+   },
+   {
+      "tag" : "+",
+      "xkids" : [
+         {
+            "tag" : "INT",
+            "value" : 1,
+            "xkids" : []
+         },
+         {
+            "tag" : "-",
+            "xkids" : [
+               {
+                  "tag" : "**",
+                  "xkids" : [
+                     {
+                        "tag" : "INT",
+                        "value" : 2,
+                        "xkids" : []
+                     },
+                     {
+                        "tag" : "+",
+                        "xkids" : [
+                           {
+                              "tag" : "INT",
+                              "value" : 1,
+                              "xkids" : []
+                           },
+                           {
+                              "tag" : "INT",
+                              "value" : 2,
+                              "xkids" : []
+                           }
+                        ]
+                     }
+                  ]
+               }
+            ]
+         }
+      ]
+   }
+]
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ cat expn-data.json | json_pp[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kmv expn-data.json true_data.json
+[?2004l[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ mv expn-data.json true_data.json[4Pcat expn-data.json | json_ppmv expn-data.json true_data.json[Kclear
+[?2004l[H[2J[3J[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ python3 expn-data.txt 
+[?2004l[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ diff expn-data.txt [K[K[K[Kjson [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kls
+[?2004last.mjs  ast.py  data.json  data.txt  expn-data.txt  true_data.json
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ cat [K[K[K[Klspython3 expn-data.txt 
+[?2004l[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ python3 expn-data.txt > [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Klspython3 expn-data.txt > expn.json
+[?2004l[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ ls
+[?2004last.mjs  ast.py  data.json  data.txt  expn-data.txt  expn.json	true_data.json
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ vim expn.json
+[?2004l[?1000h[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;50r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[50;1H"expn.json" 0L, 0B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[1;1H[33m  1 [m
+[1m[34m~                                                                                            [3;1H~                                                                                            [4;1H~                                                                                            [5;1H~                                                                                            [6;1H~                                                                                            [7;1H~                                                                                            [8;1H~                                                                                            [9;1H~                                                                                            [10;1H~                                                                                            [11;1H~                                                                                            [12;1H~                                                                                            [13;1H~                                                                                            [14;1H~                                                                                            [15;1H~                                                                                            [16;1H~                                                                                            [17;1H~                                                                                            [18;1H~                                                                                            [19;1H~                                                                                            [20;1H~                                                                                            [21;1H~                                                                                            [22;1H~                                                                                            [23;1H~                                                                                            [24;1H~                                                                                            [25;1H~                                                                                            [26;1H~                                                                                            [27;1H~                                                                                            [28;1H~                                                                                            [29;1H~                                                                                            [30;1H~                                                                                            [31;1H~                                                                                            [32;1H~                                                                                            [33;1H~                                                                                            [34;1H~                                                                                            [35;1H~                                                                                            [36;1H~                                                                                            [37;1H~                                                                                            [38;1H~                                                                                            [39;1H~                                                                                            [40;1H~                                                                                            [41;1H~                                                                                            [42;1H~                                                                                            [43;1H~                                                                                            [44;1H~                                                                                            [45;1H~                                                                                            [46;1H~                                                                                            [47;1H~                                                                                            [48;1H~                                                                                            [49;1H~                                                                                            [m[50;76H0,0-1[9CAll]2;expn.json (~/projects/i471a/submit/lab2/exercises/ast) - VIM]1;expn.json[1;5H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?1000l[?1006h[?1002h[?1006l[?1002l[?1006h[?1002hP$q q\[?12$p[?25l[50;1H[K[50;1H:[?25hq[?25l[?1006l[?1002l[?2004l[>4;m]2;Terminal - ]1;Terminal - [23;2t[23;1t[22;2t[22;1t[23;2t[23;1t[50;1H[K[50;1H[?1004l[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ vim expn.jsonls[Kvim expn.json[Kgedit expn-data.txt 
+[?2004l[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ gedit expn-data.txt [7Pvim expn.jsonls[Kpython3 expn-data.txt > expn.json
+[?2004l[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ gedit expn.json 
+[?2004l[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ gedit expn.json python3 expn-data.txt > expn.json[K[K[K[K[K[K[K[K[K[K[K[K
+[?2004l[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ python3 expn-data.txt[1Pdata.txt[1Pdata.txt[1Pdata.txt[1Pdata.txt[1Pdata.txt
+[?2004l[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ vim [K[K[K[Kgedit expn.json 
+[?2004l[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ gedit expn.json python3 data.txtexpn-data.txt
+[?2004l[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ vim expn.json 
+[?2004l[?1000h[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;50r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[50;1H"expn.json" 0L, 0B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[1;1H[33m  1 [m
+[1m[34m~                                                                                            [3;1H~                                                                                            [4;1H~                                                                                            [5;1H~                                                                                            [6;1H~                                                                                            [7;1H~                                                                                            [8;1H~                                                                                            [9;1H~                                                                                            [10;1H~                                                                                            [11;1H~                                                                                            [12;1H~                                                                                            [13;1H~                                                                                            [14;1H~                                                                                            [15;1H~                                                                                            [16;1H~                                                                                            [17;1H~                                                                                            [18;1H~                                                                                            [19;1H~                                                                                            [20;1H~                                                                                            [21;1H~                                                                                            [22;1H~                                                                                            [23;1H~                                                                                            [24;1H~                                                                                            [25;1H~                                                                                            [26;1H~                                                                                            [27;1H~                                                                                            [28;1H~                                                                                            [29;1H~                                                                                            [30;1H~                                                                                            [31;1H~                                                                                            [32;1H~                                                                                            [33;1H~                                                                                            [34;1H~                                                                                            [35;1H~                                                                                            [36;1H~                                                                                            [37;1H~                                                                                            [38;1H~                                                                                            [39;1H~                                                                                            [40;1H~                                                                                            [41;1H~                                                                                            [42;1H~                                                                                            [43;1H~                                                                                            [44;1H~                                                                                            [45;1H~                                                                                            [46;1H~                                                                                            [47;1H~                                                                                            [48;1H~                                                                                            [49;1H~                                                                                            [m[50;76H0,0-1[9CAll]2;expn.json (~/projects/i471a/submit/lab2/exercises/ast) - VIM]1;expn.json[1;5H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?1000l[?1006h[?1002h[?1006l[?1002l[?1006h[?1002hP$q q\[?12$p[?25l[50;1H[K[50;1H:[?25hq[?25l[?1006l[?1002l[?2004l[>4;m]2;Terminal - ]1;Terminal - [23;2t[23;1t[22;2t[22;1t[23;2t[23;1t[50;1H[K[50;1H[?1004l[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ vim expn.json python3 expn-data.txt[5Pgedit expn.json 
+[?2004l[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ gedit expn.json [2Pvim[C[C[C[C[C[C[C[C[C[C[Cpython3 expn-data.txt
+[?2004l[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ python3 expn-data.txt[5Pgedit expn.json 
+[?2004l[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ gedit expn.json python3 expn-data.txt
+[?2004l[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ python3 expn-data.txtaexpn-data.txtsexpn-data.txttexpn-data.txt.expn-data.txtpexpn-data.txtyexpn-data.txt expn-data.txt
+[?2004l[{"tag":"-","xkids":[{"tag":"**","xkids":[{"tag":"INT","xkids":[],"value":2},{"tag":"**","xkids":[{"tag":"INT","xkids":[],"value":2},{"tag":"","xkids":[{"tag":"INT","xkids":[],"value":3}]}]}]}]},{"tag":"+","xkids":[{"tag":"","xkids":[{"tag":"INT","xkids":[],"value":1}]},{"tag":"**","xkids":[{"tag":"INT","xkids":[],"value":2},{"tag":"","xkids":[{"tag":"+","xkids":[{"tag":"","xkids":[{"tag":"INT","xkids":[],"value":1}]},{"tag":"","xkids":[{"tag":"INT","xkids":[],"value":2}]}]}]}]}]},{"tag":"+","xkids":[{"tag":"","xkids":[{"tag":"INT","xkids":[],"value":1}]},{"tag":"-","xkids":[{"tag":"**","xkids":[{"tag":"INT","xkids":[],"value":2},{"tag":"","xkids":[{"tag":"+","xkids":[{"tag":"","xkids":[{"tag":"INT","xkids":[],"value":1}]},{"tag":"","xkids":[{"tag":"INT","xkids":[],"value":2}]}]}]}]}]}]}]
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ python3 ast.py expn-data.txt > expn.json 
+[?2004l[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ diff expn.kj[K[Kjson true_data.json 
+[?2004l1c1
+< [{"tag":"-","xkids":[{"tag":"**","xkids":[{"tag":"INT","xkids":[],"value":2},{"tag":"**","xkids":[{"tag":"INT","xkids":[],"value":2},{"tag":"","xkids":[{"tag":"INT","xkids":[],"value":3}]}]}]}]},{"tag":"+","xkids":[{"tag":"","xkids":[{"tag":"INT","xkids":[],"value":1}]},{"tag":"**","xkids":[{"tag":"INT","xkids":[],"value":2},{"tag":"","xkids":[{"tag":"+","xkids":[{"tag":"","xkids":[{"tag":"INT","xkids":[],"value":1}]},{"tag":"","xkids":[{"tag":"INT","xkids":[],"value":2}]}]}]}]}]},{"tag":"+","xkids":[{"tag":"","xkids":[{"tag":"INT","xkids":[],"value":1}]},{"tag":"-","xkids":[{"tag":"**","xkids":[{"tag":"INT","xkids":[],"value":2},{"tag":"","xkids":[{"tag":"+","xkids":[{"tag":"","xkids":[{"tag":"INT","xkids":[],"value":1}]},{"tag":"","xkids":[{"tag":"INT","xkids":[],"value":2}]}]}]}]}]}]}]
+---
+> [{"tag":"-","xkids":[{"tag":"**","xkids":[{"tag":"INT","xkids":[],"value":2},{"tag":"**","xkids":[{"tag":"INT","xkids":[],"value":2},{"tag":"INT","xkids":[],"value":3}]}]}]},{"tag":"+","xkids":[{"tag":"INT","xkids":[],"value":1},{"tag":"**","xkids":[{"tag":"INT","xkids":[],"value":2},{"tag":"+","xkids":[{"tag":"INT","xkids":[],"value":1},{"tag":"INT","xkids":[],"value":2}]}]}]},{"tag":"+","xkids":[{"tag":"INT","xkids":[],"value":1},{"tag":"-","xkids":[{"tag":"**","xkids":[{"tag":"INT","xkids":[],"value":2},{"tag":"+","xkids":[{"tag":"INT","xkids":[],"value":1},{"tag":"INT","xkids":[],"value":2}]}]}]}]}]
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ echo[K[K[K[Kcat es[Kxpn.json | json_pp
+[?2004l[
+   {
+      "tag" : "-",
+      "xkids" : [
+         {
+            "tag" : "**",
+            "xkids" : [
+               {
+                  "tag" : "INT",
+                  "value" : 2,
+                  "xkids" : []
+               },
+               {
+                  "tag" : "**",
+                  "xkids" : [
+                     {
+                        "tag" : "INT",
+                        "value" : 2,
+                        "xkids" : []
+                     },
+                     {
+                        "tag" : "",
+                        "xkids" : [
+                           {
+                              "tag" : "INT",
+                              "value" : 3,
+                              "xkids" : []
+                           }
+                        ]
+                     }
+                  ]
+               }
+            ]
+         }
+      ]
+   },
+   {
+      "tag" : "+",
+      "xkids" : [
+         {
+            "tag" : "",
+            "xkids" : [
+               {
+                  "tag" : "INT",
+                  "value" : 1,
+                  "xkids" : []
+               }
+            ]
+         },
+         {
+            "tag" : "**",
+            "xkids" : [
+               {
+                  "tag" : "INT",
+                  "value" : 2,
+                  "xkids" : []
+               },
+               {
+                  "tag" : "",
+                  "xkids" : [
+                     {
+                        "tag" : "+",
+                        "xkids" : [
+                           {
+                              "tag" : "",
+                              "xkids" : [
+                                 {
+                                    "tag" : "INT",
+                                    "value" : 1,
+                                    "xkids" : []
+                                 }
+                              ]
+                           },
+                           {
+                              "tag" : "",
+                              "xkids" : [
+                                 {
+                                    "tag" : "INT",
+                                    "value" : 2,
+                                    "xkids" : []
+                                 }
+                              ]
+                           }
+                        ]
+                     }
+                  ]
+               }
+            ]
+         }
+      ]
+   },
+   {
+      "tag" : "+",
+      "xkids" : [
+         {
+            "tag" : "",
+            "xkids" : [
+               {
+                  "tag" : "INT",
+                  "value" : 1,
+                  "xkids" : []
+               }
+            ]
+         },
+         {
+            "tag" : "-",
+            "xkids" : [
+               {
+                  "tag" : "**",
+                  "xkids" : [
+                     {
+                        "tag" : "INT",
+                        "value" : 2,
+                        "xkids" : []
+                     },
+                     {
+                        "tag" : "",
+                        "xkids" : [
+                           {
+                              "tag" : "+",
+                              "xkids" : [
+                                 {
+                                    "tag" : "",
+                                    "xkids" : [
+                                       {
+                                          "tag" : "INT",
+                                          "value" : 1,
+                                          "xkids" : []
+                                       }
+                                    ]
+                                 },
+                                 {
+                                    "tag" : "",
+                                    "xkids" : [
+                                       {
+                                          "tag" : "INT",
+                                          "value" : 2,
+                                          "xkids" : []
+                                       }
+                                    ]
+                                 }
+                              ]
+                           }
+                        ]
+                     }
+                  ]
+               }
+            ]
+         }
+      ]
+   }
+]
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ cat expn.json | json_pp[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@t[1@r[12@ue_data.json
+[?2004l[
+   {
+      "tag" : "-",
+      "xkids" : [
+         {
+            "tag" : "**",
+            "xkids" : [
+               {
+                  "tag" : "INT",
+                  "value" : 2,
+                  "xkids" : []
+               },
+               {
+                  "tag" : "**",
+                  "xkids" : [
+                     {
+                        "tag" : "INT",
+                        "value" : 2,
+                        "xkids" : []
+                     },
+                     {
+                        "tag" : "INT",
+                        "value" : 3,
+                        "xkids" : []
+                     }
+                  ]
+               }
+            ]
+         }
+      ]
+   },
+   {
+      "tag" : "+",
+      "xkids" : [
+         {
+            "tag" : "INT",
+            "value" : 1,
+            "xkids" : []
+         },
+         {
+            "tag" : "**",
+            "xkids" : [
+               {
+                  "tag" : "INT",
+                  "value" : 2,
+                  "xkids" : []
+               },
+               {
+                  "tag" : "+",
+                  "xkids" : [
+                     {
+                        "tag" : "INT",
+                        "value" : 1,
+                        "xkids" : []
+                     },
+                     {
+                        "tag" : "INT",
+                        "value" : 2,
+                        "xkids" : []
+                     }
+                  ]
+               }
+            ]
+         }
+      ]
+   },
+   {
+      "tag" : "+",
+      "xkids" : [
+         {
+            "tag" : "INT",
+            "value" : 1,
+            "xkids" : []
+         },
+         {
+            "tag" : "-",
+            "xkids" : [
+               {
+                  "tag" : "**",
+                  "xkids" : [
+                     {
+                        "tag" : "INT",
+                        "value" : 2,
+                        "xkids" : []
+                     },
+                     {
+                        "tag" : "+",
+                        "xkids" : [
+                           {
+                              "tag" : "INT",
+                              "value" : 1,
+                              "xkids" : []
+                           },
+                           {
+                              "tag" : "INT",
+                              "value" : 2,
+                              "xkids" : []
+                           }
+                        ]
+                     }
+                  ]
+               }
+            ]
+         }
+      ]
+   }
+]
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ cat true_data.json | json_pp > data1.txt
+[?2004l[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ cat true_data.json | json_pp > data1.txt[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@e[3@xpn[1@.[4@json[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Krgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ cat expn.json | json_pp > data1.txt[K[Argeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ cat expn.json | json_pp > data1.txt[Krgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ cat expn.json | json_pp > data1.txt[K[Argeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ cat expn.json | json_pp > data1.txt[Krgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ cat expn.json | json_pp > data1.txt[K[Argeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ cat expn.json | json_pp > data1.txt[C[C[Cxt[xtBxt[Kcat expn.json | json_pp > data1.txt[Bxt[C[C[K[K[K[K[K[K[K[K[K2.txt
+[?2004l[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ diff data2.txt data`[K1.txt 
+[?2004l22,29c22,24
+<                         "tag" : "",
+<                         "xkids" : [
+<                            {
+<                               "tag" : "INT",
+<                               "value" : 3,
+<                               "xkids" : []
+<                            }
+<                         ]
+---
+>                         "tag" : "INT",
+>                         "value" : 3,
+>                         "xkids" : []
+41,48c36,38
+<             "tag" : "",
+<             "xkids" : [
+<                {
+<                   "tag" : "INT",
+<                   "value" : 1,
+<                   "xkids" : []
+<                }
+<             ]
+---
+>             "tag" : "INT",
+>             "value" : 1,
+>             "xkids" : []
+59c49
+<                   "tag" : "",
+---
+>                   "tag" : "+",
+62,84c52,59
+<                         "tag" : "+",
+<                         "xkids" : [
+<                            {
+<                               "tag" : "",
+<                               "xkids" : [
+<                                  {
+<                                     "tag" : "INT",
+<                                     "value" : 1,
+<                                     "xkids" : []
+<                                  }
+<                               ]
+<                            },
+<                            {
+<                               "tag" : "",
+<                               "xkids" : [
+<                                  {
+<                                     "tag" : "INT",
+<                                     "value" : 2,
+<                                     "xkids" : []
+<                                  }
+<                               ]
+<                            }
+<                         ]
+---
+>                         "tag" : "INT",
+>                         "value" : 1,
+>                         "xkids" : []
+>                      },
+>                      {
+>                         "tag" : "INT",
+>                         "value" : 2,
+>                         "xkids" : []
+96,103c71,73
+<             "tag" : "",
+<             "xkids" : [
+<                {
+<                   "tag" : "INT",
+<                   "value" : 1,
+<                   "xkids" : []
+<                }
+<             ]
+---
+>             "tag" : "INT",
+>             "value" : 1,
+>             "xkids" : []
+117c87
+<                         "tag" : "",
+---
+>                         "tag" : "+",
+120,142c90,97
+<                               "tag" : "+",
+<                               "xkids" : [
+<                                  {
+<                                     "tag" : "",
+<                                     "xkids" : [
+<                                        {
+<                                           "tag" : "INT",
+<                                           "value" : 1,
+<                                           "xkids" : []
+<                                        }
+<                                     ]
+<                                  },
+<                                  {
+<                                     "tag" : "",
+<                                     "xkids" : [
+<                                        {
+<                                           "tag" : "INT",
+<                                           "value" : 2,
+<                                           "xkids" : []
+<                                        }
+<                                     ]
+<                                  }
+<                               ]
+---
+>                               "tag" : "INT",
+>                               "value" : 1,
+>                               "xkids" : []
+>                            },
+>                            {
+>                               "tag" : "INT",
+>                               "value" : 2,
+>                               "xkids" : []
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ [Krgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ [Krgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ [Krgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ [Krgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ [Krgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ [Krgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ [Krgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ [Krgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ [Krgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ [Krgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ [Krgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ [Krgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ [Krgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ [Krgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ [Krgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ [Krgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ [Krgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ [Krgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ [Krgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ [Krgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ [Krgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ [Krgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ [Krgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ [Krgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ [Krgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ [Krgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ [Krgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ [Krgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ cd ../calc/
+[?2004l[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/calc$ gedit a[Kcalc.py 
+[?2004l[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/calc$ gex[Ksit[K[K[Kdit data.txt 
+[?2004l[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/calc$ gedit data.txt [1@1
+[?2004l[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/calc$ ls
+[?2004lcalc.mjs  calc.py  data.txt  expn-data.txt
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/calc$ cd ../ast/
+[?2004l[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ ls
+[?2004last.mjs  data1.txt  data.json  expn-data.txt  true_data.json
+ast.py	 data2.txt  data.txt   expn.json
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ lscd ../ast/ls[Kgedit data1.txt 
+[?2004l[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ gedit data1.txt [1P[1@2
+[?2004l[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ gedit data2.txt 1[C[C[C[C[C2[C[C[C[C[C[Kpython3 expn-data.txt > [K[K| json_pp >daat[K[Kta2.txt
+[?2004lmalformed JSON string, neither array, object, number, string or atom, at character offset 0 (before "(end of string)") at /usr/bin/json_pp line 59.
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ python3 expn-data.txt | json_pp >data2.txt[C[C[1P >data2.txt[1P >data2.txt[1P >data2.txt[1P >data2.txt[1P >data2.txt[1P >data2.txt[1P >data2.txt[1P>data2.txt[1P >data2.txt[1P>data2.txt[C[C[C[C[C[C[C[C[C[C[C[C[1P.txt[1P.txt[1P.txt[1P.txt[1P.txt .txte.txts.txtp.txtn.txt-.txtd.txta.txtt.txta.txt2.txt
+[?2004l[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ python3 expn-data.txt > espn-data2.txt[K[K[Kjson
+[?2004l[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ cata[K espn-data2..[Kjson | json_pp > data2.txt
+[?2004lmalformed JSON string, neither array, object, number, string or atom, at character offset 0 (before "(end of string)") at /usr/bin/json_pp line 59.
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ cat espn-data2.json | json_pp > data2.txt[C[K[K[K[K[K[K[K[K[K[K[K[K
+[?2004lmalformed JSON string, neither array, object, number, string or atom, at character offset 0 (before "(end of string)") at /usr/bin/json_pp line 59.
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ cat espn-data2.json | json_pp > data2.txt[2Ppython3 expn-data.txt > espn-data2.json[1Ptxt| json_pp >data2.txt[4P> espn-data2.txtjsoncat espn-data2.json | json_pp > data2.txt[K[Kcat espn-data2.json | json_pp > data2.txt[2Ppython3 expn-data.txt > espn-data2.json[C[1@a[1@s[1@t.expn-data.txt > espn-data2.json [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpexpn-data.txt > espn-data2.json[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cyexpn-data.txt > espn-data2.json[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C expn-data.txt > espn-data2.json[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+[?2004l[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ python3 ast.py expn-data.txt > espn-data2.json[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[14Pcat espn-data2.json | json_pp
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpython3 ast.py expn-data.txt > espn-data2.json
+[?2004l[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ cat espn-data2.json | ex[K[Kjson_pp
+[?2004l[
+   {
+      "tag" : "-",
+      "xkids" : [
+         {
+            "tag" : "**",
+            "xkids" : [
+               {
+                  "tag" : "INT",
+                  "value" : 2,
+                  "xkids" : []
+               },
+               {
+                  "tag" : "**",
+                  "xkids" : [
+                     {
+                        "tag" : "INT",
+                        "value" : 2,
+                        "xkids" : []
+                     },
+                     {
+                        "tag" : {
+                           "tag" : "INT",
+                           "value" : 3,
+                           "xkids" : []
+                        },
+                        "xkids" : []
+                     }
+                  ]
+               }
+            ]
+         }
+      ]
+   },
+   {
+      "tag" : "+",
+      "xkids" : [
+         {
+            "tag" : {
+               "tag" : "INT",
+               "value" : 1,
+               "xkids" : []
+            },
+            "xkids" : []
+         },
+         {
+            "tag" : "**",
+            "xkids" : [
+               {
+                  "tag" : "INT",
+                  "value" : 2,
+                  "xkids" : []
+               },
+               {
+                  "tag" : {
+                     "tag" : "+",
+                     "xkids" : [
+                        {
+                           "tag" : {
+                              "tag" : "INT",
+                              "value" : 1,
+                              "xkids" : []
+                           },
+                           "xkids" : []
+                        },
+                        {
+                           "tag" : {
+                              "tag" : "INT",
+                              "value" : 2,
+                              "xkids" : []
+                           },
+                           "xkids" : []
+                        }
+                     ]
+                  },
+                  "xkids" : []
+               }
+            ]
+         }
+      ]
+   },
+   {
+      "tag" : "+",
+      "xkids" : [
+         {
+            "tag" : {
+               "tag" : "INT",
+               "value" : 1,
+               "xkids" : []
+            },
+            "xkids" : []
+         },
+         {
+            "tag" : "-",
+            "xkids" : [
+               {
+                  "tag" : "**",
+                  "xkids" : [
+                     {
+                        "tag" : "INT",
+                        "value" : 2,
+                        "xkids" : []
+                     },
+                     {
+                        "tag" : {
+                           "tag" : "+",
+                           "xkids" : [
+                              {
+                                 "tag" : {
+                                    "tag" : "INT",
+                                    "value" : 1,
+                                    "xkids" : []
+                                 },
+                                 "xkids" : []
+                              },
+                              {
+                                 "tag" : {
+                                    "tag" : "INT",
+                                    "value" : 2,
+                                    "xkids" : []
+                                 },
+                                 "xkids" : []
+                              }
+                           ]
+                        },
+                        "xkids" : []
+                     }
+                  ]
+               }
+            ]
+         }
+      ]
+   }
+]
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ cat espn-data2.json | json_pp >data2.txt 
+[?2004l[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ cat espn-data2.json | json_pp >data2.txt [Kpython3 ast.py expn-data.txt > espn-data2.json[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[14Pcat espn-data2.json | json_pp
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C >data2.txt [Kdiff data2`[K.txt data1.txt 
+[?2004l22,26c22,23
+<                         "tag" : {
+<                            "tag" : "INT",
+<                            "value" : 3,
+<                            "xkids" : []
+<                         },
+---
+>                         "tag" : "INT",
+>                         "value" : 3,
+39,43c36,37
+<             "tag" : {
+<                "tag" : "INT",
+<                "value" : 1,
+<                "xkids" : []
+<             },
+---
+>             "tag" : "INT",
+>             "value" : 1,
+55,76c49,61
+<                   "tag" : {
+<                      "tag" : "+",
+<                      "xkids" : [
+<                         {
+<                            "tag" : {
+<                               "tag" : "INT",
+<                               "value" : 1,
+<                               "xkids" : []
+<                            },
+<                            "xkids" : []
+<                         },
+<                         {
+<                            "tag" : {
+<                               "tag" : "INT",
+<                               "value" : 2,
+<                               "xkids" : []
+<                            },
+<                            "xkids" : []
+<                         }
+<                      ]
+<                   },
+<                   "xkids" : []
+---
+>                   "tag" : "+",
+>                   "xkids" : [
+>                      {
+>                         "tag" : "INT",
+>                         "value" : 1,
+>                         "xkids" : []
+>                      },
+>                      {
+>                         "tag" : "INT",
+>                         "value" : 2,
+>                         "xkids" : []
+>                      }
+>                   ]
+86,90c71,72
+<             "tag" : {
+<                "tag" : "INT",
+<                "value" : 1,
+<                "xkids" : []
+<             },
+---
+>             "tag" : "INT",
+>             "value" : 1,
+105,126c87,99
+<                         "tag" : {
+<                            "tag" : "+",
+<                            "xkids" : [
+<                               {
+<                                  "tag" : {
+<                                     "tag" : "INT",
+<                                     "value" : 1,
+<                                     "xkids" : []
+<                                  },
+<                                  "xkids" : []
+<                               },
+<                               {
+<                                  "tag" : {
+<                                     "tag" : "INT",
+<                                     "value" : 2,
+<                                     "xkids" : []
+<                                  },
+<                                  "xkids" : []
+<                               }
+<                            ]
+<                         },
+<                         "xkids" : []
+---
+>                         "tag" : "+",
+>                         "xkids" : [
+>                            {
+>                               "tag" : "INT",
+>                               "value" : 1,
+>                               "xkids" : []
+>                            },
+>                            {
+>                               "tag" : "INT",
+>                               "value" : 2,
+>                               "xkids" : []
+>                            }
+>                         ]
+[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ diff data2.txt data1.txt [16@cat espn-data2.json | json_pp >data2[C[C[C[C[C[Kpython3 ast.py expn-data.txt > espn-data2.json
+[?2004l[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ python3 ast.py expn-data.txt > espn-data2.json[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[18Pdiff data2.txt data1.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[16@cat espn-data2.json | json_pp >data2[C[C[C[C[C
+[?2004l[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ cat espn-data2.json | json_pp >data2.txt python3 ast.py expn-data.txt > espn-data2.json[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[18Pdiff data2.txt data1.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004hrgeary1@q22-23:~/i471a/submit/lab2/exercises/ast$ cd ~/i471a
+[?2004l[?2004hrgeary1@q22-23:~/i471a$ git branch -l
+[?2004l[?1h=  lab0[m[m
+  lab1[m[m
+* [32mlab2[m[m
+  main[m[m
+  prj1[m[m
+[K[?1l>[?2004hrgeary1@q22-23:~/i471a$ git checkout main
+[?2004l\error: Your local changes to the following files would be overwritten by checkout:
+	submit/lab2/exercises/ast/ast.py
+	submit/lab2/exercises/calc/calc.py
+Please commit your changes or stash them before you switch branches.
+Aborting
+[?2004hrgeary1@q22-23:~/i471a$ \[Kgit checkout main
+[?2004lerror: Your local changes to the following files would be overwritten by checkout:
+	submit/lab2/exercises/ast/ast.py
+	submit/lab2/exercises/calc/calc.py
+Please commit your changes or stash them before you switch branches.
+Aborting
+[?2004hrgeary1@q22-23:~/i471a$ [?2004l
+exit
+
+Script done on 2022-02-10 16:22:39-05:00 [COMMAND_EXIT_CODE="1"]

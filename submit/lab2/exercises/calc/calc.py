@@ -11,7 +11,8 @@ program
   | #empty
   ;
 expr
-  : term ( ( '+' | '-' ) term )*
+  : term ( ( '+' | '-') term )*
+  | ( term '**' )* term
   ;
 term
   : '-' term
@@ -61,12 +62,16 @@ def parse(text):
         return t
 
     def term():
-        if (check('-')):
+        if(check('-')):
             match('-')
             return - term()
         else:
-            return factor()
-
+            f = factor()
+            if(check('**')):
+                match('**')
+                return f ** term()
+            else:
+            	return f
     def factor():
         if (check('INT')):
             value = int(lookahead.lexeme)
@@ -94,8 +99,11 @@ def scan(text):
         if (m): return (m, None)
         m = re.compile(r'\d+').match(text)
         if (m): return (m, 'INT')
+        m = re.compile(r'\*\*').match(text)
+        if (m): return (m,'**')
         m = re.compile(r'.').match(text)  #must be last: match any char
         if (m): return (m, m.group())
+        
 
     tokens = []
     while (len(text) > 0):

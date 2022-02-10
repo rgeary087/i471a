@@ -64,7 +64,11 @@ def parse(text):
             match('-')
             return Ast('-', term())
         else:
-            return factor()
+            f = factor()
+            if(check('**')):
+                match('**')
+                return Ast('**', f, term())
+            return f
 
     def factor():
         if (check('INT')):
@@ -95,6 +99,8 @@ def scan(text):
         if (m): return (m, None)
         m = re.compile(r'\d+').match(text)
         if (m): return (m, 'INT')
+        m = re.compile(r'\*\*').match(text)
+        if(m): return (m, '**')
         m = re.compile(r'.').match(text)  #must be last: match any char
         if (m): return (m, m.group())
 

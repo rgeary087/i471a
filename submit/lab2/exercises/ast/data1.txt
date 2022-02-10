@@ -1,0 +1,107 @@
+[
+   {
+      "tag" : "-",
+      "xkids" : [
+         {
+            "tag" : "**",
+            "xkids" : [
+               {
+                  "tag" : "INT",
+                  "value" : 2,
+                  "xkids" : []
+               },
+               {
+                  "tag" : "**",
+                  "xkids" : [
+                     {
+                        "tag" : "INT",
+                        "value" : 2,
+                        "xkids" : []
+                     },
+                     {
+                        "tag" : "INT",
+                        "value" : 3,
+                        "xkids" : []
+                     }
+                  ]
+               }
+            ]
+         }
+      ]
+   },
+   {
+      "tag" : "+",
+      "xkids" : [
+         {
+            "tag" : "INT",
+            "value" : 1,
+            "xkids" : []
+         },
+         {
+            "tag" : "**",
+            "xkids" : [
+               {
+                  "tag" : "INT",
+                  "value" : 2,
+                  "xkids" : []
+               },
+               {
+                  "tag" : "+",
+                  "xkids" : [
+                     {
+                        "tag" : "INT",
+                        "value" : 1,
+                        "xkids" : []
+                     },
+                     {
+                        "tag" : "INT",
+                        "value" : 2,
+                        "xkids" : []
+                     }
+                  ]
+               }
+            ]
+         }
+      ]
+   },
+   {
+      "tag" : "+",
+      "xkids" : [
+         {
+            "tag" : "INT",
+            "value" : 1,
+            "xkids" : []
+         },
+         {
+            "tag" : "-",
+            "xkids" : [
+               {
+                  "tag" : "**",
+                  "xkids" : [
+                     {
+                        "tag" : "INT",
+                        "value" : 2,
+                        "xkids" : []
+                     },
+                     {
+                        "tag" : "+",
+                        "xkids" : [
+                           {
+                              "tag" : "INT",
+                              "value" : 1,
+                              "xkids" : []
+                           },
+                           {
+                              "tag" : "INT",
+                              "value" : 2,
+                              "xkids" : []
+                           }
+                        ]
+                     }
+                  ]
+               }
+            ]
+         }
+      ]
+   }
+]
