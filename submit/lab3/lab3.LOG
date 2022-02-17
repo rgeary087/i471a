@@ -1,0 +1,802 @@
+Script started on 2022-02-17 14:14:40-05:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="93" LINES="48"]
+[?2004hrgeary1@q22-22:~/i471a/submit/lab3$ racket
+[?2004lWelcome to Racket v7.9 [bc].
+> (+ 1 (/ 1 2) (/ 1 3) (/ 1 4) (/ 1 5))
+137/60
+> > (+ 1 (/ 1 2) (/ 1 3) (/ 1 4) (/ 1 5))[39G )[40G )[40G( )[41G/ )[42G1 )[42G )[K[43G )[43G1 )[45G )[46G )[46G)[K[45G6 )[46G) )
+49/20
+> > (+ 1 (/ 1 2) (/ 1 3) (/ 1 4) (/ 1 5) (/ 1 6) )[6G[P [6G[1@. [7G[1@2 
+1.65
+> (expr[7G[K[6G[K> (e[K> ([K> [K( (> (+ ( ([6G[K> (+> ([K> [Kdefine x 5
+; readline-input:4:0: define: bad syntax
+;   in: define
+; [,bt for context]
+; x: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+5
+> > define x 5[12G'5
+; readline-input:5:0: define: bad syntax
+;   in: define
+; [,bt for context]
+; x: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+5
+> > define x '5> [1@(ddefine x '5)
+> x
+5
+> (+ x 4)
+9
+> > (+ x 4)> [K(+ (exprexpr[10G[K[9G[K[8G[K[7G[K* 3 (expr x 3)) ( [24G* 2 [27G[26G-22 [26G(-2-2[29G)[31G[31Ge[32Gx[33Gp[34Gr[35G([35G[K[31G(exprexpr[37G[37Gx[39G[39G2[40G)[41G)[43G[43G([45G[44G[44G*[46G[46G([46G[K[46G4[48G[48G([49Ge[50Gx[51Gp[52Gr[53G([53G[K[53Gx[53G[K[54G[54Gx[56G[55G[54G[K[53G[52G[K[51G[K[50G[K[49G[K[48G[K[48Gx[49G)[51G[51G([52G-[53G1[54G)[55G)
+; expr: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+> > (+ (* 3 (expr x 3)) (* (-2) (expr x 2)) (* 4 x) (-1))[15G[P [15G[1@t  x 3)) (* (-2) (expr[35G[P [35G[1@t 
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: -2
+; [,bt for context]
+> ,bt
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: -2
+;   arguments...: [none]
+;   context...:
+;    /usr/share/racket/pkgs/xrepl-lib/xrepl/xrepl.rkt:1493:0
+;    /usr/share/racket/collects/racket/repl.rkt:11:26
+> > ,bt> (+ (* 3 (expt x 3)) (* (-2) (expt x 2)) (* 4 x) (-1))[6G[1@0([7G[1@ (
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: -2
+; [,bt for context]
+> (define x '4)
+> > (define x '4)> (+ 0 (* 3 (expt x 3)) (* (-2) (expt x 2)) (* 4 x) (-1))
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: -2
+; [,bt for context]
+> > (+ 0 (* 3 (expt x 3)) (* (-2) (expt x 2)) (* 4 x) (-1))> (define x '4)[K> (+ 0 (* 3 (expt x 3)) (* (-2) (expt x 2)) (* 4 x) (-1)))[31G[P [30G[P [29G[P [28G[P [28G[1@- [29G[1@2 
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: -1
+; [,bt for context]
+> > (+ 0 (* 3 (expt x 3)) (* -2 (expt x 2)) (* 4 x) (-1))[29G[P [28G[P  (* 3 (expt x 3)) (* [28G[1@- [29G[1@2 [31G[1@ ([31G[P(
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: -1
+; [,bt for context]
+> > (+ 0 (* 3 (expt x 3)) (* -2 (expt x 2)) (* 4 x) (-1))[55G )) [54G )[K[53G )[K[52G )[K[51G )[K[51G)[K
+176
+> -1
+-1
+> > -1> (+ 0 (* 3 (expt x 3)) (* -2 (expt x 2)) (* 4 x) )[51G-)[52G1)
+175
+> (* 1000.00 (+ 1 [18G.0 (/ .005 [28G[27G[K[26G[K5 [27G[26G[K[25G[K[24G[K[23G[22G[K[21G[K.005[24G[K[23G[K5)[15G[1@(+[15G[1@e([16G[1@x([17G[1@p([18G[1@t([19G[1@ ((+ 1.0 .05[30G ))[30G)[K) 5)
+  )
+1276.2815625000003
+> (define list 1[16G[K[15G1 '(1 2 3 4 5 [28G))
+> > (define list1 '(1 2 3 4 5))[15G[P [15G[1@2  '(1 2 3 4 5[27G))[K[26G))[K[25G))[K[24G))[K[23G))[K[22G))[K[21G))[K[20G))[K[19G))[K[19Ga))[20G ))[21Gb))[22G ))[23Gc))[24G ))[25Gd))[26G ))[27Ge))
+> car lis1
+#<procedure:car>
+; lis1: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+> > car lis1[10Gt1
+#<procedure:car>
+'(1 2 3 4 5)
+> > car list1[11G[K2
+#<procedure:car>
+'(a b c d e)
+> > car list2> ca[P > c[P > c[1@d > cd[1@r 
+#<procedure:cdr>
+'(a b c d e)
+> (car list1)
+1
+> > (car list1)1[12G)[K[12G2)
+'a
+> > (car list2)> (c[Pr> (c[1@dr
+'(b c d e)
+> > (cdr list2)t2[13G1)[13G)[K[12G)[K[12G1)
+'(2 3 4 5)
+> (car[6G[K> (c[Kdr (car list2))
+; cdr: contract violation
+;   expected: pair?
+;   given: 'a
+; [,bt for context]
+> > (cdr (car list2))[11G[P [10G[P [10G[1@d [11G[1@r [6G[P > (c[P > (c[1@a [6G[1@r 
+'b
+> > (car (cdr list2))[6G[P > (c[P > (c[1@d [6G[1@r 
+'(c d e)
+> > (cdr (cdr list2))))> ([1@(c> ([1@c(> (c[1@d([6G[1@r([7G[1@ (
+'(d e)
+> (+> ([Kcons ; user break [,bt for context]
+^[[A^[[B        racket
+racket
+> > (cons racket> (cdr (cdr (cdr list2)))> (cons racket[K[14G[K[13G[K[12G[K[11G[K[10G[K[9G[K(cdr (cdr ([19G[Klist2))[23G))[K[23G1)))) (cdr (cdr (cdr list2))))
+  
+  
+  
+  
+  
+  
+  
+  )
+; racket: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+> > (cons (cdr (cdr list1)) (cdr (cdr (cdr list2))))
+  )[A[9Gracket[K
+[K[A[15G[9G(cdr (cdr list1)) (cdr (cdr (cdr list2))))
+  )[A> [K
+[K[A> ^D
+[?2004hrgeary1@q22-22:~/i471a/submit/lab3$ racket
+[?2004lWelcome to Racket v7.9 [bc].
+> > (cons (cdr (cdr list1)) (cdr (cdr (cdr list2))))
+  ) )[K)[K[A[51G)
+[K[A[51G
+; list1: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+; readline-input:1:48: read-syntax: unexpected `)` [,bt for context]
+> defin[7G[K[6G[K> de[K> d[K> [K(define '([12G[K[11G[Klist1 '(1 2 3  4[26G[K[25G4 5 [28G))
+> > (define list1 '(1 2 3 4 5))[15G[P [15G[1@2  '(1[19G[P [19G[1@a  2 3 4 5[27G))[K[26G))[K[25G))[K[24G))[K[23G))[K[22G))[K[21G))[K[21Gb))[22G ))[23Gc))[24G ))[25Gd))[26G ))[27Ge))
+> > (define list2 '(a b c d e))[15G1 '(1 2 3 4 5))> (cons (cdr (cdr list1)) (cdr (cdr (cdr list2)))))
+'((3 4 5) d e)
+; readline-input:4:48: read-syntax: unexpected `)` [,bt for context]
+> > (cons (cdr (cdr list1)) (cdr (cdr (cdr list2)))))[51G[K
+'((3 4 5) d e)
+> (define (rect-area width jeight) ([28G[Pe[28G[1@heeight) (* width height))
+> rect-area 4 5
+#<procedure:rect-area>
+4
+5
+> > rect-area 4 5> [1@(rrect-area 4 [16G)5[16G5[K5)
+20
+> > (rect-area 4 5)> [P[16G[K> [9@(define ([22Gwidth height) (* width height))th height[50G))[K[49G))[K[48G))[K[47G))[K[46G))[K[45G))[K[45G2))[37G[1@(*[37G[1@+([38G[1@ ((* width 2)[50G )[51G()[52Gh)[53Ge)[54Gi)[55Gg)[56Gh)[57Gt)[58G )[52G[1@*h[53G[1@ hheight [61G2)[63G)
+  )
+> > (define (rect-area width height) (+ (* width 2) (* height 2))
+  )[A> ([8P[14G4 5)[K
+[K[A[18G> [P[16G[K> [9@(define ([22Gwidth height) (* width height))
+> > (define (rect-area width height) (* width height))[37G[3@+ ([48G2) (* height 2))
+  ) )[K)[K[A[64G)
+[K[A[64G[20G[P [19G[P [18G[P [17G[P [17G[1@p [18G[1@e [19G[1@r [20G[1@i [21G[1@m 
+> rect-prei[11G[K[10G[K[9G[Kerim 4 5
+#<procedure:rect-perim>
+4
+5
+> > rect-perim 4 5> [1@(rrect-perim 4 5)
+18
+> (define distance[11G[1@(ddistance x1 x2 y1 y2) ([19G[P [18G[P [17G[P [16G[P [15G[P [14G[P [13G[P [12G[P [12G[1@; [12G[P [12G[1@l [13G[1@i [14G[1@n [15G[1@e [16G[1@- [17G[1@l [18G[1@e [19G[1@n [20G[1@g [21G[1@t [22G[1@h  x1 x2 y1 y2) (sqrt (expt (- x1 x2) 2) (expt (y1[69G-y1[70G y1y1 y2))))
+> line leng[11G[K[10G[K[9G[K[8G[K[7G-length 0 3 0 4
+#<procedure:line-length>
+0
+3
+0
+4
+> > line-length 0 3 0 4> [1@(l> ([8@define ([24Gx1 x2 y1 y2) (sqrt (expt (- x1 x2) 2) (expt (- y1 y2))))> [9P[15G0 3 0 4[K)> [1@(l
+; expt: arity mismatch;
+;  the expected number of arguments does not match the given number
+;   expected: 2
+;   given: 1
+; [,bt for context]
+> > (line-length 0 3 0 4)[16G[1@(00 3 0 4[25G)
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: 0
+; [,bt for context]
+> > (line-length (0 3 0 4))[25G[K4[25G)[16G[1@'(
+; line-length: arity mismatch;
+;  the expected number of arguments does not match the given number
+;   expected: 4
+;   given: 1
+; [,bt for context]
+> > (line-length '(0 3 0 4))[26G[K[24G)[K[23G)[K[22G)[K[21G)[K[20G)[K[19G)[K[18G)[K[17G)[K[16G)[K[16G(0 3 0 4))[16G[P[23G)[K> [P[22G[K> [1@([23G)
+; expt: arity mismatch;
+;  the expected number of arguments does not match the given number
+;   expected: 2
+;   given: 1
+; [,bt for context]
+> > (line-length 0 3 0 4)[16G[2@'([25G))[16G[P([26G> [P[15G0 3 0 4[K> [9@(define ([24Gx1 x2 y1 y2) (sqrt (expt (- x1 x2) 2) (expt (- y1 y2))))[77G )))[78G2)))
+> > (define (line-length x1 x2 y1 y2) (sqrt (expt (- x1 x2) 2) (expt (- y1 y2) 2)))> ([8P[16G0 3 0 4)[K
+; sqrt: arity mismatch;
+;  the expected number of arguments does not match the given number
+;   expected: 1
+;   given: 2
+; [,bt for context]
+> > (line-length 0 3 0 4)> ([8@define ([24Gx1 x2 y1 y2) (sqrt (expt (- x1 x2) 2) (expt (- y1 y2) 2))) ([44G[1@ e[45G[1@+eexpt (- x1 x2) 2)+[45G[Pe [44G[Pe[44G[1@(e[44G[1@+([45G[1@ ((expt (- x1 x2) 2) (expt (- y1 y2) 2)[85G)
+> > (define (line-length x1 x2 y1 y2) (sqrt (+ (expt (- x1 x2) 2) (expt (- y1 y2) 2))))> ([8P[16G0 3 0 4)[K
+5
+> > (line-length 0 3 0 4)> ([8@define ([24Gx1 x2 y1 y2) (sqrt (+ (expt (- x1 x2) 2) (expt (- y1 y2) 2))))[23G[1@2  [25G[1@(xx1 x2[30G[P [29G[P [29G[Py[29G[1@ y[29G[1@. [31G[1@ y[31G[1@y [32G[1@1 [33G[1@) [33G[P [32G[P [31G[P [31G[Py[29G[P [29G[Py[27G[P [26G[P [25G[P [25G[1@p [26G[1@1  y1 y2[32G[P)[31G[P)[30G[P)[29G[P)[28G[P)[28G[1@p)[29G[1@2)) (sqrt (+ (expt (- [50G[1@(x[51G[1@cx[52G[1@ax[53G[1@rx[54G[1@ xx[55G[P1[55G[1@p11[57G[1@)  x[59G[P2[59G[1@p2[59G[1@(p[60G[1@cp[61G[1@ap[62G[1@rp[63G[1@ pp2[67G[1@) ) 2) (expt (- yy11 y2[85G[P)[84G[P)[83G[P)[82G[P)[81G[P)[80G[P)[80G[1@ )[81G[1@c)[82G[1@d)[83G[1@r)[81G[1@(ccdr[85G[1@ )[86G[1@p)[87G1) 2))) [94G)[A[88G[89G) 2)))[94G[2G)[A[89G[89G ) 2))[94G[3G)[A[90G[90G() 2)[94G[4G)[A[91G[91Gc)[K
+2))))[A[92G[92Gd)2[1@ 2[A[93G[93Gr [94G[1@) [1@ ) [1@p) p[1@2) p2)[1@) 
+> > (define (line-length2 p1 p2) (sqrt (+ (expt (- (car p1) (car p2)) 2) (expt (- (cdr p1) (cdr  p2)) 2))))[A> ([8P[15G 0 3 0 4)[K
+[K[A[24G[15G[1@2  [17G[1@(00[19G[1@.  3[20G[P3[19G[1@ ..[21G[1@ 33[23G[1@)  [25G(0 4)0[28G 4)[28G. 4)[30G 4) 4[33G)
+; readline-input:26:14: #%app: bad syntax
+;   in: (#%app 0 . 3)
+; [,bt for context]
+> ,bt
+; readline-input:26:14: #%app: bad syntax
+;   in: (#%app 0 . 3)
+;   location...:
+;    readline-input:26:14
+;   context...:
+;    /usr/share/racket/pkgs/xrepl-lib/xrepl/xrepl.rkt:1493:0
+;    /usr/share/racket/collects/racket/repl.rkt:11:26
+> > ,bt> (line-length2 (0 . 3) (0 .  4))[17G[1@'((0 . 3) [26G[1@'(
+1
+> > (line-length2 '(0 . 3) '(0 .  4))> ,bt[K> (line-length2 (0 . 3) (0 .  4))> ([8@define ([25Gp1 p2) (sqrt (+ (expt (- (car p1) (car p2)) 2) (expt (- (cdr p1) (cdr  p2)) 2))))))[A> ([8P[15G 0 3 0 4)[K
+[K[A[24G> ([8@define ([23G2 p1 p2) (sqrt (+ (expt (- (car p1) (car p2)) 2) (expt (- (cdr p1) (cdr  p2)) 2))))[A[93G(- (car p1) (car p2)) 2) (expt (- (> ([8P[17G(0 . 3) (0 .  4))[K
+[K[A[34G> ([8@define ([25Gp1 p2) (sqrt (+ (expt (- (car p1) (car p2)) 2) (expt (- (cdr p1) (cdr  p2)) 2))))[11G[K
+  
+  )
+> > (define (line-length2 p1 p2) (sqrt (+ (expt (- (car p1) (car p2)) 2) (expt (- (cdr p1) (cdr  p2)) 2)))
+  )[2A> ([8P[17G'(0 . 3) '(0 .  4))[K
+[K
+[K[2A[36G
+1
+> > (line-length2 '(0 . 3) '(0 .  4)) [32G4))[K
+1
+> > (line-length2 '(0 . 3) '(0 . 4)) . 3[23G[P)[23G[1@0)) '(0[28G[P [28G[1@3 
+5
+> (define (mult args))[22G[K (if (null? args) 1 (* c[45G[K(car args) (mult (cdr args)))))
+> mu> m[K> [Kmult [7G[6G[K> mu[K> m[K> [K(mult '(1 [12G[11G[K2 3 6 [16G[15G[K[14G[13G[K6 8 16))
+1536
+> > (mult '(2 6 8 16))[13G[P [13G[1@4 
+1024
+> > (mult '(2 4 8 16))[13G6[21G> ([8@define ([17Gargs) (if (null? args) 1 (* (car args) (mult (cdr args)))))[15G[P [14G[P [13G[P [12G[P [12G[1@s [13G[1@u [14G[1@m  args) (if (null? args) 1 (*[42G[P [42G[1@+ 
+> > (define (sum args) (if (null? args) 1 (+ (car args) (mult (cdr args)))))> (mult '(2 4 8 16))[K[7G[P [6G[P > (m[P > ([P > ([1@s > (s[1@u [6G[1@m 
+514
+> > (sum '(2 4 8 16))> (define (sum args) (if (null? args) 1 (+ (car args) (mult (cdr args)))))[59G[P [58G[P [57G[P [56G[P [56G[1@s [57G[1@u [58G[1@m 
+> > (define (sum args) (if (null? args) 1 (+ (car args) (sum (cdr args)))))> (sum '(2 4 8 16))[K
+31
+> > (sum '(2 4 8 16))> (define (sum args) (if (null? args) 1 (+ (car args) (sum (cdr args)))))um[14G[P [13G[P [12G[P [12G[1@z [13G[1@i [14G[1@p  args) (if (null? args) 1 (+ (car args[45G[1@(c(car args)[55G[1@) [55G[1@ )[56G[1@.)[57G[1@ )[58G[1@c)[59G[1@a)[60G[1@r)[19G[P)[19G[1@1)[20G[1@ )[21G[1@a)[22G[1@r)[23G[1@g)[24G[1@ )[24G[P)[24G[1@2)) (if (null? args? args[41G[P)[41G[1@1)) 1[44G[P [44G[1@( [45G[1@) [47G[1@ ( (+ ((car args) . [65G[1@(ccars[60G[P)[60G[1@1)) . (car[69G[1@ )[70G[1@a)[71G[1@r)[72G[1@g)[89G[P[73G[1@2
+)[A[74G) (sum[79G[P[89G[1@)
+[K[A[79G[78G[P 
+[K[A[78G[77G[P [77G[1@z [78G[1@i [89G[P[79G[1@p
+)[A[80G (cdr args)[91G )))[94G[2G)[A[92G[92G())[94G[3G)[A[93G[93Gc)[94G[4G)d))))ddr))))drdr ))))dr dr a))))dr ar))))[6Gg))))[7G2))))[A[93G[89G[P) (cdd[Pr[A[89G[89G[1@1
+[1@dr[A[90G
+
+; readline-input:42:60: read-syntax: illegal use of `.` [,bt for context]
+; zip: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+; arg1: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+; arg2: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+; readline-input:42:99: read-syntax: unexpected `)` [,bt for context]
+; readline-input:42:100: read-syntax: unexpected `)` [,bt for context]
+; readline-input:42:101: read-syntax: unexpected `)` [,bt for context]
+> > (define (zip arg1 arg2) (if (null? arg1) ()  (+ ((car arg1) . (car arg2) (zip (cdr arg1) (c dr arg2))))[A[93G> (sum '(2 4 8 16))[K
+[K[A[20G> (define (zip arg1 arg2) (if (null? arg1) ()  (+ ((car arg1) . (car arg2) (zip (cdr arg1) (c dr arg2))))[A[93G)[75G[1@)
+[1@cd[A[76G
+
+  )
+; readline-input:43:41: #%app: missing procedure expression;
+;  probably originally (), which is an illegal empty application
+;   in: (#%app)
+; [,bt for context]
+> > (define (zip arg1 arg2) (if (null? arg1) ()  (+ ((car arg1) . (car arg2)) (zip (cdr arg1) ( cdr arg2))))
+  ))  [K [K[A[13G)
+; readline-input:45:41: #%app: missing procedure expression;
+;  probably originally (), which is an illegal empty application
+;   in: (#%app)
+; [,bt for context]
+> > (define (zip arg1 arg2) (if (null? arg1) ()  (+ ((car arg1) . (car arg2)) (zip (cdr arg1) ( cdr arg2)))))[A[93G[45G[P[93Gcc[Pd[A[45G[44G[P[93Gdd[Pr[A[44G[44G[1@1
+[1@dr[A[45G
+
+> zip> zi[K> z[K> [Kzip l[7G[K[6G> zi[K> z[K> [K(zip list1 list2)
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: 1
+; [,bt for context]
+> > (zip list1 list2) [8G[1@'llist1 [15G[1@'l
+; car: contract violation
+;   expected: pair?
+;   given: 'list1
+; [,bt for context]
+> > (zip 'list1 'list2)[15G[Pl[8G[Pl
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: 1
+; [,bt for context]
+> > (zip list1 list2)[8G[1@'[15G[1@'[22G> (define (zip arg1 arg2) (if (null? arg1) 1  (+ ((car arg1) . (car arg2)) (zip (cdr arg1) (c dr arg2)))))[A[44G()  (+ ((car arg1) . (car arg2)) (zip (cdr arg1) (d[94G[1@cd[14G[A[44G1  (+ ((car arg1) . (car arg2)) (zip (cdr arg1) (cc[94G[Pd[13G[A[93G[48G[P[93Gdd[Pr[A[48G [48G[1@c
+[1@dr[A[49G[49G[1@o
+[1@cd[A[50G[50G[1@n[93G[K
+[1@(c[A[51G[51G[1@s 
+[1@ ([A[52G> (zip 'list1 'list2)[K
+[K[A[22G> (define (zip arg1 arg2) (if (null? arg1) 1  (+ ((car arg1) . (car arg2)) (zip (cdr arg1) (c dr arg2)))))[A[93G[48G[P[93Gdd[Pr[A[48G[48G[1@c
+[1@dr[A[49G[49G[1@o
+[1@cd[A[50G[50G[1@n[93G[K
+[1@(c[A[51G[51G[1@s 
+[1@ ([A[52G
+
+> > (define (zip arg1 arg2) (if (null? arg1) 1  (cons ((car arg1) . (car arg2)) (zip (cdr arg1)  (cdr arg2)))))[A> (zip list1 list2)[K
+[K[A[20G
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: 1
+; [,bt for context]
+> ,bt
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: 1
+;   arguments...:
+;    #<procedure:car>
+;    '(a b c d e)
+;   context...:
+;    readline-input:50:0: zip
+;    /usr/share/racket/pkgs/xrepl-lib/xrepl/xrepl.rkt:1493:0
+;    /usr/share/racket/collects/racket/repl.rkt:11:26
+> > ,bt> (zip list1 list2)> (define (zip arg1 arg2) (if (null? arg1) 1  (cons ((car arg1) . (car arg2)) (zip (cdr arg1)  (cdr arg2)))))[A[93G)(([51G[P 
+[P([A[51G[50G[P[92G (([Pc[A[50G[49G[P[93Gcc[Pd[A[49G[48G[P[93Gdd[Pr[A[48G[48G[1@a
+[1@dr[A[49G[49G[1@p
+[1@cd[A[50G[50G[1@p[93G[K
+[1@(c[A[51G[51G[1@e 
+[1@ ([A[52G[52G[1@n
+[1@) [A[53G[53G[1@d
+[1@1)[A[54G
+
+> > (define (zip arg1 arg2) (if (null? arg1) 1  (append ((car arg1) . (car arg2)) (zip (cdr arg 1) (cdr arg2)))))[A> ,bt[K
+[K[A[6G> (zip list1 list2)
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: 1
+; [,bt for context]
+> ,bt
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: 1
+;   arguments...:
+;    #<procedure:car>
+;    '(a b c d e)
+;   context...:
+;    readline-input:53:0: zip
+;    /usr/share/racket/pkgs/xrepl-lib/xrepl/xrepl.rkt:1493:0
+;    /usr/share/racket/collects/racket/repl.rkt:11:26
+> > ,bt> (zip list1 list2)> (define (zip arg1 arg2) (if (null? arg1) 1  (append ((car arg1) . (car arg2)) (zip (cdr arg 1) (cdr arg2)))))[A[93G[67G[P[93G11[P)[A[67G[67G[P[93G))[P [A[66G
+
+> (zip list1 list2)
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: 1
+; [,bt for context]
+> > (zip list1 list2)> (define (zip arg1 arg2) (if (null? arg1) 1  (append ((car arg1) (car arg2)) (zip (cdr arg1)  (cdr arg2)))))[A[93G[53G[P 
+[P([A[53G[52G[P[92G (([Pc[A[52G[51G[P[93Gcc[Pd[A[51G[50G[P[93Gdd[Pr[A[50G[49G[P[93Grr[P [A[49G[48G[P 
+[Pa[A[48G[47G[P[92G aa[Pr[A[47G[47G[1@([93G[K
+[1@ar[A[48G [48G[P[92G aa[Pr[A[48G((car arg1) ([59G[P[93Grr[Pg[A[59G[59G[1@.
+[1@rg[A[60G[59G[1@ [93G[K
+[1@ar[A[60G.[61G[1@ (
+[1@ a[A[62G(car arg2)) (zip (cdr arg1)[73G[1@.
+[1@r [A[74G[73G[1@ 
+[1@dr[A[74G> (zip list1 list2)[K
+[K[A[20G> (define (zip arg1 arg2) (if (null? arg1) 1  (append ((car arg1) (car arg2)) (zip (cdr arg1)  (cdr arg2)))))[A[93G[79G[1@ 
+[1@) [A[79G[79G[1@.
+[1@1)[A[80G[81G[1@ 
+[1@g1[A[81Gd [54G[P[93Ggg[P1[A[54G[53G[P[93G11[P)[A[53G[52G[P[93G))[P [A[52G[51G[P(
+[P([A[51G[50G[P[92G (([Pc[A[50G[49G[P[93Gcc[Pd[A[49G[48G[P[93Gdd[Pr[A[48G((car arg1)[60G[1@ 
+[1@dr[A[60G[60G[1@.
+[1@cd[A[61G[62G[1@ [93G[K
+[1@(c[A[62G
+
+> zip> zi[K> z[K> [K(zip arg1[11G[K[10G[K[9G[K[8G[Klist1 list2)
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: 1
+; [,bt for context]
+> ,bt
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: 1
+;   arguments...:
+;    #<procedure:car>
+;    '(a b c d e)
+;   context...:
+;    readline-input:58:0: zip
+;    /usr/share/racket/pkgs/xrepl-lib/xrepl/xrepl.rkt:1493:0
+;    /usr/share/racket/collects/racket/repl.rkt:11:26
+> > ,bt> (zip list1 list2)> (define (zip arg1 arg2) (if (null? arg1) 1  (((car arg1) .  (car arg2)) .  (zip (cdr arg1)
+(cdr arg2)))))[A[93G[84G[1@(c
+[1@ ([A[84G> (zip list1 list2)[K
+[K[A[20G> (define (zip arg1 arg2) (if (null? arg1) 1  (((car arg1) .  (car arg2)) .  (zip (cdr arg1)
+(cdr arg2)))))[A[93G[84G[1@(c
+[1@ ([A[84G(cdr arg1
+ (cdr arg2)[16G)
+> > (define (zip arg1 arg2) (if (null? arg1) 1  (((car arg1) .  (car arg2)) .  (zip ((cdr arg1)  (cdr arg2))))))[A> ,bt[K
+[K[A[6G> (zip list1 list2)
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: 1
+; [,bt for context]
+> > (zip list1 list2)> (define (zip arg1 arg2) (if (null? arg1) 1  (((car arg1) .  (car arg2)) .  (zip ((cdr arg1)  (cdr arg2))))))[16G[K[A[93G[84G[Pc
+[P([A[83G> ,bt[K
+[K[A[6G> (define (zip arg1 arg2) (if (null? arg1) 1  (((car arg1) .  (car arg2)) .  (zip (cdr arg1)
+(cdr arg2)))))[A[60G[6P(car arg2))[48G[7@append 
+[1@ ([16G[A[67G[2@. 
+[2@1) [18G[A[48Gcons ((car arg1) . (car arg2)) (zip (cdr arg1)1[94G[2P [16G[A> (zip 'list1 'list2)[K
+[K[A[22G
+; car: contract violation
+;   expected: pair?
+;   given: 'list1
+; [,bt for context]
+> > (zip 'list1 'list2)[20G)[K[19G)[K[18G)[K[17G)[K[16G)[K[15G)[K[14G)[K[13G)[K[12G)[K[11G)[K[10G)[K[9G)[K[8G)[K[8G')[9G()[10G1)[11G )[12G2)[13G )[14G3)[15G )[16G4)[17G )[18G5)[20G)[20G )[21G;)[21G)[K[21G')[22G()[23Ga)[24G )[25Gb)[26G )[27Gc)[28G )[29Gd)[30G )[31Ge)[32G )[32G)[K[33G)
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: 1
+; [,bt for context]
+> > (zip '(1 2 3 4 5) '(a b c d e))[9Glist1 'list2)[K[8G[P[14G[P[20G> (define (zip arg1 arg2) (if (null? arg1) 1  (((car arg1) .  (car arg2)) .  (zip ((cdr arg1)  (cdr arg2))))))[A[93G[44G[P 
+[P([A[44G
+
+; readline-input:65:24: if: missing an "else" expression
+;   in: (if (null? arg1) (((car arg1) car arg2) zip ((cdr arg1) (cdr arg2))))
+; [,bt for context]
+> > (define (zip arg1 arg2) (if (null? arg1)   (((car arg1) .  (car arg2)) .  (zip ((cdr arg1)
+(cdr arg2))))))[A[93G  [45G[P[92G (([Pc[A[44G[44G[1@1[93G[K
+[1@(c[A[45G[46G[1@ (
+[1@ ([A[46G
+
+> > (define (zip arg1 arg2) (if (null? arg1) 1  (((car arg1) .  (car arg2)) .  (zip ((cdr arg1)  (cdr arg2))))))[A[44G[P 
+[P([16G[A> (zip '(1 2 3 4 5) '(a b c d e))[K
+[K[A[34G
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: 1
+; [,bt for context]
+> > (zip '(1 2 3 4 5) '(a b c d e))> (define (zip arg1 arg2) (if (null? arg1) 1  (((car arg1) .  (car arg2)) .  (zip ((cdr arg1)  (cdr arg2))))))[A[93G) . [77G[P(
+[P([A[76G[75G[P[92G (([Pc[A[75G[75G[P[93Gcc[Pd[A[74G[48G[1@a
+[1@cd[A[49G[49G[1@p[93G[K
+[1@(c[A[50G[50G[1@p(
+[1@ ([A[51G[51G[1@e
+[1@) [A[52G[52G[1@n
+[1@1)[A[53G[53G[1@d
+[1@g1[A[54G[54G[1@ 
+[1@rg[A[55G> (zip '(1 2 3 4 5) '(a b c d e))[K
+[K[A[34G> (define (zip arg1 arg2) (if (null? arg1) 1  (((car arg1) .  (car arg2)) .  (zip ((cdr arg1)  (cdr arg2))))))[A[93G[77G[P(
+[P([A[76G[75G[P[92G (([Pc[A[75G[75G[P[93Gcc[Pd[A[74G([48G[1@a
+[1@cd[A[49G[49G[1@p[93G[K
+[1@(c[A[50G[50G[1@p(
+[1@ ([A[51G[51G[1@e
+[1@) [A[52G[52G[1@n
+[1@1)[A[53G[53G[1@d
+[1@g1[A[54G[54G[1@ 
+[1@rg[A[55G
+
+> > (define (zip arg1 arg2) (if (null? arg1) 1  (append ((car arg1) .  (car arg2)) (zip ((cdr a rg1) (cdr arg2))))))[A> (zip '(1 2 3 4 5) '(a b c d e))[K
+[K[A[34G
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: 1
+; [,bt for context]
+> ,bt
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: 1
+;   arguments...:
+;    #<procedure:car>
+;    '(a b c d e)
+;   context...:
+;    readline-input:68:0: zip
+;    /usr/share/racket/pkgs/xrepl-lib/xrepl/xrepl.rkt:1493:0
+;    /usr/share/racket/collects/racket/repl.rkt:11:26
+> > ,bt> (zip '(1 2 3 4 5) '(a b c d e))> (define (zip arg1 arg2) (if (null? arg1) 1  (append ((car arg1) .  (car arg2)) (zip ((cdr a rg1) (cdr arg2))))))[A[93G([56G[P[93Grr[Pg[A[55G(car arg1) .  (car arg2))[79G[P[93Ggg[P1[A[79G
+
+; readline-input:71:63: read-syntax: illegal use of `.` [,bt for context]
+#<procedure:zip>
+; arg1: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+; readline-input:71:105: read-syntax: unexpected `)` [,bt for context]
+; readline-input:71:106: read-syntax: unexpected `)` [,bt for context]
+; readline-input:71:107: read-syntax: unexpected `)` [,bt for context]
+; readline-input:71:108: read-syntax: unexpected `)` [,bt for context]
+> > (define (zip arg1 arg2) (if (null? arg1) 1  (append (car arg1) .  (car arg2) (zip ((cdr arg 1) (cdr arg2))))))[A> ,bt[K
+[K[A[6G> (zip '(1 2 3 4 5) '(a b c d e))> (define (zip arg1 arg2) (if (null? arg1) 1  (append ((car arg1) .  (car arg2)) (zip ((cdr a rg1) (cdr arg2))))))
+> > (define (zip arg1 arg2) (if (null? arg1) 1  (append ((car arg1) .  (car arg2)) (zip ((cdr a rg1) (cdr arg2))))))[A[56G[P[79G (zip ((cdr argr[2P1[19G[A[56G[1@([80G) (zip ((cdr a1[K[2@rg1[21G[A[93G[65G[P[93Grr[Pg[A[65G[56G[P[93Ggg[P1[A[56Gcar arg1 .  ([68G[P[93G11[P)[A[68Gcar arg2)[77G[P[93G))[P [A[76G
+
+; readline-input:73:62: read-syntax: illegal use of `.` [,bt for context]
+; rg2: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+; readline-input:73:73: read-syntax: unexpected `)` [,bt for context]
+; arg1: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+; readline-input:73:104: read-syntax: unexpected `)` [,bt for context]
+; readline-input:73:105: read-syntax: unexpected `)` [,bt for context]
+; readline-input:73:106: read-syntax: unexpected `)` [,bt for context]
+> > (define (zip arg1 arg2) (if (null? arg1) 1  (append (car arg1 .  car arg2) (zip ((cdr arg1)  (cdr arg2))))))[A[56G[1@([65G) .  (car arg2)) (zip ((cdr a [K[4@rg1) [21G
+> > (define (zip arg1 arg2) (if (null? arg1) 1  (append ((car arg1) .  (car arg2)) (zip ((cdr a rg1) (cdr arg2))))))[A[56G[P[64G .  car arg2) (zip ((cdr arg1)r[4P [17G[A[64G[1@) .  (car arg2) (zip ((cdr arg [K[2@1) [19G[A> ,bt[K
+[K[A[6G> (zip '(1 2 3 4 5) '(a b c d e))
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: 1
+; [,bt for context]
+> ,bt
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: 1
+;   arguments...:
+;    #<procedure:car>
+;    '(a b c d e)
+;   context...:
+;    readline-input:74:0: zip
+;    /usr/share/racket/pkgs/xrepl-lib/xrepl/xrepl.rkt:1493:0
+;    /usr/share/racket/collects/racket/repl.rkt:11:26
+> (car list1)
+1
+> (car list2)
+'a
+> > (car list2)[12G1)> ,bt[K> (zip '(1 2 3 4 5) '(a b c d e))> (define (zip arg1 arg2) (if (null? arg1) 1  (append ((car arg1) .  (car arg2)) (zip ((cdr a rg1) (cdr arg2))))))[A[93G[69G[P[93Grr[Pg[A[68G[67G[P[93Ggg[P1[A[67G[67G[P[93G11[P)[A[66G[56G[1@a
+[1@1)[A[57G[57G[1@p
+[1@g1[A[58G[58G[1@p
+[1@rg[A[59G[59G[1@e[93G[K
+[1@ar[A[60G[60G[1@n(
+[1@ a[A[61G[61G[1@d
+[1@r [A[62G[62G[1@ 
+[1@dr[A[63G
+
+> > (define (zip arg1 arg2) (if (null? arg1) 1  (append (append (car arg1) (car arg2)) (zip ((c dr arg1) (cdr arg2))))))[A> (car list2)[K
+[K[A[14G[12G1)> ,bt[K> (zip '(1 2 3 4 5) '(a b c d e))
+; append: contract violation
+;   expected: list?
+;   given: 1
+; [,bt for context]
+> ,bt
+; append: contract violation
+;   expected: list?
+;   given: 1
+;   context...:
+;    readline-input:79:0: zip
+;    /usr/share/racket/pkgs/xrepl-lib/xrepl/xrepl.rkt:1493:0
+;    /usr/share/racket/collects/racket/repl.rkt:11:26
+> > ,bt> (zip '(1 2 3 4 5) '(a b c d e))> (define (zip arg1 arg2) (if (null? arg1) 1  (append (append (car arg1) (car arg2)) (zip ((c dr arg1) (cdr arg2))))))[A[93G[61G[P[93Gdd[Pr[A[61G[60G[P[93Grr[P [A[60G[59G[P 
+[Pa[A[59G[58G[P[92G aa[Pr[A[58G[57G[P[93Grr[Pg[A[57G[56G[P[93Ggg[P1[A[56G> (zip '(1 2 3 4 5) '(a b c d e))[K
+[K[A[34G> (define (zip arg1 arg2) (if (null? arg1) 1  (append (append (car arg1) (car arg2)) (zip ((c dr arg1) (cdr arg2))))))[A[93Gd[61G[P[93Gdd[Pr[A[61G[60G[P[93Grr[P [A[60G[59G[P 
+[Pa[A[59G[58G[P[92G aa[Pr[A[58G[57G[P[93Grr[Pg[A[57G[56G[P[93Ggg[P1[A[56G [56G[P[93G11[P)[A[56G
+
+> > (define (zip arg1 arg2) (if (null? arg1) 1  (append ((car arg1) (car arg2)) (zip ((cdr arg1 ) (cdr arg2))))))[A> ,bt[K
+[K[A[6G> (zip '(1 2 3 4 5) '(a b c d e))
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: 1
+; [,bt for context]
+> ,bt
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: 1
+;   arguments...:
+;    'a
+;   context...:
+;    readline-input:82:0: zip
+;    /usr/share/racket/pkgs/xrepl-lib/xrepl/xrepl.rkt:1493:0
+;    /usr/share/racket/collects/racket/repl.rkt:11:26
+> > ,bt> (zip '(1 2 3 4 5) '(a b c d e))> (define (zip arg1 arg2) (if (null? arg1) 1  (append ((car arg1) (car arg2)) (zip ((cdr arg1 ) (cdr arg2))))))[A[93G([56G[1@c
+[1@1)[A[57G[57G[1@o
+[1@g1[A[58G[58G[1@n
+[1@rg[A[59G[59G[1@s[93G[K
+[1@ar[A[60G[60G[1@ (
+[1@ a[A[61G
+
+> > (define (zip arg1 arg2) (if (null? arg1) 1  (append (cons (car arg1) (car arg2)) (zip ((cdr  arg1) (cdr arg2))))))[A> ,bt[K
+[K[A[6G> (zip '(1 2 3 4 5) '(a b c d e))
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: '(2 3 4 5)
+; [,bt for context]
+> ,bt
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: '(2 3 4 5)
+;   arguments...:
+;    '(b c d e)
+;   context...:
+;    readline-input:85:0: zip
+;    /usr/share/racket/pkgs/xrepl-lib/xrepl/xrepl.rkt:1493:0
+;    /usr/share/racket/collects/racket/repl.rkt:11:26
+> > ,bt> (zip '(1 2 3 4 5) '(a b c d e))> (define (zip arg1 arg2) (if (null? arg1) 1  (append (cons (car arg1) (car arg2)) (zip ((cdr  arg1) (cdr arg2))))))[A[93Gd[53G[P 
+[Pa[A[53G[52G[P[92G aa[Pr[A[52G[51G[P[93Grr[Pg[A[51G[50G[P[93Ggg[P1[A[50G[49G[P[93G11[P)[A[49G[48G[P[93G))[P [A[48G[48G[1@c
+[1@) [A[49G[49G[1@o
+[1@1)[A[50G[50G[1@n
+[1@g1[A[51G[51G[1@s
+[1@rg[A[52G
+
+> > (define (zip arg1 arg2) (if (null? arg1) 1  (cons (cons (car arg1) (car arg2)) (zip ((cdr a rg1) (cdr arg2))))))[A> ,bt[K
+[K[A[6G> (zip '(1 2 3 4 5) '(a b c d e))
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: '(2 3 4 5)
+; [,bt for context]
+> ,bt
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: '(2 3 4 5)
+;   arguments...:
+;    '(b c d e)
+;   context...:
+;    readline-input:88:0: zip
+;    /usr/share/racket/pkgs/xrepl-lib/xrepl/xrepl.rkt:1493:0
+;    /usr/share/racket/collects/racket/repl.rkt:11:26
+> > ,bt> (zip '(1 2 3 4 5) '(a b c d e))> (define (zip arg1 arg2) (if (null? arg1) 1  (cons (cons (car arg1) (car arg2)) (zip ((cdr a rg1) (cdr arg2))))))[A[93G[51G[P[93Grr[Pg[A[51G[50G[P[93Ggg[P1[A[50G[49G[P[93G11[P)[A[49G[48G[P[93G))[P [A[48G[48G[1@l
+[1@) [A[49G[49G[1@i
+[1@1)[A[50G[50G[1@s
+[1@g1[A[51G[51G[1@t
+[1@rg[A[52G
+
+> > (define (zip arg1 arg2) (if (null? arg1) 1  (list (cons (car arg1) (car arg2)) (zip ((cdr a rg1) (cdr arg2))))))[A> ,bt[K
+[K[A[6G> (zip '(1 2 3 4 5) '(a b c d e))
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: '(2 3 4 5)
+; [,bt for context]
+> ,bt
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: '(2 3 4 5)
+;   arguments...:
+;    '(b c d e)
+;   context...:
+;    readline-input:91:0: zip
+;    /usr/share/racket/pkgs/xrepl-lib/xrepl/xrepl.rkt:1493:0
+;    /usr/share/racket/collects/racket/repl.rkt:11:26
+> > ,bt> (zip '(1 2 3 4 5) '(a b c d e))> (define (zip arg1 arg2) (if (null? arg1) 1  (list (cons (car arg1) (car arg2)) (zip ((cdr a rg1) (cdr arg2))))))[A[93G([88G[P[93Grr[Pg[A[87G(cdr a
+g1) (cdr arg2))[19G[K
+> > (define (zip arg1 arg2) (if (null? arg1) 1  (list (cons (car arg1) (car arg2)) (zip (cdr ar g1) (cdr arg2)))))[A> ,bt[K
+[K[A[6G> (zip '(1 2 3 4 5) '(a b c d e))
+'((1 . a) ((2 . b) ((3 . c) ((4 . d) ((5 . e) 1)))))
+> > (zip '(1 2 3 4 5) '(a b c d e))> (define (zip arg1 arg2) (if (null? arg1) 1  (list (cons (car arg1) (car arg2)) (zip (cdr ar g1) (cdr arg2)))))[A[93G[44G[P[93Ggg[P1[A[44G[45G[P[93G11[P)[A[43G  ([45G[P[93G))[P [A[45G> (zip '(1 2 3 4 5) '(a b c d e))[K
+[K[A[34G> (define (zip arg1 arg2) (if (null? arg1) 1  (list (cons (car arg1) (car arg2)) (zip (cdr ar g1) (cdr arg2)))))[A[93G[47G[P[93Ggg[P1[A[47G[46G[P[93G11[P)[A[46G[45G[P[93G))[P [A[45G[44G[Pl
+[P([A[44Gli[32G[1@(n
+[1@ ([A[32G[32G[1@n
+[1@) [A[33G[33G[1@o
+[1@1)[A[34G[34G[1@t
+[1@g1[A[35G[35G[1@ 
+[1@rg[A[36G> ,bt[K
+[K[A[6G> (define (zip arg1 arg2) (if (null? arg1) 1  (list (cons (car arg1) (car arg2)) (zip ((cdr a rg1) (cdr arg2))))))[A[93G[31G[1@n[93G[K
+[1@ar[A[32G[32G[1@o(
+[1@ a[A[33G[33G[1@t
+[1@r [A[34G[34G[1@ 
+[1@dr[A[35G[31G[1@(
+[1@cd[A[32Gnot (null? arg1) 1[48G[1@)[93G(c[K[1@(c[A[49G 1[50G[P[92G((([Pc[A[50G[51G[P[93Gcc[Pd[A[49G[48G[P[93Gdd[Pr[A[48G [48G[1@)
+[1@dr[A[49G  ([51G[P[93Gdd[Pr[A[51G> ,bt[K
+[K[A[6G> (define (zip arg1 arg2) (if (null? arg1) 1  (list (cons (car arg1) (car arg2)) (zip ((cdr a rg1) (cdr arg2))))))[A[93G[46G[P[93Grr[Pg[A[45G[44G[P[93Ggg[P1[A[44G[44G[P[93G11[P)[A[43G[31G[1@n
+[1@1)[A[32G[32G[1@o
+[1@g1[A[33G[33G[1@t
+[1@rg[A[34G[34G[1@ [93G[K
+[1@ar[A[35G[31G[1@(n
+[1@ a[A[32Gnot (null? arg1)[48G[1@)
+[1@r [A[49G ([50G[P[93Grr[P [A[50Glist (cons (car arg1) (car arg2)) (zip ((cd
+ arg1) (cdr arg2)))))[22G[K
+; readline-input:96:24: if: bad syntax
+;   in: (if (not (null? arg1)) list (cons (car arg1) (car arg2)) (zip ((cdr
+;     arg1) (cdr arg2))))
+; [,bt for context]
+> > (define (zip arg1 arg2) (if (not (null? arg1)) list (cons (car arg1) (car arg2)) (zip ((cdr  arg1) (cdr arg2)))))[A[93G> [K
+[K[A> > (define (zip arg1 arg2) (if (not (null? arg1)) list (cons (car arg1) (car arg2)) (zip ((cdr  arg1) (cdr arg2)))))[A> (zip '(1 2 3 4 5) '(a b c d e))[K
+[K[A[34G> (define (zip arg1 arg2) (if (null? arg1) 1  (list (cons (car arg1) (car arg2)) (zip (cdr ar g1) (cdr arg2)))))
+> > (define (zip arg1 arg2) (if (null? arg1) 1  (list (cons (car arg1) (car arg2)) (zip (cdr ar g1) (cdr arg2)))))[A[33G[5@ot (n[48G) list (cons (car arg1) (car arg2)) (zip ((cdrg[K[3@ arg[22G[A> (zip '(1 2 3 4 5) '(a b c d e))[K
+[K[A[34G
+'((1 . a) ((2 . b) ((3 . c) ((4 . d) ((5 . e) 1)))))
+> > (zip '(1 2 3 4 5) '(a b c d e))> (define (zip arg1 arg2) (if (null? arg1) 1  (list (cons (car arg1) (car arg2)) (zip (cdr ar g1) (cdr arg2)))))[A[33G[5@ot (n[48G) list (cons (car arg1) (car arg2)) (zip ((cdrg[K[3@ arg[22G[A> ,bt[K
+[K[A[6G> (define (zip arg1 arg2) (if (not (null? arg1)) list (cons (car arg1) (car arg2)) (zip ((cdr  arg1) (cdr arg2)))))[A[33G[5P[43G 1  (list (cons (car arg1) (car arg2)) (zip (cdr ar [3Pg[19G[A[33G[5@ot (n[48G) list (cons (car arg1) (car arg2)) (zip ((cdrg[K[3@ arg[22G[A[93Gll? arg1)) list (cons (car arg1) (car arg2)) (zip ((cd
+ arg1) (cdr arg2)))))[A[93G [50G[1@(
+[1@r [A[51Glist (cons (car arg1) (car arg2)) (zip ((c
+r arg1) (cdr arg2))))[23G)
+; readline-input:99:24: if: missing an "else" expression
+;   in: (if (not (null? arg1)) (list (cons (car arg1) (car arg2)) (zip ((cdr
+;     arg1) (cdr arg2)))))
+; [,bt for context]
+> > (define (zip arg1 arg2) (if (not (null? arg1)) (list (cons (car arg1) (car arg2)) (zip ((cd r arg1) (cdr arg2)))))) else ()
+; readline-input:100:24: if: missing an "else" expression
+;   in: (if (not (null? arg1)) (list (cons (car arg1) (car arg2)) (zip ((cdr
+;     arg1) (cdr arg2)))))
+; [,bt for context]
+; readline-input:100:115: else: not allowed as an expression
+;   in: else
+; [,bt for context]
+; readline-input:100:120: #%app: missing procedure expression;
+;  probably originally (), which is an illegal empty application
+;   in: (#%app)
+; [,bt for context]
+> > (define (zip arg1 arg2) (if (not (null? arg1)) (list (cons (car arg1) (car arg2)) (zip ((cd r arg1) (cdr arg2)))))) else ())[31G[K[30G[K
+; readline-input:101:24: if: missing an "else" expression
+;   in: (if (not (null? arg1)) (list (cons (car arg1) (car arg2)) (zip ((cdr
+;     arg1) (cdr arg2)))))
+; [,bt for context]
+; readline-input:101:115: else: not allowed as an expression
+;   in: else
+; [,bt for context]
+> > (define (zip arg1 arg2) (if (not (null? arg1)) (list (cons (car arg1) (car arg2)) (zip ((cd r arg1) (cdr arg2)))))) else 1[30G[K([30G'([A> [K
+[K[A> > (define (zip arg1 arg2) (if (not (null? arg1)) (list (cons (car arg1) (car arg2)) (zip ((cd r arg1) (cdr arg2)))))) else '()
+; readline-input:102:24: if: missing an "else" expression
+;   in: (if (not (null? arg1)) (list (cons (car arg1) (car arg2)) (zip ((cdr
+;     arg1) (cdr arg2)))))
+; [,bt for context]
+; readline-input:102:115: else: not allowed as an expression
+;   in: else
+; [,bt for context]
+'()
+> > (define (zip arg1 arg2) (if (not (null? arg1)) (list (cons (car arg1) (car arg2)) (zip ((cd r arg1) (cdr arg2)))))) else '()[25G[1@(eelse '())
+; readline-input:103:24: if: missing an "else" expression
+;   in: (if (not (null? arg1)) (list (cons (car arg1) (car arg2)) (zip ((cdr
+;     arg1) (cdr arg2)))))
+; [,bt for context]
+; readline-input:103:115: else: not allowed as an expression
+;   in: (else (quote ()))
+; [,bt for context]
+> > (define (zip arg1 arg2) (if (not (null? arg1)) (list (cons (car arg1) (car arg2)) (zip ((cd r arg1) (cdr arg2)))))) (else '())[34G[K[33G[K[32G[K[31G[K[30G[29G[K[28G[K[27G[K[26G[K[25G[K[24G[25Gelse '()[25G[1@([33G))[A> [K
+[K[A> > (define (zip arg1 arg2) (if (not (null? arg1)) (list (cons (car arg1) (car arg2)) (zip ((cd r arg1) (cdr arg2)))))) (else '())[34G[K[33G[K[32G[K[31G[K[30G[29G[K[28G[K[27G[K[26G[K[25G[K[24G[A[93G[48G[P[93Grr[P [A[48G [35G[P(
+[Pa[A[35G[34G[P[92G aa[Pr[A[34G[33G[P[93Grr[Pg[A[33G[32G[P[93Ggg[P1[A[32G[32G[P[93G11[P)[A[31G(null? arg1)[44G[1@ 
+[1@1)[A[44G[44G[1@'
+[1@g1[A[45G[45G[1@(
+[1@rg[A[46G[46G[1@)[93G[K
+[1@ar[A[47G[48G[1@ (
+[1@ a[A[48G
+
+> > (define (zip arg1 arg2) (if (null? arg1) '()  (list (cons (car arg1) (car arg2)) (zip ((cdr  arg1) (cdr arg2))))))[A[33G[5@ot (n[48G) (list (cons (car arg1) (car arg2)) (zip ((cd [K[1@r[22G)) (else '())[25G[P[32G)[K[29G[K[30G()[24G[K[A> (zip '(1 2 3 4 5) '(a b c d e))[K
+[K[A[34G
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: '(2 3 4 5)
+; [,bt for context]
+> > (zip '(1 2 3 4 5) '(a b c d e))> (define (zip arg1 arg2) (if (null? arg1) '()  (list (cons (car arg1) (car arg2)) (zip ((cdr  arg1) (cdr arg2))))))[A[93G([90Gcdr[K
+[Pa[A[89G(cdr
+arg1) (cdr arg2))[21G[K
+> > (define (zip arg1 arg2) (if (null? arg1) '()  (list (cons (car arg1) (car arg2)) (zip (cdr
+arg1) (cdr arg2)))))[A> (zip '(1 2 3 4 5) '(a b c d e))[K
+[K[A[34G
+'((1 . a) ((2 . b) ((3 . c) ((4 . d) ((5 . e) ())))))
+> > (zip '(1 2 3 4 5) '(a b c d e))> (define (zip arg1 arg2) (if (null? arg1) '()  (list (cons (car arg1) (car arg2)) (zip (cdr
+arg1) (cdr arg2)))))[A[93G[59G[P[92G aa[Pr[A[59G[58G[P[93Grr[Pg[A[58G[57G[P[93Ggg[P1[A[57G[56G[P[93G11[P)[A[56G[56G[1@l
+[1@1)[A[57G[57G[1@i
+[1@g1[A[58G[58G[1@s
+[1@rg[A[59G[59G[1@t[93G[K
+[1@ar[A[60G
+
+> > (define (zip arg1 arg2) (if (null? arg1) '()  (list (list (car arg1) (car arg2)) (zip (cdr
+arg1) (cdr arg2)))))[A> (zip '(1 2 3 4 5) '(a b c d e))[K
+[K[A[34G
+'((1 a) ((2 b) ((3 c) ((4 d) ((5 e) ())))))
+> > (zip '(1 2 3 4 5) '(a b c d e))> (define (zip arg1 arg2) (if (null? arg1) '()  (list (list (car arg1) (car arg2)) (zip (cdr
+arg1) (cdr arg2)))))[A[93G [44G[1@('
+[1@ a[A[45G[45G[1@c
+[1@r [A[46G[46G[1@d
+[1@dr[A[47G[47G[1@r
+[1@cd[A[48G[48G[1@ [93G[K
+[1@(c[A[49G'()[52G[1@) 
+[1@ ([A[53G
+
+> > (define (zip arg1 arg2) (if (null? arg1) (cdr '())  (list (list (car arg1) (car arg2)) (zip  (cdr arg1) (cdr arg2)))))[A> (zip '(1 2 3 4 5) '(a b c d e))[K
+[K[A[34G
+; cdr: contract violation
+;   expected: pair?
+;   given: '()
+; [,bt for context]
+> > (zip '(1 2 3 4 5) '(a b c d e))> (define (zip arg1 arg2) (if (null? arg1) (cdr '())  (list (list (car arg1) (car arg2)) (zip  (cdr arg1) (cdr arg2)))))[A[93G[52G[P 
+[P([A[52G[48G[P[92G (([Pc[A[48G[47G[P[93Gcc[Pd[A[47G[46G[P[93Gdd[Pr[A[46G[45G[P[93Grr[P [A[45G[44G[P'
+[Pa[A[44G'()  [48G[P[92G aa[Pr[A[48G
+
+> > (define (zip arg1 arg2) (if (null? arg1) '() (list (list (car arg1) (car arg2)) (zip (cdr a rg1) (cdr arg2)))))[A> (zip '(1 2 3 4 5) '(a b c d e))[K
+[K[A[34G
+'((1 a) ((2 b) ((3 c) ((4 d) ((5 e) ())))))
+> ; user break [,bt for context]
+^C; user break [,bt for context]
+^C; user break [,bt for context]
+
+[?2004hrgeary1@q22-22:~/i471a/submit/lab3$ [?2004l
+exit
+
+Script done on 2022-02-17 15:46:32-05:00 [COMMAND_EXIT_CODE="0"]
