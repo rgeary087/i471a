@@ -1,0 +1,730 @@
+Script started on 2022-02-24 14:20:38-05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="93" LINES="50"]
+[?2004hrgeary1@q22-23:~/i471a/submit/lab4$ racket
+[?2004lWelcome to Racket v7.9 [bc].
+> (define discriminant ([24G[Ka b c [11G[1@(ddiscriminant a b c[30G)[32G[32G([33Gs[34Gq[35Gr[36Gt[38G[38G([39G([40G*[42G[42Gb[44G[44Gb[45G)[39G[1@-([40G[1@ ((* b b)[49G[49G([50G*[52G[52G4[54G[54G([55G*[56Ga[58G[58Gc[56G a ca c[60G)[61G)[62G)[63G)[64G)
+> discrima[10G[K[9G[K[8G[K[7G[K[6G[K> di[K> d[K> [K(discriminant 1 2 3)
+0+2.8284271247461903i
+> > (discriminant 1 2 3)[21G)[K[20G)[K[19G)[K[18G)[K[17G)[K[17G3)[18G )[19G1)[20G6)[21G )[22G5)
+14
+> (define quad-func b a d[11G[1@(qquad-func b a d) (/ (- (- b) [33G[P [33G[1@+  (- b)[41G[41Gd[42G)[44G[44G([45G*[47G[47G2[49G[49Ga[50G)[51G)[52G)
+> quad[6G[K> qu[K> q[K> [K(quad-func 16 2 [18G[17G[K3 (discriminant([32G[K 2 [34G[33G[K3 16 5))
+-1/3
+> de> d[K> [K(define quadratic-roots a bc[30G[K c[11G[1@(qquadratic-roots a b c) (let[38G[K[37G[K[36G[K (let (disc) (discriminant(3 16 5))([62G[P3[62G[1@ 33 16 5)[70G[K)) cons([76G[K[72G(cons( [36G[1@i [37G[1@f [39G[1@ ([39G[1@( (([36G[1@(iif ( (le(if ([41G[1@= [43G[1@ ([43G[1@a [45G[1@ ([45G[1@0 [46G[1@) [48G[1@ ([48G[1@( [49G[1@e [50G[1@r [51G[1@r [52G[1@o [53G[1@r
+s[A[54G[55G[1@ 
+ns[A[55G[55G[1@"
+ons[A[56G[56G[1@d
+cons[A[57G[57G[1@i[93G[K
+(cons[A[58G[58G[1@v 
+[1@ ([A[59G[59G[1@i[93G) [K[1@) [A[60G[60G[1@d
+)[1@) [A[61G[61G[1@e[93G[K
+[1@5)[A[62G[63G[1@ (
+[1@ 5[A[63G[63G[1@b
+[1@6 [A[64G[64G[1@y[93G[K
+[1@16[A[65G[66G[1@ (
+[1@ 1[A[66G[66G[1@z[93G[K
+[1@3 [A[67G[67G[1@e 
+[1@ 3[A[68G[68G[1@r
+[1@t [A[69G[69G[1@o
+[1@nt[A[70G[69G[P[93Gnn[Pt[A[69G[68G[P[93Gtt[P [A[68G[67G[P 
+[P3[A[67G[66G[P[92G 33[P [A[66G[66G[P(
+[P1[A[65G[64G[P[92G 11[P6[A[64G[63G[P[93G66[P [A[63G[63G[P(
+[P5[A[62G[61G[P[92G 55[P)[A[61G[60G[P[93G))[P [A[60G[59G[P[92G)))[P [A[59G[58G[P 
+[P([A[58G[57G[P[92G ((cons[K[A[57G[56G[P[93Gccons[K[A[56G[55G[P[93Goons[K[A[55G[55G[1@'
+ons[A[56G[56G[1@(
+cons[A[57G[57G[1@d[93G[K
+(cons[A[58G[58G[1@i 
+[1@ ([A[59G[59G[1@v[93G) [K[1@) [A[60G[60G[1@i
+)[1@) [A[61G[61G[1@d[93G[K
+[1@5)[A[62G[62G[1@e 
+[1@ 5[A[63G[62G[P 
+[P5[A[62G[61G[P[92G 55[P)[A[61G[60G[P[93G))[P [A[60G[59G[P[92G)))[P [A[59G[58G[P 
+[P([A[58G[57G[P[92G ((cons[K[A[57G[57G[1@e[93G[K
+(cons[A[58G[58G[1@r 
+[1@ ([A[59G[59G[1@r[93G) [K[1@) [A[60G[60G[1@o
+)[1@) [A[61G[61G[1@r[93G[K
+[1@5)[A[62G[62G[1@) 
+[1@ 5[A[63G[63G[1@)
+[1@6 [A[64G[64G[1@)[93G[K
+[1@16[A[65G> [K
+[K[A> > (quad-func 16 3 (discriminant 3 16 5))> [K(define (quad-[16G[Kratic [21G-roots a b c) ( (if (= a 0) (error '(error)'[64G[K) (let[67G let[68G(let[68Glet[K[67Glet[Klet (disc) (discriminant a  b c)) cons[10G[K[9G[K[8G[K[7G[K( [8Gcons quad-func b a disc [13G[1@(qquad-func b a disc[32G)[34G[34G([35Gq[36Gu[37Ga[38Gd[39G-[40Gf[41Gu[42Gn[43Gc[45G[45Gb[47G[47Ga[49G[49G([50G-[52G[52Gd[53Gi[54Gs[55Gc[56G)[57G)[58G)[59G)[60G)
+  )
+; readline-input:6:34: if: bad syntax
+;   in: (if (= a 0) (error (quote (error))) (let (disc) (discriminant a b c))
+;     (cons (quad-func b a disc) (quad-func b a (- disc))))
+; [,bt for context]
+> ,bt
+; readline-input:6:34: if: bad syntax
+;   in: (if (= a 0) (error (quote (error))) (let (disc) (discriminant a b c)) (cons (quad-func b a disc) (quad-func b a (- disc))))
+;   location...:
+;    readline-input:6:34
+;   context...:
+;    /usr/share/racket/pkgs/xrepl-lib/xrepl/xrepl.rkt:1493:0
+;    /usr/share/racket/collects/racket/repl.rkt:11:26
+> > ,bt> (define (quadratic-roots a b c) ( (if (= a 0) (error '(error)) (let (disc) (discriminant a
+b c)) (cons (quad-func b a disc) (quad-func b a (- disc)))))
+  )[A[62G[A[93G[65G[1@) 
+[1@ b[A[66G (let (disc) (discriminant 
+ b c)) (cons (quad-func b a disc) (quad-func b a (- disc))))) [62G[61G[K
+
+; readline-input:9:34: if: missing an "else" expression
+;   in: (if (= a 0) (error (quote (error))))
+; [,bt for context]
+> > (define (quadratic-roots a b c) ( (if (= a 0) (error '(error))) (let (disc) (discriminant a  b c)) (cons (quad-func b a disc) (quad-func b a (- disc))))
+  )[A[61G[A[93G[68G[1@([93G[K
+[1@a [A[68G[68G[1@e(
+[1@ a[A[69G[69G[1@l
+[1@t [A[70G[70G[1@s
+[1@nt[A[71G[71G[1@e
+[1@an[A[72G[72G[1@ 
+[1@na[A[73G(let (disc) (discrim
+nant a b c)) (cons (quad-func b a disc) (quad-func b a (- disc)))[67G)
+
+; readline-input:11:34: if: missing an "else" expression
+;   in: (if (= a 0) (error (quote (error))))
+; [,bt for context]
+> > (define (quadratic-roots a b c) ( (if (= a 0) (error '(error))) (else (let (disc) (discrimi nant a b c)) (cons (quad-func b a disc) (quad-func b a (- disc)))))
+  )[A[68G[A[93G))[65G[P[93Gnn[Pa[A[65G a 0) (error '(error)) (else (let (disc) (discrimi
+ant a [A[65G) (let (disc) (discriminant aa[94G[5P[57G[P
+  )[2A[68G[6@else (
+[6@nant a[63G[1@)
+  )[2A> [K
+[K
+[K[2A> > (define (quadratic-roots a b c) ( (if (= a 0) (error '(error))) (else (let (disc) (discrimi nant a b c)) (cons (quad-func b a disc) (quad-func b a (- disc)))))
+  )[A[68G[A[93G[65G[P[93Gnn[Pa[A[65G (else[70G[P[93Gaa[Pn[A[70G[69G[P[93Gnn[Pt[A[69G[68G[P[93Gtt[P [A[68G[67G[P 
+[Pa[A[67G[66G[P[92G aa[P [A[66G[66G[P(
+[Pb[A[65G (let (disc) (discriminant a
+b c)) (cons (quad-func b a disc) (quad-func b a (- disc)))))[60G[K
+
+  )
+; readline-input:13:34: if: bad syntax
+;   in: (if (= a 0) (error (quote (error))) (let (disc) (discriminant a b c))
+;     (cons (quad-func b a disc) (quad-func b a (- disc))))
+; [,bt for context]
+> > (define (quadratic-roots a b c) ( (if (= a 0) (error '(error)) (let (disc) (discriminant a
+b c)) (cons (quad-func b a disc) (quad-func b a (- disc))))
+  )
+  )[3A[65G[7@) (else
+[7@nant a [63G[1@)
+
+[K[A  )[2A[65G[7P[87Gnant a
+[7P[56G[P
+
+  ) )[K)[K[A  ))
+[K[A  ))  )[K  [K [K[A[60G[A[65G[7@) (else
+[7@nant a [63G[1@)
+  )[2A[65G[7P[87Gnant a
+[7P[56G[P
+
+  )  [K [K[A  )  [K [K[A[60G[A[93G)
+
+  )
+  )
+; readline-input:16:34: if: bad syntax
+;   in: (if (= a 0) (error (quote (error))) (let (disc) (discriminant a b c))
+;     (cons (quad-func b a disc) (quad-func b a (- disc))))
+; [,bt for context]
+> > (define (quadratic-roots a b c) ( (if (= a 0) (error '(error)) (let (disc) (discriminant a
+b c)) (cons (quad-func b a disc) (quad-func b a (- disc))))
+  )
+  )  [K [K[A  )  [K [K[A[60G))
+; readline-input:19:34: if: bad syntax
+;   in: (if (= a 0) (error (quote (error))) (let (disc) (discriminant a b c))
+;     (cons (quad-func b a disc) (quad-func b a (- disc))))
+; [,bt for context]
+> > (define (quadratic-roots a b c) ( (if (= a 0) (error '(error)) (let (disc) (discriminant a
+b c)) (cons (quad-func b a disc) (quad-func b a (- disc))))))[60G[K
+  )
+  )[3A[65G[7@) (else
+[7@nant a [63G[1@)
+
+[K[A  )[2A[65G[7P[87Gnant a
+[7P[56G[P
+
+  )[2A[60G))
+[K
+[K[2A[62G[A[93G)[64G[P[92G bb[P [A[64G[49G[Pe
+[Pc[A[49G
+
+; readline-input:20:34: if: bad syntax
+;   in: (if (= a 0) error (quote (error)) (let (disc) (discriminant a b c))
+;     (cons (quad-func b a disc) (quad-func b a (- disc))))
+; [,bt for context]
+> ,bt
+; readline-input:20:34: if: bad syntax
+;   in: (if (= a 0) error (quote (error)) (let (disc) (discriminant a b c)) (cons (quad-func b a disc) (quad-func b a (- disc))))
+;   location...:
+;    readline-input:20:34
+;   context...:
+;    /usr/share/racket/pkgs/xrepl-lib/xrepl/xrepl.rkt:1493:0
+;    /usr/share/racket/collects/racket/repl.rkt:11:26
+> > ,bt> (define (quadratic-roots a b c) ( (if (= a 0) error '(error) (let (disc) (discriminant a b
+c)) (cons (quad-func b a disc) (quad-func b a (- disc))))))[A[93G= a 0) er[36G[P[92G cc[P)[A[36G[36G[P[93G))[P [A[35G(if (= a 0)[40G[1@(
+)[1@) [A[40G(= a 0)[47G[1@)[93G[K
+[1@c)[A[48G[47G[P[92G cc[P)[A[47G([40G[P[93G))[P [A[39G(= a 0) error '((error[59G[P[92G)))[P [A[59G[58G[P)
+[P([A[58G[57G[P[92G (([Pc[A[57G[56G[P[93Gcc[Po[A[56G[55G[P[93Goo[Pn[A[55G[55G[1@1
+[1@on[A[56G)[56G[P[93Goo[Pn[A[56G[55G[P[93Gnn[Ps[A[55G[54G[P[93Gss[P [A[54G[53G[P 
+[P([A[53G[53G[1@1 
+[1@ ([A[54G[47G[1@(
+[1@s [A[48Gerror 1[55G[1@)
+[1@ns[A[56G[56G[1@)
+[1@on[A[57G[56G[P[93Goo[Pn[A[56G [58G[1@(
+[1@on[A[58G(let (disc) (discriminant a b c)) (
+ons (quad-func b a disc) (quad-func b a (- disc))))[54G)
+; readline-input:22:61: let: bad syntax (not an identifier and expression for a
+;   binding)
+;   at: disc
+;   in: (let (disc) (discriminant a b c))
+; [,bt for context]
+; readline-input:22:144: read-syntax: unexpected `)` [,bt for context]
+> > (define (quadratic-roots a b c) (if (= a 0) (error 1) ((let (disc) (discriminant a b c)) (c ons (quad-func b a disc) (quad-func b a (- disc)))))))[54G[K
+; readline-input:23:61: let: bad syntax (not an identifier and expression for a
+;   binding)
+;   at: disc
+;   in: (let (disc) (discriminant a b c))
+; [,bt for context]
+> ,bt
+; readline-input:23:61: let: bad syntax (not an identifier and expression for a binding)
+;   at: disc
+;   in: (let (disc) (discriminant a b c))
+;   location...:
+;    readline-input:23:61
+;   context...:
+;    /usr/share/racket/collects/racket/private/qq-and-or.rkt:50:20: go
+;    /usr/share/racket/pkgs/xrepl-lib/xrepl/xrepl.rkt:1493:0
+;    /usr/share/racket/collects/racket/repl.rkt:11:26
+> > ,bt> (define (quadratic-roots a b c) (if (= a 0) (error 1) ((let (disc) (discriminant a b c)) (c ons (quad-func b a disc) (quad-func b a (- disc))))))
+; readline-input:25:61: let: bad syntax (not an identifier and expression for a
+;   binding)
+;   at: disc
+;   in: (let (disc) (discriminant a b c))
+; [,bt for context]
+> > (define (quadratic-roots a b c) (if (= a 0) (error 1) ((let (disc) (discriminant a b c)) (c ons (quad-func b a disc) (quad-func b a (- disc))))))[A[93G([70G[P[93Goo[Pn[A[70G[69G[P[93Gnn[Ps[A[69G[68G[P[93Gss[P [A[68G[68G[1@ 
+[1@s [A[69G
+
+; readline-input:26:55: let: bad syntax (missing binding pairs or body)
+;   in: (let (disc discriminant a b c))
+; [,bt for context]
+> > (define (quadratic-roots a b c) (if (= a 0) (error 1) ((let (disc discriminant a b c)) (con s (quad-func b a disc) (quad-func b a (- disc))))))[A[93G [69G[1@(
+[1@ns[A[70Gdiscriminant a b c[90G) (cn[94G[1@on[A[89G
+
+; readline-input:27:55: let: bad syntax (missing binding pairs or body)
+;   in: (let (disc (discriminant a b c)))
+; [,bt for context]
+> 'bt
+'bt
+> > 'bt> (define (quadratic-roots a b c) (if (= a 0) (error 1) ((let (disc (discriminant a b c))) (c ons (quad-func b a disc) (quad-func b a (- disc))))))
+; readline-input:29:55: let: bad syntax (missing binding pairs or body)
+;   in: (let (disc (discriminant a b c)))
+; [,bt for context]
+> ,bt
+; readline-input:29:55: let: bad syntax (missing binding pairs or body)
+;   in: (let (disc (discriminant a b c)))
+;   location...:
+;    readline-input:29:55
+;   context...:
+;    /usr/share/racket/collects/racket/private/qq-and-or.rkt:50:20: go
+;    /usr/share/racket/pkgs/xrepl-lib/xrepl/xrepl.rkt:1493:0
+;    /usr/share/racket/collects/racket/repl.rkt:11:26
+> > ,bt> (define (quadratic-roots a b c) (if (= a 0) (error 1) ((let (disc (discriminant a b c))) (c ons (quad-func b a disc) (quad-func b a (- disc))))))[A[93Gt a b c)))[90G (coo[94G[Pn[A[90G (c
+ns (quad-func b a d
+  )
+; readline-input:31:61: let: bad syntax (not an identifier and expression for a
+;   binding)
+;   at: disc
+;   in: (let (disc (discriminant a b c)) (cons (quad-func b a disc) (quad-func
+;     b a (- disc))))
+; [,bt for context]
+> > (define (quadratic-roots a b c) (if (= a 0) (error 1) ((let (disc (discriminant a b c)) (co ns (quad-func b a disc) (quad-func b a (- disc))))))
+  )  [K [K[A[53G)
+; readline-input:33:61: let: bad syntax (not an identifier and expression for a
+;   binding)
+;   at: disc
+;   in: (let (disc (discriminant a b c)) (cons (quad-func b a disc) (quad-func
+;     b a (- disc))))
+; [,bt for context]
+> ,bt
+; readline-input:33:61: let: bad syntax (not an identifier and expression for a binding)
+;   at: disc
+;   in: (let (disc (discriminant a b c)) (cons (quad-func b a disc) (quad-func b a (- disc))))
+;   location...:
+;    readline-input:33:61
+;   context...:
+;    /usr/share/racket/collects/racket/private/qq-and-or.rkt:50:20: go
+;    /usr/share/racket/pkgs/xrepl-lib/xrepl/xrepl.rkt:1493:0
+;    /usr/share/racket/collects/racket/repl.rkt:11:26
+> > ,bt> (define (quadratic-roots a b c) (if (= a 0) (error 1) ((let (disc (discriminant a b c)) (co ns (quad-func b a disc) (quad-func b a (- disc)))))))[A[93Gb c))[90G) (cn[94G[1@on[A[91G[62G[1@*
+[1@co[A[63G
+
+; readline-input:35:55: let*: bad syntax (missing body)
+;   in: (let* (disc (discriminant a b c)))
+; [,bt for context]
+; readline-input:35:145: read-syntax: unexpected `)` [,bt for context]
+> > (define (quadratic-roots a b c) (if (= a 0) (error 1) ((let* (disc (discriminant a b c))) ( cons (quad-func b a disc) (quad-func b a (- disc)))))))[A[93G([64G[P[93Gcc[Po[A[64Gdisc (discriminant a b c))[90G (coo[94G[Pn[A[89G
+
+; readline-input:36:61: let*: bad syntax (not a sequence of
+;   identifier--expression bindings)
+;   at: disc
+;   in: (let* disc (discriminant a b c))
+; [,bt for context]
+; readline-input:36:143: read-syntax: unexpected `)` [,bt for context]
+> > (define (quadratic-roots a b c) (if (= a 0) (error 1) ((let* disc (discriminant a b c)) (co ns (quad-func b a disc) (quad-func b a (- disc)))))))[A[93Ga[62G[P[93Gnn[Ps[A[62G disc (discriminant a b c))[88G[P[93Gss[P [A[88G (con
+ (quad-func b a disc) (quad-func b a (- disc))))[51G[K[50G[K
+  )
+  )
+; readline-input:37:66: let: bad syntax (not an identifier and expression for a
+;   binding)
+;   at: discriminant
+;   in: (let disc (discriminant a b c) (cons (quad-func b a disc) (quad-func b
+;     a (- disc))))
+; [,bt for context]
+> > (define (quadratic-roots a b c) (if (= a 0) (error 1) ((let disc (discriminant a b c) (cons  (quad-func b a disc) (quad-func b a (- disc)))))
+  )
+  )[A  )[A[50G[A[93G[63G[1@(
+[1@s [A[64Gdisc (discriminant a b c[89G[1@)
+[1@ns[A[89G
+
+
+
+; readline-input:40:61: let: bad syntax (not an identifier and expression for a
+;   binding)
+;   at: disc
+;   in: (let (disc (discriminant a b c)) (cons (quad-func b a disc) (quad-func
+;     b a (- disc))))
+; [,bt for context]
+> > (define (quadratic-roots a b c) (if (= a 0) (error 1) ((let (disc (discriminant a b c)) (co ns (quad-func b a disc) (quad-func b a (- disc)))))
+  )
+  )[A  )[A[52G[A[93G[64G[1@[
+[1@on[A[65Gdisc (discriminant a b c)[90G]) (o[94G[1@co[A[91G
+
+
+
+> quadratic [12G-roots 3 16 5
+#<procedure:quadratic-roots>
+3
+16
+5
+> > quadratic-roots 3 16 5> [1@(qquadratic-roots 3 16 5)
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: '(-1/3 . -5)
+; [,bt for context]
+> > (quadratic-roots 3 16 5)> [P[25G[K> [9@(define ([28Ga b c) (if (= a 0) (error 1) ((let ([disc (discriminant a b c)]) ( cons (quad-func b a disc) (quad-func b a (- disc)))))
+  )
+  )[A  )[A[54Gcon[P co[P c[P [P [1@l l[1@i li[1@s lis[1@t 
+
+
+> > (define (quadratic-roots a b c) (if (= a 0) (error 1) ((let ([disc (discriminant a b c)]) ( list (quad-func b a disc) (quad-func b a (- disc)))))
+  )
+  )[3A> ([8P[20G3 16 5)[K
+[K
+[K
+[K[3A[27G
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: '(-1/3 -5)
+; [,bt for context]
+> > (quadratic-roots 3 16 5)[20G[P [20G[1@0 
+; error: contract violation
+;   expected: (or/c string? symbol?)
+;   given: 1
+; [,bt for context]
+> > (quadratic-roots 0 16 5)[20G[P [20G[1@3 
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: '(-1/3 -5)
+; [,bt for context]
+> > (quadratic-roots 3 16 5)[20G0[27G> ([8@define ([28Ga b c) (if (= a 0) (error 1) ((let ([disc (discriminant a b c)]) ( list (quad-func b a disc) (quad-func b a (- disc)))))
+  )
+  )[A  )[A[54G))
+  )[2A> ([8P[20G0 16 5)[K
+[K
+[K
+[K[3A[27G> ([8@define ([28Ga b c) (if (= a 0) (error 1) ((let ([disc (discriminant a b c)]) ( list (quad-func b a disc) (quad-func b a (- disc)))))
+  )
+  )  [K [K[A  )  [K [K[A[54G))
+> > (define (quadratic-roots a b c) (if (= a 0) (error 1) ((let ([disc (discriminant a b c)]) ( list (quad-func b a disc) (quad-func b a (- disc)))))))[A> ([8P[20G3 16 5)[K
+[K[A[27G
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: '(-1/3 -5)
+; [,bt for context]
+> ,bt
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: '(-1/3 -5)
+;   arguments...: [none]
+;   context...:
+;    /usr/share/racket/pkgs/xrepl-lib/xrepl/xrepl.rkt:1493:0
+;    /usr/share/racket/collects/racket/repl.rkt:11:26
+> > ,bt> (quadratic-roots 3 16 5)> ([8@define ([28Ga b c) (if (= a 0) (error 1) ((let ([disc (discriminant a b c)]) ( list (quad-func b a disc) (quad-func b a (- disc)))))))[A[93G[62G[1@*[93G[K
+[1@(l[A[63G ([disc (discriminant a b c)][93G)([1@ ([A[93G
+ (list (quad-func b a disc) (quad-func b a (- disc))))[57G[K
+; readline-input:57:55: let*: bad syntax (missing body)
+;   in: (let* ((disc (discriminant a b c))))
+; [,bt for context]
+> > (define (quadratic-roots a b c) (if (= a 0) (error 1) ((let* ([disc (discriminant a b c)]))  (list (quad-func b a disc) (quad-func b a (- disc)))))))[A[93G[93G[K
+[P([A[92G[62G[P[92G (([Pl[A[62G
+
+> > (define (quadratic-roots a b c) (if (= a 0) (error 1) ((let ([disc (discriminant a b c)]) ( list (quad-func b a disc) (quad-func b a (- disc)))))))[A[62G[1@*[93G)l[K[2@ ([51G[P[57G[A> ,bt[K
+[K[A[6G> (quadratic-roots 3 16 5)
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: '(-1/3 -5)
+; [,bt for context]
+> > (quadratic-roots 3 16 5)> ([8@define ([28Ga b c) (if (= a 0) (error 1) ((let ([disc (discriminant a b c)]) ( list (quad-func b a disc) (quad-func b a (- disc))))))))[55G[K[A[93G([58G[P[93Gll[Pi[A[57G
+
+> > (define (quadratic-roots a b c) (if (= a 0) (error 1) (let ([disc (discriminant a b c)]) (l ist (quad-func b a disc) (quad-func b a (- disc))))))[A> ([8P[20G3 16 5)[K
+[K[A[27G
+'(-1/3 -5)
+> > (quadratic-roots 3 16 5)[25G)[K[24G)[K[23G)[K[22G)[K[21G)[K[20G)[K[20G1)[21G )[22G2)[23G )[24G1)
+'(-1 -1)
+> > (quadratic-roots 1 2 1)[24G-1)[26G1)
+'(2.4641016151377544 -4.464101615137754)
+> > (quadratic-roots 1 2 -11)[26G)[K
+'(0.41421356237309515 -2.414213562373095)
+> > (quadratic-roots 1 2 -1)[24G1)[K[22G-2 1)
+'(1 1)
+> > (quadratic-roots 1 -2 1)[22G2 1)[K2 1[24G)[K[24G4)
+'(-1.0+1.7320508075688772i -1.0-1.7320508075688772i)
+> (define (guess a b) ( if([27G[K[26G[K[25G[K[24Gif ( [28G> ( ([31G/ ([33G ( ([33G([K(abs (* guess guess) [39G[1@(*[39G[1@-([40G[1@ ((* guess guess) n)) n) .0001) ss[48G[P [47G[P [46G[P [45G[P [44G[P [44G[1@a  guess[50G[P)[49G[P)[48G[P)[47G[P)[46G[P)[46G[1@a)) n[49G[P)[49G[1@b))) n[53G[P)[53G[1@b)) .0001)[63G[63Gg[64Gu[65Ge[66Gs[66G[K[65G[K[64G[K[63G[K[63G([64Gg[65Gu[66Ge[67Gs[68Gs[70G[70G([71G/[73G[73G([74G+[76G[76Ga[78G[78G([80G[80G/[82G[82Ga[84G[83G[82G[K[82Gb[84G[84Ga[85G)[86G)[88G[88G2[89G)[90G)[92G[92Ga[93G) )
+> guess [8G[7G[K[6G[K> gu[K> g[K> [K(guess 1 5
+  )
+; guess: arity mismatch;
+;  the expected number of arguments does not match the given number
+;   expected: 2
+;   given: 1
+; [,bt for context]
+> > (guess 1 5
+  )  [K [K[A[13G)
+; guess: arity mismatch;
+;  the expected number of arguments does not match the given number
+;   expected: 2
+;   given: 1
+; [,bt for context]
+> > (guess 1 5)[13G[K
+  )[A> ([8@define ([18Ga b) (if (> (/ (abs (- (* a a) b)) b) .0001) (guess (/ (+ a ( / b a)) 2)) a) )[K[A[93G
+[A[93Ga)[90G ) a)[94G[2G)[A[91G[91Gb)[K
+a))[A[92G
+
+> > (define (guess a b) (if (> (/ (abs (- (* a a) b)) b) .0001) (guess (/ (+ a ( / b a)) 2) b)
+a))[A> ([8P[10G1 5)[K
+[K[A[14G
+2207/987
+> > (guess 1 5)[11G. 5)[12G0 5)
+2.2360688956433634
+> (define (my-sqrt b) (guess 1.0 b))
+> > (define (my-sqrt b) (guess 1.0 b))> [Km> [K(my--sqrt[11G[K[10G[K[9G[K[8G[K[7G[Ksqrt 3[12G[K9)
+3.00009155413138
+> (define (qud[14G[Kad-func-2)[23G )[24Ga)[25G )[26Gb)[27G )[28Gc)[29G )[30Gd)[30G)[K[30Gf)) ([33G[K[32G[31G[K[30G[K[29G[28G[K[27G[26G[K[25G[24G[K[23G[22G[K[21G[K[20G[K[19G[K[18G[K[17G[K[16G[K[15G[K[14G[K[13G[K[12G[K[11G[K[10G[9G[K[8G[K[7G[K[6G[K> (d[K> ([K> [K> (my-sqrt 9)> ([8@define ([20Gb) (guess 1.0 b))> (guess 1.0 5)[K[11G 5)[K> ([8@define ([18Ga b) (if (> (/ (abs (- (* a a) b)) b) .0001) (guess (/ (+ a ( / b a)) 2) b)
+a))[A> ([8P[10G1 5[K
+  )[A> ([8@define ([18Ga b) (if (> (/ (abs (- (* a a) b)) b) .0001) (guess (/ (+ a ( / b a)) 2) b)
+a))[A> ([8P[10G1 5[K
+  )[A> ([8@define ([18Ga b) (if (> (/ (abs (- (* a a) b)) b) .0001) (guess (/ (+ a ( / b a)) 2)) a) )[K[A> (quadratic-roots 1 2 4)[K
+[K[A[26G[22G-2 1)[22G2 -1)[26G1)[24G1)[K[20G3 16 5)> ([8@define ([28Ga b c) (if (= a 0) (error 1) (let ([disc (discriminant a b c)]) (l ist (quad-func b a disc) (quad-func b a (- disc))))))[A[93G[27G[1@2
+[1@li[A[28G a b c[34G[1@ [93G[K
+[1@(l[A[35G[35G[1@f)
+[1@ ([A[36G[36G[1@ 
+[1@) [A[37G[36G[P[93G))[P [A[36G) (if (= a 0) (error 1) (let ([disc (discriminant a b c)][91G])[K
+[P([A[91G[90G]) (([Pl[A[90G[89G[P]) (ll[Pi[A[89G[88G[P[93Gii[Ps[A[88G[87G[P[93Gss[Pt[A[87G[86G[P[93Gtt[P [A[86G[85G[P]
+[P([A[85G[84G[P[92G (([Pq[A[84G[83G[P[93Gqq[Pu[A[83G[82G[P[93Guu[Pa[A[82G[81G[P[93Gaa[Pd[A[81G[80G[P[93Gdd[P-[A[80G[79G[P[93G--[Pf[A[79G[78G[P[93Gff[Pu[A[78G[77G[P[93Guu[Pn[A[77G[76G[P[93Gnn[Pc[A[76G[75G[P[93Gcc[P [A[75G[74G[P]
+[Pb[A[74G[73G[P[92G bb[P [A[73G[73G[1@f[93G[K
+[1@b [A[74G[74G[1@ ]
+[1@ b[A[75G[75G[1@(
+[1@c [A[76G[76G[1@)
+[1@nc[A[77G)[77G[1@)
+[1@un[A[78G([76G[1@-
+[1@fu[A[77G[77G[1@ 
+[1@-f[A[78G[78G[1@(
+[1@d-[A[79G[81G[1@)
+[1@ad[A[80G[79G[1@(
+[1@ua[A[80G[80G[1@*
+[1@qu[A[81G[81G[1@b[93G[K
+[1@(q[A[82G[82G[1@ )
+[1@ ([A[83G[83G[1@b
+[1@t [A[84G[87G[1@)
+[1@st[A[85G[81G[1@ 
+[1@is[A[82Gb b)[86G[1@ 
+[1@li[A[87G[87G[1@([93G[K
+[1@(l[A[88G[88G[1@*)
+[1@ ([A[89G[89G[1@ 
+[1@) [A[90G[90G4))))[94G[1@])[A[91G[91G ))][94G[1@)][A[92G[92G())[94G[2G[1@)][A[93G[93G*)[94G[3G[1@)][1@a)a[1@ )a[P)[P)[1@ ) [1@a) a[1@ ) a [1@v) a [P) a [1@c)[8G[1@)][9G[1@)])))))))[9G[P][A[93G([79G[P*
+[Pa[A[78G(* b b) (* 4 (*
+a c)))))))
+> > (define (quadratic-roots2 a b c f) (if (= a 0) (error 1) (let ([disc (f (- (* b b) (* 4 (*
+a c))))]) (list (quad-func b a disc) (quad-func b a (- disc))))))[A> (my-sqrt 9)[K
+[K[A[14G> ([8@define ([20Gb) (guess 1.0 b))> (guess 1.0 5)[K[11G 5)[K> ([8@define ([18Ga b) (if (> (/ (abs (- (* a a) b)) b) .0001) (guess (/ (+ a ( / b a)) 2) b)
+a))[A> ([8P[10G1 5[K
+  )[A> ([8@define ([18Ga b) (if (> (/ (abs (- (* a a) b)) b) .0001) (guess (/ (+ a ( / b a)) 2)) a) )[K[A> (quadratic-roots 1 2 4)[K
+[K[A[26G[22G-2 1)
+'(1 1)
+> > (quadratic-roots 1 -2 1)[19G[1@2 
+; quadratic-roots2: arity mismatch;
+;  the expected number of arguments does not match the given number
+;   expected: 4
+;   given: 3
+; [,bt for context]
+> > (quadratic-roots2 1 -2 1)[27G )[28Gm)[29Gy)[30G-)[31Gs)[32Gq)[33Grt )[36Gr)[36G)[K[35G)[K[34G)[K[34Gt)
+; /: division by zero [,bt for context]
+> > (quadratic-roots2 1 -2 1 my-sqrt)[23G[P2
+; /: division by zero [,bt for context]
+> ,bt
+; /: division by zero
+;   context...:
+;    readline-input:71:0: guess
+;    readline-input:76:0: quadratic-roots2
+;    /usr/share/racket/pkgs/xrepl-lib/xrepl/xrepl.rkt:1493:0
+;    /usr/share/racket/collects/racket/repl.rkt:11:26
+> > ,bt> (quadratic-roots2 1 2 1 my-sqrt)[25G[P [25G[Pm[23G[P [23G[Pm[21G[P [21G[1@3 [23G[1@ m[23G[1@1 [24G[1@6 [26G[1@ m[26G[1@5 
+'(-0.3333332815637438 -5.0000000517695895)
+> > (quadratic-roots2 3 16 5 my-sqrt)[26G[P [26G[Pm[24G[P [23G[P [23G[Pm[21G[P [21G[1@1 [23G[1@ m[23G[1@2 [25G[1@ m[25G[1@1 
+; /: division by zero [,bt for context]
+> > (quadratic-roots2 1 2 1 my-sqrt)[21G[1@3 16 5[36G> ,bt[K> (quadratic-roots2 1 -2 1 my-sqrt)[27G)[K[19G[P [27G> ([8@define ([27G2 a b c f) (if (= a 0) (error 1) (let ([disc (f (- (* b b) (* 4 (*
+a c))))]) (list (quad-func b a disc) (quad-func b a (- disc))))))[A> (my-sqrt 9)[K
+[K[A[14G> ([8@define ([20Gb) (guess 1.0 b))> (guess 1.0 5)[K> (define (my-sqrt b) (guess 1.0 b))([23G[1@ ([23G[1@( [24G[1@i [25G[1@f [27G[1@ ([27G[1@( [28G[1@a [28G[P [28G[1@= [30G[1@ ([30G[1@b [32G[1@ ([32G[1@0 [33G[1@) [35G[1@ ([35G[1@0 [37G[1@ ( (guess 1.0 b)[52G)
+> > (define (my-sqrt b) (if (= b 0) 0  (guess 1.0 b)))> (quadratic-roots2 1 2 1 my-sqrt)[K
+'(-1 -1)
+> q
+; q: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+> quit
+; quit: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+> ; user break [,bt for context]
+
+
+> ; user break [,bt for context]
+^C; user break [,bt for context]
+
+[?2004hrgeary1@q22-23:~/i471a/submit/lab4$ gedit lab4-sol.scm
+[?2004l[?2004hrgeary1@q22-23:~/i471a/submit/lab4$ gedit lab4-sol.scm &
+[?2004l[1] 345295
+[?2004hrgeary1@q22-23:~/i471a/submit/lab4$ 
+(gedit:345295): Gtk-[1;33mWARNING[0m **: [34m15:25:52.384[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such method “Inhibit”
+gedit lab4-sol.scm &[K[12Pracketpython3 scan.py < extras/tests/ifdef-else.defs[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cracket[Kgedit lab4-sol.scm &[Kgedit lab4-sol.scm &[K[12Pracketpython3 scan.py < extras/tests/ifdef-else.defs[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cracket[K
+[?2004lWelcome to Racket v7.9 [bc].
+> ^D
+[?2004hrgeary1@q22-23:~/i471a/submit/lab4$ racket lab4-sol.scm
+[?2004ldefault-load-handler: expected a `module' declaration, but found something else
+  file: /home/rgeary1/i471a/submit/lab4/lab4-sol.scm
+[?2004hrgeary1@q22-23:~/i471a/submit/lab4$ racket
+[?2004lWelcome to Racket v7.9 [bc].
+> load("[8G[K[7G[K[6G[K> lo[K> l[K> [Kdefine[8G[K[7G[K[6G[K> de[K> d[K> [K(dfein[8G[K[7G[K[6G[K> (d[Kefine l[11G[K(load) (load "lab4-scm.scm"))
+> load
+#<procedure:load>
+> (load)
+; open-input-file: cannot open input file
+;   path: /home/rgeary1/i471a/submit/lab4/lab4-scm.scm
+;   system error: No such file or directory; errno=2
+; [,bt for context]
+> > (load)> [Pload[K> (define (load) (load "lab4-scm.scm"))[32G[P.[31G[P.[31G[1@o.[32G[1@l.
+> > (define (load) (load "lab4-sol.scm"))> (load)[K
+; load: arity mismatch;
+;  the expected number of arguments does not match the given number
+;   expected: 0
+;   given: 1
+; [,bt for context]
+> > (load)> (define (load) (load "lab4-sol.scm"))> load[K> (define (load) (load "lab4-scm.scm"))> load[K> (define (load) (load "lab4-sol.scm"))> (load)[K[8G )
+; load: arity mismatch;
+;  the expected number of arguments does not match the given number
+;   expected: 0
+;   given: 1
+; [,bt for context]
+> > (load )[8G)[K> (define (load) (load "lab4-sol.scm"))[16G[1@ )[17G[1@a)
+> > (define (load a) (load "lab4-sol.scm"))> ([8P[9G)[K[9G0)
+
+
+^C; user break [,bt for context]
+> > (load 0)> ([8@define ([17Ga) (load "lab4-sol.scm"))[41G )[42G0)
+> > (define (load a) (load "lab4-sol.scm") 0)> (load 0)[K
+^C; user break [,bt for context]
+> > (load 0)> (define (load a) (load "lab4-sol.scm") 0))[43G[K[42G[K[41G[40G[K) a) [19G[P([18G[P([17G[P([16G[P([15G[P([14G[P([13G[P([12G[P([12G[Pl[10G[P([9G[P([8G[P([7G[P([6G[P(> (d[P(> ([P(> ([Pl
+^C^C^C^C^C^C; user break [,bt for context]
+^C
+
+
+^C
+
+
+
+
+
+
+
+
+
+
+^C^C^C^C^C^C^C^C^C^C^C^C
+wuit
+,bt
+; user break [,bt for context]
+> 
+  wuit
+; wuit: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+> ,bt
+; wuit: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+;   context...:
+;    /usr/share/racket/pkgs/xrepl-lib/xrepl/xrepl.rkt:1493:0
+;    /usr/share/racket/collects/racket/repl.rkt:11:26
+> > ,bt> wuit> (load "lab4-sol.scm")
+^C; user break [,bt for context]
+> > (load "lab4-sol.scm")
+^C^C; user break [,bt for context]
+; user break [,bt for context]
+> ^D
+[?2004hrgeary1@q22-23:~/i471a/submit/lab4$ racket
+[?2004lWelcome to Racket v7.9 [bc].
+> > (load "lab4-sol.scm")> ,bt[K> (load "lab4-sol.scm")
+> (cmp-gt '(4 7 2) '(3 9 1))
+'(#t #f #t)
+> ^D
+[?2004hrgeary1@q22-23:~/i471a/submit/lab4$ racket
+[?2004lWelcome to Racket v7.9 [bc].
+> > (cmp-gt '(4 7 2) '(3 9 1))> (load "lab4-sol.scm")[K
+; lab4-sol.scm:19:31: if: missing an "else" expression
+;   in: (if (not (null? list1)) (cons (* list1 list2) (ls-prod cdr (list1) cdr
+;     (list2))))
+; [,bt for context]
+> > (load "lab4-sol.scm")> (cmp-gt '(4 7 2) '(3 9 1))> (load "lab4-sol.scm")[K> [K^D
+[?2004hrgeary1@q22-23:~/i471a/submit/lab4$ racket
+[?2004lWelcome to Racket v7.9 [bc].
+> > (load "lab4-sol.scm")
+; lab4-sol.scm:19:30: if: missing an "else" expression
+;   in: (if (not (null? list1)) (cons (* list1 list2) (ls-prod cdr (list1) cdr
+;     (list2))))
+; [,bt for context]
+> > (load "lab4-sol.scm")> (cmp-gt '(4 7 2) '(3 9 1))> (load "lab4-sol.scm")[K> [K^D
+[?2004hrgeary1@q22-23:~/i471a/submit/lab4$ racket
+[?2004lWelcome to Racket v7.9 [bc].
+> > (load "lab4-sol.scm")> (cmp-gt '(4 7 2) '(3 9 1))> (load "lab4-sol.scm")[K
+; lab4-sol.scm:19:30: if: bad syntax
+;   in: (if (not (null? list1)) cons (* list1 list2) (ls-prod cdr (list1) cdr
+;     (list2)))
+; [,bt for context]
+> > (load "lab4-sol.scm")> [K> (load "lab4-sol.scm")> (cmp-gt '(4 7 2) '(3 9 1))> (load "lab4-sol.scm")[K> [K^D
+[?2004hrgeary1@q22-23:~/i471a/submit/lab4$ racket
+[?2004lWelcome to Racket v7.9 [bc].
+> > (load "lab4-sol.scm")> (cmp-gt '(4 7 2) '(3 9 1))> (load "lab4-sol.scm")[K
+; lab4-sol.scm:19:30: if: missing an "else" expression
+;   in: (if (not (null? list1)) (cons (* list1 list2) (ls-prod cdr (list1) cdr
+;     (list2))))
+; [,bt for context]
+> > (load "lab4-sol.scm")
+; lab4-sol.scm:19:50: #%app: missing procedure expression;
+;  probably originally (), which is an illegal empty application
+;   in: (#%app)
+; [,bt for context]
+> > (load "lab4-sol.scm")> (cmp-gt '(4 7 2) '(3 9 1))> ,bt[K> (cmp-gt '(4 7 2) '(3 9 1))> (load "lab4-sol.scm")[K> [K> ^D
+[?2004hrgeary1@q22-23:~/i471a/submit/lab4$ racket
+[?2004lWelcome to Racket v7.9 [bc].
+> > (load "lab4-sol.scm")> (cmp-gt '(4 7 2) '(3 9 1))> (load "lab4-sol.scm")[K
+; lab4-sol.scm:19:50: #%app: missing procedure expression;
+;  probably originally (), which is an illegal empty application
+;   in: (#%app)
+; [,bt for context]
+> ^D
+[?2004hrgeary1@q22-23:~/i471a/submit/lab4$ racket
+[?2004lWelcome to Racket v7.9 [bc].
+> > (load "lab4-sol.scm")
+> (ls-prod ([12G'((1 2 3) '(1 2 3))
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: #f
+; [,bt for context]
+> ,bt
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: #f
+;   arguments...: [none]
+;   context...:
+;    /home/rgeary1/i471a/submit/lab4/lab4-sol.scm:19:0: ls-prod
+;    /usr/share/racket/pkgs/xrepl-lib/xrepl/xrepl.rkt:1493:0
+;    /usr/share/racket/collects/racket/repl.rkt:11:26
+> ^D
+[?2004hrgeary1@q22-23:~/i471a/submit/lab4$ racket
+[?2004lWelcome to Racket v7.9 [bc].
+> > ,bt> (ls-prod '(1 2 3) '(1 2 3))> (load "lab4-sol.scm")[K> (cmp-gt '(4 7 2) '(3 9 1))> (load "lab4-sol.scm")[K
+; lab4-sol.scm:19:30: if: bad syntax
+;   in: (if ((null? list1)) (quote ()) cons (* list1 list2) (ls-prod cdr
+;     (list1) cdr (list2)))
+; [,bt for context]
+> > (load "lab4-sol.scm")> [K^D
+[?2004hrgeary1@q22-23:~/i471a/submit/lab4$ racket
+[?2004lWelcome to Racket v7.9 [bc].
+> > (load "lab4-sol.scm")
+> > (load "lab4-sol.scm")> ,bt[K> (ls-prod '(1 2 3) '(1 2 3))
+; *: contract violation
+;   expected: number?
+;   given: '(1 2 3)
+;   argument position: 1st
+; [,bt for context]
+> ,bt> ,b[K> ,[K> [K^D
+[?2004hrgeary1@q22-23:~/i471a/submit/lab4$ racket
+[?2004lWelcome to Racket v7.9 [bc].
+> > (ls-prod '(1 2 3) '(1 2 3))> (load "lab4-sol.scm")[K> ,bt[K> (load "lab4-sol.scm")
+> > (load "lab4-sol.scm")> (ls-prod '(1 2 3) '(1 2 3))
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: '(1 2 3)
+; [,bt for context]
+> ,bt
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: '(1 2 3)
+;   arguments...: [none]
+;   context...:
+;    /home/rgeary1/i471a/submit/lab4/lab4-sol.scm:19:0: ls-prod
+;    /usr/share/racket/pkgs/xrepl-lib/xrepl/xrepl.rkt:1493:0
+;    /usr/share/racket/collects/racket/repl.rkt:11:26
+> > ,bt> (ls-prod '(1 2 3) '(1 2 3))> ,bt[K> (ls-prod '(1 2 3) '(1 2 3))> ,bt[K> [Kdefine [9G[8G[K[7G[K[6G[K> de[K> d[K> [K(defie[8G[Kne l1 '(1 2 3))
+> > (define l1 '(1 2 3))[12G[P [12G[1@2 
+> > (define l2 '(1 2 3))[12G1[23G> ,bt[K> (ls-prod '(1 2 3) '(1 2 3))[19G[P [18G[P [18G[P'[16G[P [16G[P'[14G[P [13G[P [12G[P [12G[1@l [13G[1@1  '(1 2 3))[23G[K[21G)[K[20G)[K[19G)[K[18G)[K[17G)[K[16G)[K[15G)[K[15Gl)[16G2)
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: '(1 2 3)
+; [,bt for context]
+> ^D
+[?2004hrgeary1@q22-23:~/i471a/submit/lab4$ racket
+[?2004lWelcome to Racket v7.9 [bc].
+^[[A> > (ls-prod l1 l2)> (define l2 '(1 2 3))[12G1[23G> ,bt[K> (ls-prod '(1 2 3) '(1 2 3))> (load "lab4-sol.scm")[K
+> > (load "lab4-sol.scm")> (ls-prod l1 l2)[K> (define l2 '(1 2 3))[12G1[23G> ,bt[K> (ls-prod '(1 2 3) '(1 2 3))
+'(1 4 9)
+> > (ls-prod '(1 2 3) '(1 2 3))> (load "lab4-sol.scm")[K
+> > (load "lab4-sol.scm")> (ls-prod '(1 2 3) '(1 2 3))d[10G[P [9G[P [8G[P [7G[P [7G[1@f [7Gprod l1 l2)[K> (define l2 '(1 2 3))> (ls-prod l1 l2)[K[12G'(1 2 3) '(1 2 3))> (load "lab4-sol.scm")[K> (ls-prod '(1 2 3) '(1 2 3))[10G[P [9G[P [8G[P [7G[P [7G[1@f  '(1 2 3) '(1 2 3)[26G )[27G()[28Gl)[29Ga)[30Gm)[31Gb)[32Gd)[33Ga)[34G )[35G()[36Ga)[37G )[38Gb)[40G)[40G )[41G()[42G-)[43Gb)[43G)[K[43G )[44Gb)[45G )[46Ga)[47G )[47G)[K[48G)[49G)
+; ls-f: arity mismatch;
+;  the expected number of arguments does not match the given number
+;   expected: 2
+;   given: 3
+; [,bt for context]
+> ^D
+[?2004hrgeary1@q22-23:~/i471a/submit/lab4$ racket
+[?2004lWelcome to Racket v7.9 [bc].
+> > (ls-f '(1 2 3) '(1 2 3) (lambda (a b) (- b a)))> (load "lab4-sol.scm")[K
+> > (load "lab4-sol.scm")> (ls-f '(1 2 3) '(1 2 3) (lambda (a b) (- b a)))
+; ls-f: arity mismatch;
+;  the expected number of arguments does not match the given number
+;   expected: 2
+;   given: 3
+; [,bt for context]
+> > (ls-f '(1 2 3) '(1 2 3) (lambda (a b) (- b a)))> (load "lab4-sol.scm")[K
+> > (load "lab4-sol.scm")> (ls-f '(1 2 3) '(1 2 3) (lambda (a b) (- b a)))
+'(0 4 9)
+> > (ls-f '(1 2 3) '(1 2 3) (lambda (a b) (- b a)))> (load "lab4-sol.scm")[K
+> > (load "lab4-sol.scm")> (ls-f '(1 2 3) '(1 2 3) (lambda (a b) (- b a)))
+; ls-f: arity mismatch;
+;  the expected number of arguments does not match the given number
+;   expected: 3
+;   given: 2
+; [,bt for context]
+> > (ls-f '(1 2 3) '(1 2 3) (lambda (a b) (- b a)))> (load "lab4-sol.scm")[K
+> > (load "lab4-sol.scm")> (ls-f '(1 2 3) '(1 2 3) (lambda (a b) (- b a)))
+'(0 0 0)
+> > (ls-f '(1 2 3) '(1 2 3) (lambda (a b) (- b a)))) '(1 2 3) (lambda (a b) (--[42G[
