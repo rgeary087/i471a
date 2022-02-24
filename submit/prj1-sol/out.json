@@ -1,0 +1,3 @@
+ELSE
+AA
+[{"tag":"TEXT","text":"Before any #ifdef\n"},{"tag":"IFDEF","sym":"DEF","xkids":[[{"tag":"TEXT","text":"Here are some lines\n# else not recognized because of space\n"},null]]}]
