@@ -1,0 +1,115 @@
+Script started on 2022-03-04 14:21:08-05:00 [TERM="xterm-256color" TTY="/dev/pts/10" COLUMNS="123" LINES="18"]
+[?2004hrgeary1@remote00:~/i471a/submit/lab5$ racker[Kt
+[?2004lWelcome to Racket v7.9 [bc].
+> > (unary-mul '(s s s s s . z) '(s s . z))[37G[6@s s s . z))[37G[6P. z))> [K> (map (lambda (n) (n [22G[21G[Kmap n lambda[32G[K[31G[K[30G[K[29G[K[28G[K[27G[K'(1 2 3 4 5 [38G))) '( (;[46G[Klambda (n) (* n n)) (lambda (n) (n+[80G[K[79G[K+  [81Gn n [84G))))
+; map: contract violation
+;   expected: procedure?
+;   given: '(lambda (n) (* n n))
+; [,bt for context]
+> > (map (lambda (n) (map n '(1 2 3 4 5))) '( (lambda (n) (* n n)) (lambda (n) (+ n n))))))[22G[1@(a[23G[1@ma[25G[1@ap[25G[1@pa[26G[1@ a[27G[1@(a[28G[1@la[30G[1@ap[30G[1@ma[31G[1@ba[32G[1@da[34G[1@ap[34G[1@ a[35G[1@(a[36G[1@na[37G[1@)a[38G[1@ a[39G[1@(a[40G[1@ma[42G[1@ap[42G[1@pa[43G[1@ a[44G[1@na[45G[1@ a[46G[1@'a[47G[1@(a[48G[1@1a[49G[1@ a[50G[1@2a[51G[1@ a[52G[1@3a[53G[1@ a[54G[1@4a[55G[1@ a[56G[1@5a[57G[1@)a[58G[1@)[121G))) [K)[A[59G[59G[1@)[122G)))[K)[A[60G[60G[1@ [123G))[K))[A[61G[61G[1@'
+))))[A[62G[62G[1@([121G n[K
+n))))[A[63G[63G[1@ a
+[1@ n[A[64G[64G[1@([123G[K
+[1@n [A[65G[65G[1@la
+[1@ n[A[66G[67G[1@a
+[1@+ [A[67G[67G[1@m[123G[K
+[1@(+[A[68G[68G[1@ba
+[1@ ([A[69G[69G[1@d
+[1@) [A[70G[71G[1@a
+[1@n)[A[71G[71G[1@ [123G[K
+[1@(n[A[72G[72G[1@(a
+[1@ ([A[73G[73G[1@n
+[1@a [A[74G[74G[1@)
+[1@da[A[75G[75G[1@ 
+[1@bd[A[76G[76G[1@(
+[1@mb[A[77G[77G[1@*
+[1@am[A[78G[78G[1@ 
+[1@la[A[79G[79G[1@n[123G[K
+[1@(l[A[80G[80G[1@ a
+[1@ ([A[81G[81G[1@n[123G) [K[1@) [A[82G[82G[1@)
+)[1@) [A[83G[83G[1@)[121G n[K
+[1@n)[A[84G[84G[1@ a
+[1@ n[A[85G[85G[1@([123G[K
+[1@n [A[86G[86G[1@la
+[1@ n[A[87G[88G[1@a
+[1@* [A[88G[88G[1@m[123G[K
+[1@(*[A[89G[89G[1@ba
+[1@ ([A[90G[90G[1@d
+[1@) [A[91G[92G[1@a
+[1@n)[A[92G[92G[1@ [123G[K
+[1@(n[A[93G[93G[1@(a
+[1@ ([A[94G[94G[1@n
+[1@a [A[95G[95G[1@)
+[1@da[A[96G[96G[1@ 
+[1@bd[A[97G[97G[1@(
+[1@mb[A[98G[98G[1@+
+[1@am[A[99G[99G[1@ 
+[1@la[A[100G[100G[1@n[122G([K
+[1@(l[A[101G[101G[1@ a
+[1@ ([A[102G[102G[1@n
+[1@( [A[103G[103G[1@)[123G[K
+[1@'([A[104G[104G[1@)a
+[1@ '[A[105G[105G[1@)[122G)) [K[1@) [A[106G[106G[1@)[123G))[K[1@) [A[107G> (unary-mul '(s s s s s . z) '(s s . z))[K
+[K[A[42G> (map (lambda (n) (map n '(1 2 3 4 5))) '( (lambda (n) (* n n)) (lambda (n) (+ n n))))'(1 2 3 4 5))) '( (lambda (n) (* n n)))) ((lambda (n) (+ n n))))
+; map: contract violation
+;   expected: procedure?
+;   given: '(lambda (n) (* n n))
+; [,bt for context]
+> > (map (lambda (n) (map n '(1 2 3 4 5))) '( (lambda (n) (* n n)) (lambda (n) (+ n n)))) (lambda (n)[55G[P [54G[P [53G[P [53G[1@n  (* n n)) (lambda (n)[74G[P [73G[P [72G[P [72G[1@n 
+; map: contract violation
+;   expected: procedure?
+;   given: '(lambda n (* n n))
+; [,bt for context]
+> > (map (lambda (n) (map n '(1 2 3 4 5))) '( (lambda n (* n n)) (lambda n (+ n n))))[18G[P [17G[P [16G[P [16G[1@n 
+; map: contract violation
+;   expected: procedure?
+;   given: '((lambda n (* n n)))
+; [,bt for context]
+> > (map (lambda n (map n '(1 2 3 4 5))) '( (lambda n (* n n)) (lambda n (+ n n))))'[40G[P([41G[1@( [41G[1@l([42G[1@i([43G[1@s([44G[1@t([45G[1@ (( (lambda n (* n n)) (lambda n (+ n n)))[87G)
+; *: contract violation
+;   expected: number?
+;   given: '(#<procedure>)
+;   argument position: 1st
+; [,bt for context]
+> > (map (lambda n (map n '(1 2 3 4 5))) (list ( (lambda n (* n n)) (lambda n (+ n n)))))[56G[1@(nn[58G[1@)  (* n n)) (lambda [77G[1@(nn[79G[1@)  [16G[1@(nn[18G[1@) 
+; *: contract violation
+;   expected: number?
+;   given: #<procedure>
+;   argument position: 1st
+; [,bt for context]
+> > (map (lambda (n) (map n '(1 2 3 4 5))) (list ( (lambda (n) (* n n)) (lambda (n) (+ n n)))))[48G[P  (lambda (n) (* n n)) (lambda (n) (+ n n)))[92G[K
+'((1 4 9 16 25) (2 4 6 8 10))
+> ; user break [,bt for context]
+
+[?2004hrgeary1@remote00:~/i471a/submit/lab5$ [?2004l
+exit
+
+Script done on 2022-03-04 14:30:38-05:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2022-03-04 14:30:44-05:00 [TERM="xterm-256color" TTY="/dev/pts/10" COLUMNS="74" LINES="18"]
+[?2004hrgeary1@remote00:~/i471a/submit/lab5$ ./lab5-sol.scm 
+[?2004l--------------------
+FAILURE
+name:       check-equal?
+location:   lab5-sol.scm:105:0
+actual:     #<procedure:less-than>
+expected:   '(#t #f #f #t #t #f)
+--------------------
+--------------------
+FAILURE
+name:       check-equal?
+location:   lab5-sol.scm:107:0
+actual:     #<procedure:less-than>
+expected:   '(#t #f #f #t #f #f)
+--------------------
+--------------------
+FAILURE
+name:       check-equal?
+location:   lab5-sol.scm:109:0
+actual:     #<procedure:less-than>
+expected:   '()
+--------------------
+[?2004hrgeary1@remote00:~/i471a/submit/lab5$ ^C[?2004l[?2004h[?2004l
+[?2004hrgeary1@remote00:~/i471a/submit/lab5$ [?2004l
+exit
+
+Script done on 2022-03-04 14:30:51-05:00 [COMMAND_EXIT_CODE="130"]
