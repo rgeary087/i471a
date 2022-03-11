@@ -1,0 +1,545 @@
+Script started on 2022-03-10 16:04:22-05:00 [TERM="xterm-256color" TTY="/dev/pts/19" COLUMNS="144" LINES="6"]
+[?2004hrgeary1@remote02:~/i471a/submit/lab6$ pt[Kroloh[Kg
+[?2004lWelcome to SWI-Prolog (threaded, 64 bits, version 8.2.4)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- [?- ['lab6-sol.pro[18G'[5G[19G[19G][4G[20G.
+[1mtrue.[0m
+
+?- f(X,a[9G)[5G[10G=f(a,Y[16G)[12G[17G.
+X = Y, Y = a.
+
+?- ?- f(X,a)=f(a,Y).[15G).[K[15GX).
+X = a.
+
+?- ?- f(X,a)=f(a,X).[13G,X).[K[13Gb,X).
+[1;31mfalse.[0m
+
+?- ?- f(X,a)=f(b,X).[8G[P)[8G[1@Y))=f(b,X[15G).[K[15Ga).).[17G[K, g(X,Y[24G)[20G[25G=g(a,b[31G)[27G[32G
+|    .
+[1;31mfalse.[0m
+
+?- ?- f(X,Y)=f(b,a), g(X,Y)=g(a,b).
+[1;31mfalse.[0m
+
+?- ?- f(X,Y)=f(b,a), g(X,Y)=g(a,b).[30G).[K[30Ga).
+[1;31mfalse.[0m
+
+?- ?- f(X,Y)=f(b,a), g(X,Y)=g(a,a).[28G,a).[K[28Gb,a).
+X = b,
+Y = a.
+
+?- f(1[6G[K1,2,X,[11G[K[11G)[5G[12G=f(1,2,z[20G)[14G[21G
+|    .
+X = z.
+
+?- ?- f(1,2,X)=f(1,2,z).f?- [P(?- [1@h(?- h[1@e([6G[1@a([7G[1@d((1[9G[P,[9G[1@a,,2[11G[P,[11G[1@t,[12G[1@a,[13G[1@i,[14G[1@l,[15G[1@(,[16G[1@z,[18G[1@,X[18G[1@B,[19G[1@),[15G[20G,X[21G[P)[21G[1@Y)[16G[P,[16G[1@X,,B),Y)=f(1,2,z).[31G.[K[30G.[K[29G.[K[28G.[K[27G.[K[26G.[K[25G.[K[24G.[K[24Gh.[25Ge.[26Ga.[27Gd.[28G(.[29Ga.[30G,.[31Gt.[32Ga.[33Gi.[34Gl.[35G(.[36Gz.[37G,.[38GB.[39G).[35G[40G[40G,.[41G .[42GY.[43G).[28G[44G
+X = z.
+
+?- cons(a, cons(b, cons(c,X[28G)[24G[29G[29G)[16G[30G[30G)[8G[31G=cons(a, cons(b, cons(c,z[56G)[52G[57G[57G)[44G[58G[58G)[36G[59G
+|    .
+X = z.
+
+?- length/2([a,b[17G][13G[18G[18G)[12G[19G.
+[1;31mERROR: Syntax error: Operator expected
+ERROR: length/
+ERROR: ** here **
+ERROR: 2([a,b]) . 
+[0m?- ?- length/2([a,b]).[12G[P[[12G[1@ [[13G[1@i[[14G[1@s[[15G[1@ [?- cons(a, cons(b, cons(c,X)))=cons(a, cons(b, cons(c,z))).?- length/2([a,b]).[K[12G[P[[12G[1@ [[13G[1@i[[14G[1@s[[15G[1@ [[a,b])[21G.[K[21G .
+[1;31mERROR: Type error: `[]' expected, found `[a,b]' (a list) ("x" must hold one character)
+ERROR: In:
+ERROR:   [10] length/2 is [a,b]
+ERROR:    [9] <user>
+[0m?- ?- length/2 is [a,b].[14G[P [13G[P [13G[1@/ 
+[1;31mERROR: Type error: `lambda_free' expected, found `length/2' (a compound)
+ERROR: In:
+ERROR:   [13] throw(error(type_error(lambda_free,...),_37890))
+ERROR:   [11] yall:lambda_free(length/2) at /usr/lib/swi-prolog/library/yall.pl:357
+ERROR:   [10] yall:length/2/(user:[a|...]) at /usr/lib/swi-prolog/library/yall.pl:276
+ERROR:    [9] <user>
+ERROR: 
+ERROR: Note: some frames are missing due to last-call optimization.
+ERROR: Re-run your program in debug mode (:- debug.) to get more detail.
+[0m?- ?- ?- length/2 / [a,b]./[13G[P [13G[P[[11G[P [10G[P [10G[1@(  [a,b][17G,.[18G .[19G2.[20G).[10G[21G
+[1mtrue.[0m
+
+?- ?- length( [a,b], 2).[a,[14G[Pb[14G[1@|b
+[1;31mERROR: Type error: `list' expected, found `[a|b]' (a compound)
+ERROR: In:
+ERROR:   [11] throw(error(type_error(list,...),context(...,_2318)))
+ERROR:    [9] <user>
+ERROR: 
+ERROR: Note: some frames are missing due to last-call optimization.
+ERROR: Re-run your program in debug mode (:- debug.) to get more detail.
+[0m?- ?- length( [a|b], 2).[15G[1@[bb[18G[1@],[15G[b]
+[1mtrue.[0m
+
+?- ?- length( [a|[b]], 2).[17G[1@|][18G[1@c]
+[1;31mERROR: Type error: `list' expected, found `[a,b|c]' (a compound)
+ERROR: In:
+ERROR:   [11] throw(error(type_error(list,...),context(...,_4588)))
+ERROR:    [9] <user>
+ERROR: 
+ERROR: Note: some frames are missing due to last-call optimization.
+ERROR: Re-run your program in debug mode (:- debug.) to get more detail.
+[0m?- ?- length( [a|[b|c]], 2).[16G[P|[16G[1@B|[13G[P|[13G[1@S|[13G[P|[13G[1@A|
+[1;31mERROR: Type error: `list' expected, found `[_5862,_5868|c]' (a compound)
+ERROR: In:
+ERROR:   [11] throw(error(type_error(list,...),context(...,_5932)))
+ERROR:    [9] <user>
+ERROR: 
+ERROR: Note: some frames are missing due to last-call optimization.
+ERROR: Re-run your program in debug mode (:- debug.) to get more detail.
+[0m?- ?- length( [A|[B|c]], 2).[24G.[K[23G.[K[22G.[K[21G.[K[20G.[K[19G.[K[18G.[K[17G.[K[16G.[K[15G.[K[14G.[K[13G.[K[12G.[K[11G.[K[10G.[K[9G.[K[8G.[K[7G.[K[6G.[K?- l.[K?- .[K?- c.?- cd.[6Gd.[7Gr.[8G(.[9G[.[10G1.[11G,.[12G2.[13G,.[14G3.[15G,.[16G4.,3,4[16G.[K[15G.[K[14G.[K[14GX.[15G].[9G[16G[16G).[8G[17G[17G=.[18Gc.[19Gd.[20Gd.[21Gr.[22G(.[23G[.[24G1.[25G,.[26G2.[27G,.[28G3.[29G,.[30G4.[31G].[23G[32G[32G).[22G[33G
+[1;31mfalse.[0m
+
+?- ?- cddr([1,2,X])=cddr([1,2,3,4]).[14G[P][13G[P][12G[P][12G[1@[][13G[1@2][14G[1@|][15G[1@X]
+[1;31mERROR: Syntax error: Illegal start of term
+ERROR: cddr([1,[2|X
+ERROR: ** here **
+ERROR: ])=cddr([1,2,3,4]) . 
+[0m?- ?- cddr([1,[2|X])=cddr([1,2,3,4]).][17G[1@])[9G[18G
+[1;31mfalse.[0m
+
+?- ?- cddr([1,[2|X]])=cddr([1,2,3,4]).r([24G[P[[23G[P[[22G[P[[21G[P[[20G[P[[1,2,3,4])[29G.[K[18G[P=([8G[P[[7G[P[[6G[P[?- c[P[?- [P[[1,[[7G[P22|X][11G[P=
+X = [3, 4].
+
+?- ?- [1,2|X]=[1,2,3,4].|X[10G[1@s]
+Xs = [3, 4].
+
+?- ?- [1,2|Xs]=[1,2,3,4].s[10G[P][9G[1@[XX[11G[1@|][12G[1@_][14G[1@]=[9G[14G
+X = 3.
+
+?- ?- [1,2|[X|_]]=[1,2,3,4].][14G[P=[12G[P][11G[P][10G[P][9G[P][8G[P][7G[P][6G[P]?- [[P]?- [[1@[]?- [[P]?- [[1@X][6G[1@,][7G[1@ ][8G[1@2][8G[P][8G[1@3][9G[1@,][10G[1@4],4]=[[14G[1@[11,2[18G[1@],[14G[19G[?- [[1@1X[6G[1@|X
+[1;31mERROR: Syntax error: Unexpected comma or bar in rest of list
+ERROR: [1|
+ERROR: ** here **
+ERROR: X, 3,4]=[[1,2],3,4] . 
+[0m?- ?- [1|X, 3,4]=[[1,2],3,4].?- [[1@[11|X[9G[1@],[5G[10G
+X = [2].
+
+?- N=2+2
+|    .
+N = 2+2.
+
+?- ?- N=2+2.=?- N2+2.[K?- N 2+2.[6Gi2+2.[7Gs2+2.[8G 2+2.
+N = 4.
+
+?- 5 is 7 mod 2
+|    .
+[1;31mfalse.[0m
+
+?- ?- 5 is 7 mod 2.?- [P ?- [1@X 
+X = 1.
+
+?- N is pi
+|    .
+N = 3.141592653589793.
+
+?- load[[9G'lab6-sol.pro[22G'[9G[23G[23G][8G[24G
+|    .
+[1;31mERROR: Syntax error: Operator expected
+ERROR: loa
+ERROR: ** here **
+ERROR: d['lab6-sol.pro'] . 
+[0m?- ?- load['lab6-sol.pro'].[7G[P[[6G[P[?- l[P[?- [P[
+[1;31mERROR: /home/rgeary1/i471a/submit/lab6/lab6-sol.pro:2:38: Syntax error: Unexpected end of file
+[0m[1mtrue.[0m
+
+?- ?- ['lab6-sol.pro'].
+[1;31mERROR: /home/rgeary1/i471a/submit/lab6/lab6-sol.pro:2:38: Syntax error: Unexpected end of file
+[0m[1mtrue.[0m
+
+?- ?- ['lab6-sol.pro'].
+[31mWarning: /home/rgeary1/i471a/submit/lab6/lab6-sol.pro:1:
+Warning:    Singleton variables: [Z]
+[0m[1mtrue.[0m
+
+?- ?- ['lab6-sol.pro'].
+[31mWarning: /home/rgeary1/i471a/submit/lab6/lab6-sol.pro:1:
+Warning:    Singleton variables: [Z]
+[0m[1mtrue.[0m
+
+?- ^D
+[32m% halt
+[0m[?2004hrgeary1@remote02:~/i471a/submit/lab6$ [?2004l
+exit
+
+Script done on 2022-03-10 16:46:26-05:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2022-03-10 19:29:20-05:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="102" LINES="18"]
+[?2004hrgeary1@remote00:~/i471a/submit/lab6$ prolog
+[?2004lWelcome to SWI-Prolog (threaded, 64 bits, version 8.2.4)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- [?- ['lab6-sol.pro[18G'[5G[19G[19G][4G[20G
+|    .
+[1mtrue.[0m
+
+?- quadratic-roots(1,2,1,Z[27G)[19G[28G
+|    .
+[1;31mfalse.[0m
+
+?- ?- ?- ?- quadratic-roots(1,2,1,Z).?- ['lab6-sol.pro'].[K
+[1mtrue.[0m
+
+?- ?- ['lab6-sol.pro'].?- quadratic-roots(1,2,1,Z).
+[1;31mfalse.[0m
+
+?- trace?
+|    .
+[1;31mERROR: Syntax error: Operator expected
+ERROR: trac
+ERROR: ** here **
+ERROR: e? . 
+[0m?- ?- ?- trace.
+[1mtrue.[0m
+
+[trace]  ?- quadratic-roots(1,2,1,Z[36G)[28G[37G.
+   [1;32mCall: [0m(10) quadratic-roots(1, 2, 1, _13324) ? creep
+   [1;31mFail: [0m(10) quadratic-roots(1, 2, 1, _13324) ? creep
+[1;31mfalse.[0m
+
+[trace]  ?- trace.
+[1mtrue.[0m
+
+[trace]  ?- Exit.
+[32m% ... 1,000,000 ............ 10,000,000 years later
+% 
+%       >> 42 << (last release gives the question)
+[0m[trace]  ?- notrace.
+[1mtrue.[0m
+
+[debug]  ?- [13Gnotrace.[13GExit.[K[13Gtrace.[13Gquadratic-roots(1,2,1,Z).[13Gtrace.[K[18G? .[13Gquadratic-roots(1,2,1,Z).
+[1;31mfalse.[0m
+
+[debug]  ?- [13Gquadratic-roots(1,2,1,Z).[13Gnotrace.[K[13GExit.[K[13Gtrace.[13Gquadratic-roots(1,2,1,Z).[13Gtrace.[K[18G? .[13Gquadratic-roots(1,2,1,Z).[13G['lab6-sol.pro'].[K[13Gquadratic-roots(1,2,1,Z).[13G['lab6-sol.pro'].[K
+[1mtrue.[0m
+
+[debug]  ?- [13G['lab6-sol.pro'].[13Gquadratic-roots(1,2,1,Z).
+[1;31mfalse.[0m
+
+[debug]  ?- [13Gquadratic-roots(1,2,1,Z).[13G['lab6-sol.pro'].[K
+[1mtrue.[0m
+
+[debug]  ?- [13G['lab6-sol.pro'].[13Gquadratic-roots(1,2,1,Z).
+[1;31mERROR: Arithmetic: `discriminant/3' is not a function
+ERROR: In:
+ERROR:   [11] _33206 is sqrt(discriminant(1,2,1))
+ERROR:   [10] quadratic-roots(1,2,1,_33256) at /home/rgeary1/i471a/submit/lab6/lab6-sol.pro:4
+ERROR:    [9] <user>
+[0m   [1;35mException: [0m(11) _33430 is sqrt(discriminant(1, 2, 1)) ? Unknown option (h for help)
+   [1;35mException: [0m(11) _33474 is sqrt(discriminant(1, 2, 1)) ? Unknown option (h for help)
+   [1;35mException: [0m(11) _33518 is sqrt(discriminant(1, 2, 1)) ? alternatives
+   [1;35mException: [0m(11) _33562 is sqrt(discriminant(1, 2, 1)) ? Unknown option (h for help)
+   [1;35mException: [0m(11) _33606 is sqrt(discriminant(1, 2, 1)) ? Unknown option (h for help)
+   [1;35mException: [0m(11) _33650 is sqrt(discriminant(1, 2, 1)) ? alternatives
+   [1;35mException: [0m(11) _33694 is sqrt(discriminant(1, 2, 1)) ? Unknown option (h for help)
+   [1;35mException: [0m(11) _33738 is sqrt(discriminant(1, 2, 1)) ? Unknown option (h for help)
+   [1;35mException: [0m(11) _33782 is sqrt(discriminant(1, 2, 1)) ? alternatives
+   [1;35mException: [0m(11) _33826 is sqrt(discriminant(1, 2, 1)) ? Unknown option (h for help)
+   [1;35mException: [0m(11) _33870 is sqrt(discriminant(1, 2, 1)) ? Unknown option (h for help)
+   [1;35mException: [0m(11) _33914 is sqrt(discriminant(1, 2, 1)) ? alternatives
+   [1;35mException: [0m(11) _33958 is sqrt(discriminant(1, 2, 1)) ? 
+WARNING: By typing Control-C twice, you have forced an asynchronous
+WARNING: interrupt.  Your only SAFE operations are: c(ontinue), p(id),
+WARNING: s(stack) and e(xit).  Notably a(abort) often works, but
+WARNING: leaves the system in an UNSTABLE state
+
+Action (h for help) ? EOF: exit (status 4)
+[?2004hrgeary1@remote00:~/i471a/submit/lab6$ prolog
+[?2004lWelcome to SWI-Prolog (threaded, 64 bits, version 8.2.4)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- ?- quadratic-roots(1,2,1,Z).?- ['lab6-sol.pro'].[K
+[1mtrue.[0m
+
+?- ?- ['lab6-sol.pro'].?- quadratic-roots(1,2,1,Z).
+[1;31mERROR: Unknown procedure: sqrt/1
+ERROR:   However, there are definitions for:
+ERROR:         sort/2
+ERROR:         sort/4
+ERROR: 
+ERROR: In:
+ERROR:   [11] sqrt(discriminant(1,2,1,_13442))
+ERROR:   [10] quadratic-roots(1,2,1,_13478) at /home/rgeary1/i471a/submit/lab6/lab6-sol.pro:4
+ERROR:    [9] <user>
+[0m   [1;35mException: [0m(11) sqrt(discriminant(1, 2, 1, _4278)) ? creep
+?- ?- quadratic-roots(1,2,1,Z).?- ['lab6-sol.pro'].[K
+[1mtrue.[0m
+
+?- ?- ['lab6-sol.pro'].?- quadratic-roots(1,2,1,Z).
+[1;31mERROR: Unknown procedure: sqrt/1
+ERROR:   However, there are definitions for:
+ERROR:         sort/2
+ERROR:         sort/4
+ERROR: 
+ERROR: In:
+ERROR:   [11] sqrt(0)
+ERROR:   [10] quadratic-roots(1,2,1,_16552) at /home/rgeary1/i471a/submit/lab6/lab6-sol.pro:5
+ERROR:    [9] <user>
+[0m   [1;35mException: [0m(11) sqrt(0) ? Unknown option (h for help)
+   [1;35mException: [0m(11) sqrt(0) ? Unknown option (h for help)
+   [1;35mException: [0m(11) sqrt(0) ? alternatives
+   [1;35mException: [0m(11) sqrt(0) ? creep
+?- ?- quadratic-roots(1,2,1,Z).?- ['lab6-sol.pro'].[K
+[1mtrue.[0m
+
+?- ?- ['lab6-sol.pro'].?- quadratic-roots(1,2,1,Z).
+[1;31mfalse.[0m
+
+?- ?- quadratic-roots(1,2,1,Z).?- ['lab6-sol.pro'].[K
+[1mtrue.[0m
+
+?- ?- ['lab6-sol.pro'].?- quadratic-roots(1,2,1,Z).
+[1;31mfalse.[0m
+
+?- ?- quadratic-roots(1,2,1,Z).?- [1@Zq?- Z[1@ q[6G[1@iq[7G[1@sq[8G[1@ q
+[1;31mERROR: Arguments are not sufficiently instantiated
+ERROR: In:
+ERROR:   [10] _22642 is quadratic-roots(1,2,1,_22660)
+ERROR:    [9] <user>
+[0m?- ?- Z is quadratic-roots(1,2,1,Z).s [8G[Pq[7G[Pq[6G[Pq?- Z[Pq?- [Pq
+[1;31mfalse.[0m
+
+?- ?- quadratic-roots(1,2,1,Z).?- [5@Z is q[34G
+[1;31mERROR: Arguments are not sufficiently instantiated
+ERROR: In:
+ERROR:   [10] _24628 is quadratic-roots(1,2,1,_24646)
+ERROR:    [9] <user>
+[0m?- ?- Z is quadratic-roots(1,2,1,Z).?- [5Pq[29G?- [5@Z is q[34G?- [5Pq[29G?- ['lab6-sol.pro'].[K?- quadratic-roots(1,2,1,Z).?- ['lab6-sol.pro'].[K
+[1mtrue.[0m
+
+?- ?- ['lab6-sol.pro'].?- Z is quadratic-roots(1,2,1,Z).?- [5Pq[29G?- [5@Z is q[34G?- [5Pq[29G
+Z = -1.0 [1m.[0m
+
+?- ?- quadratic-roots(1,2,1,Z).
+Z = -1.0 [1m.[0m
+
+?- ?- quadratic-roots(1,2,1,Z).
+Z = -1.0 
+Unknown action:  (h for help)
+Action? 
+Unknown action: [ (h for help)
+Action? 
+Unknown action: A (h for help)
+Action? 
+Unknown action:  (h for help)
+Action? 
+Unknown action: [ (h for help)
+Action? 
+Unknown action: A (h for help)
+Action? 
+[1]+  Stopped                 prolog
+[?2004hrgeary1@remote00:~/i471a/submit/lab6$ prologscript -a lab6.LOG[12Pprolog
+[?2004lWelcome to SWI-Prolog (threaded, 64 bits, version 8.2.4)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- ?- quadratic-roots(1,2,1,Z).?- ['lab6-sol.pro'].[K?- quadratic-roots(1,2,1,Z).?- ['lab6-sol.pro'].[K
+[1mtrue.[0m
+
+?- ?- ['lab6-sol.pro'].?- quadratic-roots(1,2,1,Z).
+[1;31mERROR: Arithmetic: `(;)/2' is not a function
+ERROR: In:
+ERROR:   [11] _13470 is (... / ...;... / ...)
+ERROR:    [9] <user>
+ERROR: 
+ERROR: Note: some frames are missing due to last-call optimization.
+ERROR: Re-run your program in debug mode (:- debug.) to get more detail.
+[0m?- ?- quadratic-roots(1,2,1,Z).?- ['lab6-sol.pro'].[K
+[1mtrue.[0m
+
+?- ?- ['lab6-sol.pro'].?- quadratic-roots(1,2,1,Z).
+Z = -1.0 [1m;[0m
+Z = -1.0.
+
+?- 
+|    
+|    .
+[1;31m
+ERROR: Stream user_input:27:1 Syntax error: Unexpected end of clause
+[0m?- ?- quadratic-roots(1,2,1,Z).
+Z = -1.0 [1m.[0m
+
+?- ?- quadratic-roots(1,2,1,Z).
+Z = -1.0 [1m;[0m
+Z = -1.0.
+
+?- 1?- [K?- quadratic-roots(1,2,1,Z).1[24G,Z).[K[24G4,Z).
+[1;31mERROR: Arithmetic: evaluation error: `undefined'
+ERROR: In:
+ERROR:   [11] _21450 is (... + ...)/(2*1)
+ERROR:   [10] quadratic-roots(1,2,4,_21506) at /home/rgeary1/i471a/submit/lab6/lab6-sol.pro:3
+ERROR:    [9] <user>
+[0m?- ?- quadratic-roots(1,2,4,Z).
+[1;31mERROR: Arithmetic: evaluation error: `undefined'
+ERROR: In:
+ERROR:   [11] _22900 is (... + ...)/(2*1)
+ERROR:   [10] quadratic-roots(1,2,4,_22956) at /home/rgeary1/i471a/submit/lab6/lab6-sol.pro:3
+ERROR:    [9] <user>
+[0m?- ?- quadratic-roots(1,2,4,Z).2[22G[P,[22G[1@4,
+Z = -2.0 [1m;[0m
+Z = -2.0.
+
+?- ?- quadratic-roots(1,4,4,Z).4,[24G[1@-4
+Z = 0.8284271247461903 [1m;[0m
+Z = -4.82842712474619.
+
+?- ?- quadratic-roots(1,4,-4,Z).
+Z = 0.8284271247461903 [1m.[0m
+
+?- ?- quadratic-roots(1,4,-4,Z).
+Z = 0.8284271247461903 [1m;[0m
+Z = -4.82842712474619.
+
+?- ?- quadratic-roots(1,4,-4,Z).[24G[P4,Z).[22G2[29G[24G1,Z).?- ['lab6-sol.pro'].[K?- quadratic-roots(1,2,1,Z).?- ['lab6-sol.pro'].[K
+[31mWarning: /home/rgeary1/i471a/submit/lab6/lab6-sol.pro:6:
+Warning:    Singleton variable in branch: DISC
+[0m[1mtrue.[0m
+
+?- ?- ['lab6-sol.pro'].?- quadratic-roots(1,4,-4,Z).?- ['lab6-sol.pro'].[K
+[31mWarning: /home/rgeary1/i471a/submit/lab6/lab6-sol.pro:10:
+Warning:    Singleton variables: [C]
+[0m[1mtrue.[0m
+
+?- ?- ['lab6-sol.pro'].
+[1mtrue.[0m
+
+?- ?- ['lab6-sol.pro'].?- quadratic-roots(1,4,-4,Z).[24G[P4,Z).[24G[1@-4,Z).[19G[1@2(
+Z = 0.8284271247461903 [1m;[0m
+Z = -4.82842712474619.
+
+?- ?- quadratic-roots2(1,4,-4,Z).?- ['lab6-sol.pro'].[K
+[1mtrue.[0m
+
+?- sum_lengths([[1[19G][1],?- sum_lengths([[1],?- sum_lengths([[1],[19G,],[20G2],],[3,[4,5[,[31G[K[30G[K[30G][26G[31G, 6[34G][23G[35G, [7,8[41G][37G[42G,[9[45G][9][46G][16G[47G,Z[49G)[15G[50G.
+[1;31mERROR: Type error: `[]' expected, found `[3,[4,5],6]' (a list) ("x" must hold one character)
+ERROR: In:
+ERROR:   [13] _49106 is 0+[3|...]
+ERROR:   [12] lists:sum_list([[3|...],...|...],0,_49154) at /usr/lib/swi-prolog/library/lists.pl:552
+ERROR:   [10] sum_lengths([[1|...],...|...],_49198) at /home/rgeary1/i471a/submit/lab6/lab6-sol.pro:15
+ERROR:    [9] <user>
+ERROR: 
+ERROR: Note: some frames are missing due to last-call optimization.
+ERROR: Re-run your program in debug mode (:- debug.) to get more detail.
+[0m?- ?- ?- ?- sum_lengths([[1,2],[3,[4,5], 6], [7,8],[9]],Z).?- ['lab6-sol.pro'].[K
+[1mtrue.[0m
+
+?- ?- ['lab6-sol.pro'].?- sum_lengths([[1,2],[3,[4,5], 6], [7,8],[9]],Z).
+[1;31mERROR: Arithmetic: `length/1' is not a function
+ERROR: In:
+ERROR:   [14] _3430 is length(...)+0
+ERROR:   [12] sum_lengths([[7|...],...],_3468) at /home/rgeary1/i471a/submit/lab6/lab6-sol.pro:15
+ERROR:   [11] sum_lengths([[3|...],...|...],_3512) at /home/rgeary1/i471a/submit/lab6/lab6-sol.pro:15
+ERROR:   [10] sum_lengths([[1|...],...|...],_3556) at /home/rgeary1/i471a/submit/lab6/lab6-sol.pro:15
+ERROR:    [9] <user>
+ERROR: 
+ERROR: Note: some frames are missing due to last-call optimization.
+ERROR: Re-run your program in debug mode (:- debug.) to get more detail.
+[0m?- ?- sum_lengths([[1,2],[3,[4,5], 6], [7,8],[9]],Z).?- ['lab6-sol.pro'].[K
+[1mtrue.[0m
+
+?- ?- ['lab6-sol.pro'].?- sum_lengths([[1,2],[3,[4,5], 6], [7,8],[9]],Z).
+[1;31mERROR: Arithmetic: `length/1' is not a function
+ERROR: In:
+ERROR:   [14] _6904 is length(...)+0
+ERROR:   [12] sum_lengths([[7|...],...],_6942) at /home/rgeary1/i471a/submit/lab6/lab6-sol.pro:15
+ERROR:   [11] sum_lengths([[3|...],...|...],_6986) at /home/rgeary1/i471a/submit/lab6/lab6-sol.pro:15
+ERROR:   [10] sum_lengths([[1|...],...|...],_7030) at /home/rgeary1/i471a/submit/lab6/lab6-sol.pro:15
+ERROR:    [9] <user>
+ERROR: 
+ERROR: Note: some frames are missing due to last-call optimization.
+ERROR: Re-run your program in debug mode (:- debug.) to get more detail.
+[0m?- ?- sum_lengths([[1,2],[3,[4,5], 6], [7,8],[9]],Z).?- ['lab6-sol.pro'].[K
+[1mtrue.[0m
+
+?- ?- ['lab6-sol.pro'].?- sum_lengths([[1,2],[3,[4,5], 6], [7,8],[9]],Z).
+[1;31mERROR: Arithmetic: `length/2' is not a function
+ERROR: In:
+ERROR:   [14] _10382 is length(...,...)+0
+ERROR:   [12] sum_lengths([[7|...],...],_10422) at /home/rgeary1/i471a/submit/lab6/lab6-sol.pro:15
+ERROR:   [11] sum_lengths([[3|...],...|...],_10466) at /home/rgeary1/i471a/submit/lab6/lab6-sol.pro:15
+ERROR:   [10] sum_lengths([[1|...],...|...],_10510) at /home/rgeary1/i471a/submit/lab6/lab6-sol.pro:15
+ERROR:    [9] <user>
+ERROR: 
+ERROR: Note: some frames are missing due to last-call optimization.
+ERROR: Re-run your program in debug mode (:- debug.) to get more detail.
+[0m?- ?- sum_lengths([[1,2],[3,[4,5], 6], [7,8],[9]],Z).?- ['lab6-sol.pro'].[K
+[1;31mERROR: /home/rgeary1/i471a/submit/lab6/lab6-sol.pro:13:
+ERROR:    No permission to redefine imported_procedure `lists:sum_list/2'
+[0m[31mWarning: /home/rgeary1/i471a/submit/lab6/lab6-sol.pro:14:
+Warning:    Singleton variables: [N]
+[0m[1;31mERROR: /home/rgeary1/i471a/submit/lab6/lab6-sol.pro:14:
+ERROR:    No permission to redefine imported_procedure `lists:sum_list/2'
+[0m[31mWarning: /home/rgeary1/i471a/submit/lab6/lab6-sol.pro:19:
+Warning:    Singleton variables: [N,List]
+[0m[1mtrue.[0m
+
+?- ?- ['lab6-sol.pro'].
+[1;31mERROR: /home/rgeary1/i471a/submit/lab6/lab6-sol.pro:13:
+ERROR:    No permission to redefine imported_procedure `lists:sum_list/2'
+[0m[31mWarning: /home/rgeary1/i471a/submit/lab6/lab6-sol.pro:14:
+Warning:    Singleton variables: [N]
+[0m[1;31mERROR: /home/rgeary1/i471a/submit/lab6/lab6-sol.pro:14:
+ERROR:    No permission to redefine imported_procedure `lists:sum_list/2'
+[0m[31mWarning: /home/rgeary1/i471a/submit/lab6/lab6-sol.pro:19:
+Warning:    Singleton variables: [N,List]
+[0m[1mtrue.[0m
+
+?- ?- ['lab6-sol.pro'].
+[1;31mERROR: /home/rgeary1/i471a/submit/lab6/lab6-sol.pro:13:
+ERROR:    No permission to redefine imported_procedure `lists:sum_list/2'
+[0m[31mWarning: /home/rgeary1/i471a/submit/lab6/lab6-sol.pro:14:
+Warning:    Singleton variables: [N]
+[0m[1;31mERROR: /home/rgeary1/i471a/submit/lab6/lab6-sol.pro:14:
+ERROR:    No permission to redefine imported_procedure `lists:sum_list/2'
+[0m[1mtrue.[0m
+
+?- ?- ['lab6-sol.pro'].?- sum_lengths([[1,2],[3,[4,5], 6], [7,8],[9]],Z).?- ['lab6-sol.pro'].[K
+[1;31mERROR: /home/rgeary1/i471a/submit/lab6/lab6-sol.pro:13:
+ERROR:    No permission to redefine imported_procedure `lists:sum_list/2'
+[0m[31mWarning: /home/rgeary1/i471a/submit/lab6/lab6-sol.pro:14:
+Warning:    Singleton variables: [N]
+[0m[1;31mERROR: /home/rgeary1/i471a/submit/lab6/lab6-sol.pro:14:
+ERROR:    No permission to redefine imported_procedure `lists:sum_list/2'
+[0m[1mtrue.[0m
+
+?- ?- ['lab6-sol.pro'].
+[1;31mERROR: /home/rgeary1/i471a/submit/lab6/lab6-sol.pro:13:
+ERROR:    No permission to redefine imported_procedure `lists:sum_list/2'
+[0m[1;31mERROR: /home/rgeary1/i471a/submit/lab6/lab6-sol.pro:14:
+ERROR:    No permission to redefine imported_procedure `lists:sum_list/2'
+[0m[1mtrue.[0m
+
+?- ?- ['lab6-sol.pro'].
+[1;31mERROR: /home/rgeary1/i471a/submit/lab6/lab6-sol.pro:11:
+ERROR:    No permission to redefine imported_procedure `lists:sum_list/2'
+[0m[1;31mERROR: /home/rgeary1/i471a/submit/lab6/lab6-sol.pro:12:
+ERROR:    No permission to redefine imported_procedure `lists:sum_list/2'
+[0m[1mtrue.[0m
+
+?- ?- ['lab6-sol.pro'].
+[1mtrue.[0m
+
+?- ?- ['lab6-sol.pro'].?- sum_lengths([[1,2],[3,[4,5], 6], [7,8],[9]],Z).?- ['lab6-sol.pro'].[K?- sum_lengths([[1,2],[3,[4,5], 6], [7,8],[9]],Z).
+[1;31mERROR: Arithmetic: `sum_lists/2' is not a function
+ERROR: In:
+ERROR:   [14] _13778 is sum_lists(...,0)+0
+ERROR:   [12] sum_lengths([[7|...],...],_13818) at /home/rgeary1/i471a/submit/lab6/lab6-sol.pro:18
+ERROR:   [11] sum_lengths([[3|...],...|...],_13862) at /home/rgeary1/i471a/submit/lab6/lab6-sol.pro:18
+ERROR:   [10] sum_lengths([[1|...],...|...],_13906) at 
