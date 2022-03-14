@@ -26,29 +26,28 @@
 ;;with an uppercase letter whereas non-terminal symbols are
 ;;Scheme symbols which are not terminal symbols.
 (define (parse gram toks)
-    ( begin (display 'START (current-error-port))  (display toks (current-error-port)) 
+    ( begin  
     (if (equal? (parse-nonterm gram toks (caar gram)) '()) #t
-    (begin (display 'NOOOOOOOOOOOOOO (current-error-port)) #f))))
+    (begin  #f))))
 ;(trace parse)
 
 (define (parse-nonterm gram toks nonterm)
-( begin (display 'b  (current-error-port))
+( begin
   (parse-rhss gram toks (rhss gram nonterm))))
 ;(trace parse-nonterm)
 
 (define (parse-rhss gram toks rhss)
-( begin (display 'c (current-error-port)) 
+( begin 
   (if (equal? rhss '()) #f (or (parse-rhs gram toks (car rhss)) (parse-rhss gram toks (cdr rhss))))))
 ;(trace parse-rhss)
 
 (define (parse-rhs gram toks rhs)
-( begin (display 'd (current-error-port))
+( begin 
   (if (equal? rhs '()) toks (if (parse-sym gram toks (car rhs)) (parse-rhs gram (parse-sym gram toks (car rhs)) (cdr rhs)) #f))))
 ;(trace parse-rhs)
 
 (define (parse-sym gram toks sym)
-( begin (display 'x (current-error-port)) (display (car toks) (current-error-port)) (display 'L (current-error-port)) (display sym (current-error-port))
-(display (and (terminal? sym) (equal? sym (caar toks)))  (current-error-port))
+( begin 
   (cond [(not (pair? toks)) #f]
         [(and (terminal? sym) (equal? sym (caar toks))) (cdr toks)]
         [(and (not (terminal? sym)))  (parse-nonterm gram toks sym)]
