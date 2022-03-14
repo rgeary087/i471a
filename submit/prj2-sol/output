@@ -1,0 +1,11 @@
+parse ifdef-elif2.defs ... ok
+parse ifdef-else.defs ... ok
+parse ifdef.defs ... ok
+parse nested.defs ... FAIL
+parse parse0.defs ... ok
+parse text.defs ... ok
+parse no-sym-err.defs ... ok: failed as expected
+parse top-elif-err.defs ... ok: failed as expected
+parse top-else-err.defs ... ok: failed as expected
+parse top-endif-err.defs ... ok: failed as expected
+parse unclose-err.defs ... ok: failed as expected

@@ -2,14 +2,11 @@
 
 #lang racket
 (require rackunit)
-(require racket/trace)  ;to trace function f add (trace f) after f defn
-
-;;Given a non-negative int argument n, return its unary representation.
+(require racket/trace)
 (define (int->unary n) 
-    (if (= n 0) 'z
-    (if (or (< n 1) (= n 1))
+    (if (eq? n 1) 
         '(s . z) 
-        (cons 's (int->unary (- n 1))))))
+        (cons 's (int->unary (- n 1)))))
 
 (check-equal? (int->unary 0) 'z)
 (check-equal? (int->unary 1) '(s . z))
@@ -31,29 +28,24 @@
     (if (equal? n1 'z) 
         n2
         (cons 's (unary-add (cdr n1) n2))))
-
 (check-equal? (unary-add 'z '(s . z)) '(s . z))
 (check-equal? (unary-add '(s . z) 'z) '(s . z))
 (check-equal? (unary-add '(s  s . z) '(s . z)) '(s s s . z))
 (check-equal? (unary-add (int->unary 5) (int->unary 9)) (int->unary 14))
 
-
 (define (unary-add-tr n1 n2) 
     (if (equal? n1 'z) 
         n2
         (unary-add-tr (cdr n1) (cons (car n1) n2))))
-
 (check-equal? (unary-add-tr 'z '(s . z)) '(s . z))
 (check-equal? (unary-add-tr '(s . z) 'z) '(s . z))
 (check-equal? (unary-add-tr '(s  s . z) '(s . z)) '(s s s . z))
 (check-equal? (unary-add-tr (int->unary 5) (int->unary 9)) (int->unary 14))
 
-
 (define (unary-mul n1 n2) 
     (if (equal? n1 'z) 
         'z
         (unary-add n2 (unary-mul (cdr n1) n2))))
-
 (check-equal? (unary-mul 'z '(s . z)) 'z)
 (check-equal? (unary-mul '(s s . z) 'z) 'z)
 (check-equal? (unary-mul '(s . z) '(s . z)) '(s . z))
@@ -61,7 +53,6 @@
 (check-equal? (unary-mul '(s s . z) '(s s  s . z))
 	      '(s s s s s s . z))
 (check-equal? (unary-mul (int->unary 5) (int->unary 9)) (int->unary 45))
-
 
 ;TODO
 (define (contains-empty-lists-only? ls) 
@@ -72,50 +63,22 @@
         [else #t]
       ))
 
-(check-equal? (contains-empty-lists-only? '()) #t)
-(check-equal? (contains-empty-lists-only? '(())) #t)
-(check-equal? (contains-empty-lists-only? '((()))) #f)
-(check-equal? (contains-empty-lists-only? '(() ())) #t)
-(check-equal? (contains-empty-lists-only? '(() () ())) #t)
-(check-equal? (contains-empty-lists-only? '(1 () () ())) #f)
-
 
 (define (split-firsts ls)
   (letrec ([greats
     (lambda (acc1 acc2 l) 
       (cond [(and (pair? l) (pair? (car l)))
-        (greats (cons (caar l) acc1) (cons (cdr (car l)) acc2 ) (cdr l))]
-        [(and (pair? l) (not (pair? (car l))))
+        (greats (cons (caar l) acc1 ) (cons (cdr (car l)) acc2 ) (cdr l))]
+        [(and (pair? l) (not (pair? (car 1))))
         (greats (cons '() acc1 ) (cons '() acc2 ) (cdr l))]
-        [else (cons (reverse acc1) (reverse acc2))]
+        [else (cons (reverse acc1) (list (reverse acc2)))]
       )
     )])
     (greats '() '() ls))
   )
 
-(check-equal? (split-firsts '((a) ())) '( (a ()) .(() ()) ))
-(check-equal? (split-firsts '((a) (1))) '( (a 1) . (() ()) ))
-(check-equal? (split-firsts '((a b) (1 2))) '( (a 1) . ((b) (2) ) ))
-(check-equal? (split-firsts '((a b c) (1 2 3))) '( (a 1) . ((b c) (2 3)) ))
-(check-equal? (split-firsts '((a b c) (1))) '((a 1) . ( (b c) ()) ))
-(check-equal? (split-firsts '((a) (1 2 3))) '( (a 1) . (() (2 3)) ))
-(check-equal? (split-firsts '((a) (1 2 3) (x y z)))
-	                    '( (a 1 x) . (() (2 3) (y z)) ))
-
-
-
 (define (list-tuples l1) 
-    (if (contains-empty-lists-only? l1)
-        '()
-        (let [(x (split-firsts l1))](cons (car x) (list-tuples (cdr x))))))
-
-(check-equal? (list-tuples '(() ())) '())
-(check-equal? (list-tuples '((a) ())) '((a ())))
-(check-equal? (list-tuples '((a) (1))) '((a 1)))
-(check-equal? (list-tuples '((a b) (1 2))) '((a 1) (b 2)))
-(check-equal? (list-tuples '((a b c) (1 2 3))) '((a 1) (b 2) (c 3)))
-(check-equal? (list-tuples '((a b c) (1))) '((a 1) (b ()) (c ())))
-(check-equal? (list-tuples '((a) (1 2 3))) '((a 1) (() 2) (() 3)))
-(check-equal? (list-tuples '((a) (1 2 3) (x y))) '((a 1 x) (() 2 y) (() 3 ())))
-
+    (if (not (pair? (cdr l1)))
+        (cdr l1)
+        (let [(x (split-firsts l1))](append (car x) (list-tuples (cdr x))))))
 

@@ -1,0 +1,209 @@
+START((TEXT This is a test for a ifdef containing multiple #elif without any #else.
+) (IFDEF #ifdef) (SYM _123Sym) (TEXT Text internal #ifdef not recognized
+) (ELIF #elif) (SYM sym_231) (TEXT First #elif text
+) (ELIF #elif) (SYM sym3_2) (TEXT Second #elif text
+some more text
+) (ENDIF #endif) (TEXT Some more text without
+any recognized #ifdef, #ifndef, #elif or #else
+) (EOF <EOF>))bcdx((TEXT This is a test for a ifdef containing multiple #elif without any #else.
+) (IFDEF #ifdef) (SYM _123Sym) (TEXT Text internal #ifdef not recognized
+) (ELIF #elif) (SYM sym_231) (TEXT First #elif text
+) (ELIF #elif) (SYM sym3_2) (TEXT Second #elif text
+some more text
+) (ENDIF #endif) (TEXT Some more text without
+any recognized #ifdef, #ifndef, #elif or #else
+) (EOF <EOF>))Lsource#fbcdx((TEXT This is a test for a ifdef containing multiple #elif without any #else.
+) (IFDEF #ifdef) (SYM _123Sym) (TEXT Text internal #ifdef not recognized
+) (ELIF #elif) (SYM sym_231) (TEXT First #elif text
+) (ELIF #elif) (SYM sym3_2) (TEXT Second #elif text
+some more text
+) (ENDIF #endif) (TEXT Some more text without
+any recognized #ifdef, #ifndef, #elif or #else
+) (EOF <EOF>))LTEXT#tx((TEXT This is a test for a ifdef containing multiple #elif without any #else.
+) (IFDEF #ifdef) (SYM _123Sym) (TEXT Text internal #ifdef not recognized
+) (ELIF #elif) (SYM sym_231) (TEXT First #elif text
+) (ELIF #elif) (SYM sym3_2) (TEXT Second #elif text
+some more text
+) (ENDIF #endif) (TEXT Some more text without
+any recognized #ifdef, #ifndef, #elif or #else
+) (EOF <EOF>))LTEXT#tdx((IFDEF #ifdef) (SYM _123Sym) (TEXT Text internal #ifdef not recognized
+) (ELIF #elif) (SYM sym_231) (TEXT First #elif text
+) (ELIF #elif) (SYM sym3_2) (TEXT Second #elif text
+some more text
+) (ENDIF #endif) (TEXT Some more text without
+any recognized #ifdef, #ifndef, #elif or #else
+) (EOF <EOF>))Lsource#fbcdx((IFDEF #ifdef) (SYM _123Sym) (TEXT Text internal #ifdef not recognized
+) (ELIF #elif) (SYM sym_231) (TEXT First #elif text
+) (ELIF #elif) (SYM sym3_2) (TEXT Second #elif text
+some more text
+) (ENDIF #endif) (TEXT Some more text without
+any recognized #ifdef, #ifndef, #elif or #else
+) (EOF <EOF>))LTEXT#fcdx((IFDEF #ifdef) (SYM _123Sym) (TEXT Text internal #ifdef not recognized
+) (ELIF #elif) (SYM sym_231) (TEXT First #elif text
+) (ELIF #elif) (SYM sym3_2) (TEXT Second #elif text
+some more text
+) (ENDIF #endif) (TEXT Some more text without
+any recognized #ifdef, #ifndef, #elif or #else
+) (EOF <EOF>))Lifdef#fbcdx((IFDEF #ifdef) (SYM _123Sym) (TEXT Text internal #ifdef not recognized
+) (ELIF #elif) (SYM sym_231) (TEXT First #elif text
+) (ELIF #elif) (SYM sym3_2) (TEXT Second #elif text
+some more text
+) (ENDIF #endif) (TEXT Some more text without
+any recognized #ifdef, #ifndef, #elif or #else
+) (EOF <EOF>))Ldef#fbcdx((IFDEF #ifdef) (SYM _123Sym) (TEXT Text internal #ifdef not recognized
+) (ELIF #elif) (SYM sym_231) (TEXT First #elif text
+) (ELIF #elif) (SYM sym3_2) (TEXT Second #elif text
+some more text
+) (ENDIF #endif) (TEXT Some more text without
+any recognized #ifdef, #ifndef, #elif or #else
+) (EOF <EOF>))LIFDEF#tx((IFDEF #ifdef) (SYM _123Sym) (TEXT Text internal #ifdef not recognized
+) (ELIF #elif) (SYM sym_231) (TEXT First #elif text
+) (ELIF #elif) (SYM sym3_2) (TEXT Second #elif text
+some more text
+) (ENDIF #endif) (TEXT Some more text without
+any recognized #ifdef, #ifndef, #elif or #else
+) (EOF <EOF>))LIFDEF#tdx((IFDEF #ifdef) (SYM _123Sym) (TEXT Text internal #ifdef not recognized
+) (ELIF #elif) (SYM sym_231) (TEXT First #elif text
+) (ELIF #elif) (SYM sym3_2) (TEXT Second #elif text
+some more text
+) (ENDIF #endif) (TEXT Some more text without
+any recognized #ifdef, #ifndef, #elif or #else
+) (EOF <EOF>))Ldef#fbcdx((IFDEF #ifdef) (SYM _123Sym) (TEXT Text internal #ifdef not recognized
+) (ELIF #elif) (SYM sym_231) (TEXT First #elif text
+) (ELIF #elif) (SYM sym3_2) (TEXT Second #elif text
+some more text
+) (ENDIF #endif) (TEXT Some more text without
+any recognized #ifdef, #ifndef, #elif or #else
+) (EOF <EOF>))LIFDEF#tx((IFDEF #ifdef) (SYM _123Sym) (TEXT Text internal #ifdef not recognized
+) (ELIF #elif) (SYM sym_231) (TEXT First #elif text
+) (ELIF #elif) (SYM sym3_2) (TEXT Second #elif text
+some more text
+) (ENDIF #endif) (TEXT Some more text without
+any recognized #ifdef, #ifndef, #elif or #else
+) (EOF <EOF>))LIFDEF#tddx#tLSYMcaar: contract violation
+  expected: (cons/c pair? any/c)
+  given: #t
+  context...:
+   /home/rgeary1/i471a/submit/prj2-sol/gram.scm:49:0: parse-sym
+   /home/rgeary1/i471a/submit/prj2-sol/gram.scm:34:0: parse-nonterm
+   [repeats 2 more times]
+   /home/rgeary1/i471a/submit/prj2-sol/gram.scm:28:0: parse
+   "/home/rgeary1/i471a/submit/prj2-sol/ifdef.scm": [running body]
+START((TEXT Before any #ifdef
+) (IFDEF #ifdef) (SYM DEF) (TEXT Here are some lines
+# else not recognized because of space
+) (ELSE #else) (TEXT Else text
+More else text
+) (ENDIF #endif) (TEXT After #ifdef
+) (EOF <EOF>))bcdx((TEXT Before any #ifdef
+) (IFDEF #ifdef) (SYM DEF) (TEXT Here are some lines
+# else not recognized because of space
+) (ELSE #else) (TEXT Else text
+More else text
+) (ENDIF #endif) (TEXT After #ifdef
+) (EOF <EOF>))Lsource#fbcdx((TEXT Before any #ifdef
+) (IFDEF #ifdef) (SYM DEF) (TEXT Here are some lines
+# else not recognized because of space
+) (ELSE #else) (TEXT Else text
+More else text
+) (ENDIF #endif) (TEXT After #ifdef
+) (EOF <EOF>))LTEXT#tx((TEXT Before any #ifdef
+) (IFDEF #ifdef) (SYM DEF) (TEXT Here are some lines
+# else not recognized because of space
+) (ELSE #else) (TEXT Else text
+More else text
+) (ENDIF #endif) (TEXT After #ifdef
+) (EOF <EOF>))LTEXT#tdx((IFDEF #ifdef) (SYM DEF) (TEXT Here are some lines
+# else not recognized because of space
+) (ELSE #else) (TEXT Else text
+More else text
+) (ENDIF #endif) (TEXT After #ifdef
+) (EOF <EOF>))Lsource#fbcdx((IFDEF #ifdef) (SYM DEF) (TEXT Here are some lines
+# else not recognized because of space
+) (ELSE #else) (TEXT Else text
+More else text
+) (ENDIF #endif) (TEXT After #ifdef
+) (EOF <EOF>))LTEXT#fcdx((IFDEF #ifdef) (SYM DEF) (TEXT Here are some lines
+# else not recognized because of space
+) (ELSE #else) (TEXT Else text
+More else text
+) (ENDIF #endif) (TEXT After #ifdef
+) (EOF <EOF>))Lifdef#fbcdx((IFDEF #ifdef) (SYM DEF) (TEXT Here are some lines
+# else not recognized because of space
+) (ELSE #else) (TEXT Else text
+More else text
+) (ENDIF #endif) (TEXT After #ifdef
+) (EOF <EOF>))Ldef#fbcdx((IFDEF #ifdef) (SYM DEF) (TEXT Here are some lines
+# else not recognized because of space
+) (ELSE #else) (TEXT Else text
+More else text
+) (ENDIF #endif) (TEXT After #ifdef
+) (EOF <EOF>))LIFDEF#tx((IFDEF #ifdef) (SYM DEF) (TEXT Here are some lines
+# else not recognized because of space
+) (ELSE #else) (TEXT Else text
+More else text
+) (ENDIF #endif) (TEXT After #ifdef
+) (EOF <EOF>))LIFDEF#tdx((IFDEF #ifdef) (SYM DEF) (TEXT Here are some lines
+# else not recognized because of space
+) (ELSE #else) (TEXT Else text
+More else text
+) (ENDIF #endif) (TEXT After #ifdef
+) (EOF <EOF>))Ldef#fbcdx((IFDEF #ifdef) (SYM DEF) (TEXT Here are some lines
+# else not recognized because of space
+) (ELSE #else) (TEXT Else text
+More else text
+) (ENDIF #endif) (TEXT After #ifdef
+) (EOF <EOF>))LIFDEF#tx((IFDEF #ifdef) (SYM DEF) (TEXT Here are some lines
+# else not recognized because of space
+) (ELSE #else) (TEXT Else text
+More else text
+) (ENDIF #endif) (TEXT After #ifdef
+) (EOF <EOF>))LIFDEF#tddx#tLSYMcaar: contract violation
+  expected: (cons/c pair? any/c)
+  given: #t
+  context...:
+   /home/rgeary1/i471a/submit/prj2-sol/gram.scm:49:0: parse-sym
+   /home/rgeary1/i471a/submit/prj2-sol/gram.scm:34:0: parse-nonterm
+   [repeats 2 more times]
+   /home/rgeary1/i471a/submit/prj2-sol/gram.scm:28:0: parse
+   "/home/rgeary1/i471a/submit/prj2-sol/ifdef.scm": [running body]
+START((IFDEF #ifdef) (SYM DEF) (TEXT Here are some lines
+# ifdef
+more #ifndef lines
+) (ENDIF #endif) (EOF <EOF>))bcdx((IFDEF #ifdef) (SYM DEF) (TEXT Here are some lines
+# ifdef
+more #ifndef lines
+) (ENDIF #endif) (EOF <EOF>))Lsource#fbcdx((IFDEF #ifdef) (SYM DEF) (TEXT Here are some lines
+# ifdef
+more #ifndef lines
+) (ENDIF #endif) (EOF <EOF>))LTEXT#fcdx((IFDEF #ifdef) (SYM DEF) (TEXT Here are some lines
+# ifdef
+more #ifndef lines
+) (ENDIF #endif) (EOF <EOF>))Lifdef#fbcdx((IFDEF #ifdef) (SYM DEF) (TEXT Here are some lines
+# ifdef
+more #ifndef lines
+) (ENDIF #endif) (EOF <EOF>))Ldef#fbcdx((IFDEF #ifdef) (SYM DEF) (TEXT Here are some lines
+# ifdef
+more #ifndef lines
+) (ENDIF #endif) (EOF <EOF>))LIFDEF#tx((IFDEF #ifdef) (SYM DEF) (TEXT Here are some lines
+# ifdef
+more #ifndef lines
+) (ENDIF #endif) (EOF <EOF>))LIFDEF#tdx((IFDEF #ifdef) (SYM DEF) (TEXT Here are some lines
+# ifdef
+more #ifndef lines
+) (ENDIF #endif) (EOF <EOF>))Ldef#fbcdx((IFDEF #ifdef) (SYM DEF) (TEXT Here are some lines
+# ifdef
+more #ifndef lines
+) (ENDIF #endif) (EOF <EOF>))LIFDEF#tx((IFDEF #ifdef) (SYM DEF) (TEXT Here are some lines
+# ifdef
+more #ifndef lines
+) (ENDIF #endif) (EOF <EOF>))LIFDEF#tddx#tLSYMcaar: contract violation
+  expected: (cons/c pair? any/c)
+  given: #t
+  context...:
+   /home/rgeary1/i471a/submit/prj2-sol/gram.scm:49:0: parse-sym
+   /home/rgeary1/i471a/submit/prj2-sol/gram.scm:34:0: parse-nonterm
+   [repeats 1 more time]
+   /home/rgeary1/i471a/submit/prj2-sol/gram.scm:28:0: parse
+   "/home/rgeary1/i471a/submit/prj2-sol/ifdef.scm": [running body]
+terminate break
