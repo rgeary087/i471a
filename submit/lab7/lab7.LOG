@@ -1,0 +1,708 @@
+Script started on 2022-04-06 13:17:38-04:00 [TERM="xterm-256color" TTY="/dev/pts/31" COLUMNS="86" LINES="18"]
+[?2004hrgeary1@remote04:~/i471a/submit/lab7$ ghci
+[?2004lGHCi, version 8.8.4: https://www.haskell.org/ghc/  :? for help
+[?1h=Prelude> :l "lab7-sol.hs"
+[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+Ok, one module loaded.
+[?1h=*Main> :t add
+[?1l>
+[;1m<interactive>:1:1: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Variable not in scope: add
+    • Perhaps you meant one of these:
+        ‘and’ (imported from Prelude), ‘odd’ (imported from Prelude)[0m[0m
+[0m[0m[0m[?1h=*Main> :t add
+[?1l>
+[;1m<interactive>:1:1: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Variable not in scope: add
+    • Perhaps you meant one of these:
+        ‘and’ (imported from Prelude), ‘odd’ (imported from Prelude)[0m[0m
+[0m[0m[0m[?1h=*Main> :t add[5Dl "lab7-sol.hs"
+[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+Ok, one module loaded.
+[?1h=*Main> :l "lab7-sol.hs"[15Dt add[K
+[?1l>add :: Num a => a -> a -> a
+[?1h=*Main> :t add[K[K[Kplus
+[?1l>plus :: Integer -> Integer -> Integer
+[?1h=*Main> :t plus[4Dadd[K[K[K[Kconc
+[?1l>conc :: [a] -> [a] -> [a]
+[?1h=*Main> let tuple = "[K("hello", 42) in fst y[Ktuple
+[?1l>"hello"
+[?1h=*Main> let tuple = ("hello", 42) in fst tuple[C tuple[K[6D tuple[K[6D tuple[K[6Ds tuple[6Dn tuple[6Dd tuple[6D
+[?1l>42
+[?1h=*Main> :r
+[?1l>Ok, one module loaded.
+[?1h=*Main> first(12, "hello", [])
+[?1l>
+[;1m<interactive>:11:1: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    Variable not in scope: first :: (Integer, [Char], [a0]) -> t[0m[0m
+[0m[0m[0m[?1h=*Main> :r
+[?1l>Ok, one module loaded.
+[?1h=*Main> :r[C[2Dfirst(12, "hello", [])3(12, "hello", [])[17D
+[?1l>
+[;1m<interactive>:13:1: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    Variable not in scope: first3 :: (Integer, [Char], [a0]) -> t[0m[0m
+[0m[0m[0m[?1h=*Main> first3(12, "hello", [])lfirst3(12, "hello", [])[23Defirst3(12, "hello", [])[23Dtfirst3(12, "hello", [])[23D first3(12, "hello", [])[23Dtfirst3(12, "hello", [])[23Dufirst3(12, "hello", [])[23Dpfirst3(12, "hello", [])[23Dlfirst3(12, "hello", [])[23Defirst3(12, "hello", [])[23D first3(12, "hello", [])[23D=first3(12, "hello", [])[23D first3(12, "hello", [])[23D[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K("hello"1"hello"[7D2"hello"[7D,"hello"[7D[C[C[C[C[C[C[C,][K[]) in first3 tuple
+[?1l>
+[;1m<interactive>:14:32: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    Variable not in scope: first3 :: (Integer, [Char], [a0]) -> t[0m[0m
+[0m[0m[0m[?1h=*Main> let tuple = (12,"hello",[]) in first3 tuple[K[K[K[Kriple
+[?1l>
+[;1m<interactive>:15:32: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    Variable not in scope: first3 :: t0 -> t[0m[0m
+[0m[0m[0m
+[;1m<interactive>:15:39: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Variable not in scope: triple
+    • Perhaps you meant ‘tuple’ (line 15)[0m[0m
+[0m[0m[0m[?1h=*Main> let tuple = (12,"hello",[]) in first3 triple[K[K[K[K[K[K[K
+[?1l>
+[;1m<interactive>:16:32: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m Variable not in scope: first3[0m[0m
+[0m[0m[0m[?1h=*Main> :r
+[?1l>Ok, one module loaded.
+[?1h=*Main> :r
+[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+Ok, one module loaded.
+[?1h=*Main> :r[2Dlet tuple = (12,"hello",[]) in first3
+[?1l>
+[;1m<interactive>:19:1: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • No instance for (Show ((a0, b0, c0) -> a0))
+        arising from a use of ‘print’
+        (maybe you haven't applied a function to enough arguments?)
+    • In a stmt of an interactive GHCi command: print it[0m[0m
+[0m[0m[0m[?1h=*Main> let tuple = (12,"hello",[]) in first3[K[C) in first[K[10D) in first[K[10D) in first[K[10D
+[?1l>
+[;1m<interactive>:20:1: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • No instance for (Show ((a0, b0) -> a0))
+        arising from a use of ‘print’
+        (maybe you haven't applied a function to enough arguments?)
+    • In a stmt of an interactive GHCi command: print it[0m[0m
+[0m[0m[0m[?1h=*Main> let tuple = (12,"hello") in first tuple
+[?1l>12
+[?1h=*Main> let tuple = (12,"hello") in first tuple[6D[K[10D,[]) in first3 triple
+[?1l>
+[;1m<interactive>:22:39: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Variable not in scope: triple :: (a, b0, c0)
+    • Perhaps you meant ‘tuple’ (line 22)[0m[0m
+[0m[0m[0m[?1h=*Main> let tuple = (12,"hello",[]) in first3 triple[K[K[K[K[Kuple
+[?1l>12
+[?1h=*Main> let tuple = (12,"hello",[]) in first3 tuple3 tuple[K[7D3 tuple[K[7D3 tuple[K[7D3 tuple[K[7D3 tuple[K[7Ds3 tuple[7Dn3 tuple[7Dd3 tuple[7D
+[?1l>"hello"
+[?1h=*Main> :r
+[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+
+[;1mlab7-sol.hs:11:31: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Couldn't match expected type ‘(a, b0)’ with actual type ‘[a]’
+    • In the first argument of ‘first’, namely ‘xs’
+      In the second argument of ‘(+)’, namely ‘(first xs)’
+      In the expression: x + (first xs)
+    • Relevant bindings include
+        xs :: [a] (bound at lab7-sol.hs:11:14)
+        x :: a (bound at lab7-sol.hs:11:12)
+        sumFirst2 :: [a] -> a (bound at lab7-sol.hs:11:1)[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m11 |[0m[0m sumFirst2 (x:xs) = x + (first [;1m[31mxs[0m[0m) 
+[;1m[34m   |[0m[0m[;1m[31m                               ^^[0m[0m
+[0m[0m[0mFailed, no modules loaded.
+[?1h=Prelude> :r[2Dlet tuple = (12,"hello",[]) in snd3 tuple
+[?1l>
+[;1m<interactive>:26:32: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Variable not in scope: snd3 :: (Integer, [Char], [a0]) -> t
+    • Perhaps you meant ‘snd’ (imported from Prelude)[0m[0m
+[0m[0m[0m[?1h=Prelude> let tuple = (12,"hello",[]) in snd3 tuple[41D:r[K
+[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+
+[;1mlab7-sol.hs:13:31: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Couldn't match expected type ‘(a, b0)’ with actual type ‘[a]’
+    • In the first argument of ‘first’, namely ‘xs’
+      In the second argument of ‘(+)’, namely ‘(first xs)’
+      In the expression: x + (first xs)
+    • Relevant bindings include
+        xs :: [a] (bound at lab7-sol.hs:13:14)
+        x :: a (bound at lab7-sol.hs:13:12)
+        sumFirst2 :: [a] -> a (bound at lab7-sol.hs:11:1)[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m13 |[0m[0m sumFirst2 (x:xs) = x + (first [;1m[31mxs[0m[0m) 
+[;1m[34m   |[0m[0m[;1m[31m                               ^^[0m[0m
+[0m[0m[0mFailed, no modules loaded.
+[?1h=Prelude> :r[2Dlet tuple = (12,"hello",[]) in snd3 tuple
+[?1l>
+[;1m<interactive>:28:32: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Variable not in scope: snd3 :: (Integer, [Char], [a0]) -> t
+    • Perhaps you meant ‘snd’ (imported from Prelude)[0m[0m
+[0m[0m[0m[?1h=Prelude> let tuple = (12,"hello",[]) in snd3 tuple[41D:r[K
+[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+
+[;1mlab7-sol.hs:13:31: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Couldn't match expected type ‘(a, b0)’ with actual type ‘[a]’
+    • In the first argument of ‘first’, namely ‘xs’
+      In the second argument of ‘(+)’, namely ‘(first xs)’
+      In the expression: x + (first xs)
+    • Relevant bindings include
+        xs :: [a] (bound at lab7-sol.hs:13:14)
+        x :: a (bound at lab7-sol.hs:13:12)
+        sumFirst2 :: [[a]] -> [a] (bound at lab7-sol.hs:11:1)[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m13 |[0m[0m sumFirst2 [x:xs] = x + (first [;1m[31mxs[0m[0m) 
+[;1m[34m   |[0m[0m[;1m[31m                               ^^[0m[0m
+[0m[0m[0mFailed, no modules loaded.
+[?1h=Prelude> c[K:r[2Dlet tuple = (12,"hello",[]) in snd3 tuple[41D:r[K
+[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+
+[;1mlab7-sol.hs:13:22: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Couldn't match expected type ‘[(a, b)]’ with actual type ‘(a, b)’
+    • In the expression: x + (first xs)
+      In an equation for ‘sumFirst2’:
+          sumFirst2 [x : xs : _] = x + (first xs)
+    • Relevant bindings include
+        xs :: (a, b) (bound at lab7-sol.hs:13:14)
+        x :: (a, b) (bound at lab7-sol.hs:13:12)
+        sumFirst2 :: [[(a, b)]] -> [(a, b)] (bound at lab7-sol.hs:11:1)[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m13 |[0m[0m sumFirst2 [x:xs:_] = [;1m[31mx + (first xs)[0m[0m 
+[;1m[34m   |[0m[0m[;1m[31m                      ^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0mFailed, no modules loaded.
+[?1h=Prelude> :r
+[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+
+[;1mlab7-sol.hs:13:27: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Occurs check: cannot construct the infinite type: a ~ (a, b)
+    • In the second argument of ‘(+)’, namely ‘(first xs)’
+      In the expression: x + (first xs)
+      In an equation for ‘sumFirst2’:
+          sumFirst2 (x : xs : _) = x + (first xs)
+    • Relevant bindings include
+        xs :: (a, b) (bound at lab7-sol.hs:13:14)
+        x :: (a, b) (bound at lab7-sol.hs:13:12)
+        sumFirst2 :: [(a, b)] -> (a, b) (bound at lab7-sol.hs:11:1)[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m13 |[0m[0m sumFirst2 (x:xs:_) = x + ([;1m[31mfirst xs[0m[0m) 
+[;1m[34m   |[0m[0m[;1m[31m                           ^^^^^^^^[0m[0m
+[0m[0m[0mFailed, no modules loaded.
+[?1h=Prelude> :r
+[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+Ok, one module loaded.
+[?1h=*Main> :r[2D[KsumFirst2 [1,2,3]
+[?1l>3
+[?1h=*Main> sumFirst2 [1,2,3],]4],]5],]6],]7]
+[?1l>3
+[?1h=*Main> sumFirst2 [1,2,3,4,5,6,7][K[K[K[K[K[K[K[K[K[K[K[K[K]
+[?1l>1
+[?1h=*Main> sumFirst2 [1]][K
+[?1l>0
+[?1h=*Main> :r
+[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+
+[;1mlab7-sol.hs:15:30: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Occurs check: cannot construct the infinite type:
+        t1 ~ [t -> t1 -> p]
+    • In the second argument of ‘x’, namely ‘xs’
+      In the expression: x f1 xs
+      In an equation for ‘fnFirst2’: fnFirst2 [x : xs] f1 f2 = x f1 xs
+    • Relevant bindings include
+        f2 :: t (bound at lab7-sol.hs:15:20)
+        f1 :: t (bound at lab7-sol.hs:15:17)
+        xs :: [t -> t1 -> p] (bound at lab7-sol.hs:15:13)
+        x :: t -> t1 -> p (bound at lab7-sol.hs:15:11)
+        fnFirst2 :: [[t -> t1 -> p]] -> t -> t -> p
+          (bound at lab7-sol.hs:15:1)[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m15 |[0m[0m fnFirst2 [x:xs] f1 f2 = x f1 [;1m[31mxs[0m[0m
+[;1m[34m   |[0m[0m[;1m[31m                              ^^[0m[0m
+[0m[0m[0mFailed, no modules loaded.
+[?1h=Prelude> :r
+[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+
+[;1mlab7-sol.hs:16:11: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Occurs check: cannot construct the infinite type: a ~ [a]
+    • In the pattern: x : xs
+      In the pattern: [x : xs]
+      In an equation for ‘fnFirst2’: fnFirst2 [x : xs] f1 f2 = f1 x xs
+    • Relevant bindings include
+        fnFirst2 :: [a] -> (a -> a -> b) -> (a -> a -> b) -> b
+          (bound at lab7-sol.hs:16:1)[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m16 |[0m[0m fnFirst2 [[;1m[31mx:xs[0m[0m] f1 f2 = f1 x xs
+[;1m[34m   |[0m[0m[;1m[31m           ^^^^[0m[0m
+[0m[0m[0mFailed, no modules loaded.
+[?1h=Prelude> :r
+[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+
+[;1mlab7-sol.hs:16:1: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Woverlapping-patterns[0m[0m[;1m][0m[0m[;1m
+    Pattern match has inaccessible right hand side
+    In an equation for ‘fnFirst2’: fnFirst2 [x : xs : _] f1 f2 = ...[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m16 |[0m[0m [;1m[35mfnFirst2 [x:xs:_] f1 f2 = f2 x xs[0m[0m
+[;1m[34m   |[0m[0m[;1m[35m ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0mOk, one module loaded.
+[?1h=*Main> :r
+[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+
+[;1mlab7-sol.hs:16:1: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Woverlapping-patterns[0m[0m[;1m][0m[0m[;1m
+    Pattern match has inaccessible right hand side
+    In an equation for ‘fnFirst2’:
+        fnFirst2 [x : xs : xd : _] f1 f2 = ...[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m16 |[0m[0m [;1m[35mfnFirst2 [x:xs:xd:_] f1 f2 = f2 x xs[0m[0m
+[;1m[34m   |[0m[0m[;1m[35m ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0mOk, one module loaded.
+[?1h=*Main> :r
+[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+Ok, one module loaded.
+[?1h=*Main> fnFirst2 [3,4[[K] (+) ( [K*)
+[?1l>
+[;1m<interactive>:42:16: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Occurs check: cannot construct the infinite type: t ~ [t]
+      Expected type: t -> [t] -> [t]
+        Actual type: [t] -> [t] -> [t]
+    • In the second argument of ‘fnFirst2’, namely ‘(+)’
+      In the expression: fnFirst2 [3, 4] (+) (*)
+      In an equation for ‘it’: it = fnFirst2 [3, 4] (+) (*)
+    • Relevant bindings include it :: [t] (bound at <interactive>:42:1)[0m[0m
+[0m[0m[0m[?1h=*Main> clear
+[?1l>
+[;1m<interactive>:43:1: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m Variable not in scope: clear[0m[0m
+[0m[0m[0m[?1h=*Main> :r
+[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+Ok, one module loaded.
+[?1h=*Main> :r[2Dclear
+[?1l>
+[;1m<interactive>:45:1: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m Variable not in scope: clear[0m[0m
+[0m[0m[0m[?1h=*Main> clear[5D:r[K[2Dclear[5DfnFirst2 [3,4] (+) (*)
+[?1l>
+[;1m<interactive>:46:16: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Occurs check: cannot construct the infinite type: t ~ [t]
+      Expected type: t -> [t] -> [t]
+        Actual type: [t] -> [t] -> [t]
+    • In the second argument of ‘fnFirst2’, namely ‘(+)’
+      In the expression: fnFirst2 [3, 4] (+) (*)
+      In an equation for ‘it’: it = fnFirst2 [3, 4] (+) (*)
+    • Relevant bindings include it :: [t] (bound at <interactive>:46:1)[0m[0m
+[0m[0m[0m[?1h=*Main> clear
+[?1l>
+[;1m<interactive>:47:1: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m Variable not in scope: clear[0m[0m
+[0m[0m[0m[?1h=*Main> clear[5DfnFirst2 [3,4] (+) (*)[22Dclear[K[5D:r[K
+[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+
+[;1mlab7-sol.hs:17:1: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Woverlapping-patterns[0m[0m[;1m][0m[0m[;1m
+    Pattern match is redundant
+    In an equation for ‘fnFirst2’: fnFirst2 (x : xs : _) f1 f2 = ...[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m17 |[0m[0m [;1m[35mfnFirst2 (x:xs:_) f1 f2 = f2 x xs[0m[0m
+[;1m[34m   |[0m[0m[;1m[35m ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0mOk, one module loaded.
+[?1h=*Main> :r
+[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+Ok, one module loaded.
+[?1h=*Main> :r[2Dclear[5DfnFirst2 [3,4] (+) (*)
+[?1l>
+[;1m<interactive>:50:16: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Occurs check: cannot construct the infinite type: t ~ [t]
+      Expected type: t -> [t] -> [t]
+        Actual type: [t] -> [t] -> [t]
+    • In the second argument of ‘fnFirst2’, namely ‘(+)’
+      In the expression: fnFirst2 [3, 4] (+) (*)
+      In an equation for ‘it’: it = fnFirst2 [3, 4] (+) (*)
+    • Relevant bindings include it :: [t] (bound at <interactive>:50:1)[0m[0m
+[0m[0m[0m[?1h=*Main> fnFirst2 [3,4] (+) (*)[K[K[K[K[K[K[K+ *
+[?1l>
+[;1m<interactive>:51:18: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m parse error on input ‘*’[0m[0m
+[0m[0m[0m[?1h=*Main> fnFirst2 [3,4] + *(*[C)(+ (*)[5D[C) (*)[4D
+[?1l>
+[;1m<interactive>:52:16: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Occurs check: cannot construct the infinite type: t ~ [t]
+      Expected type: t -> [t] -> [t]
+        Actual type: [t] -> [t] -> [t]
+    • In the second argument of ‘fnFirst2’, namely ‘(+)’
+      In the expression: fnFirst2 [3, 4] (+) (*)
+      In an equation for ‘it’: it = fnFirst2 [3, 4] (+) (*)
+    • Relevant bindings include it :: [t] (bound at <interactive>:52:1)[0m[0m
+[0m[0m[0m[?1h=*Main> fnFirst2 [3,4] (+) (*)[7D+ *[K[3D(+) (*)[22D:r[K
+[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+
+[;1mlab7-sol.hs:18:30: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Occurs check: cannot construct the infinite type: a ~ [a]
+    • In the second argument of ‘f1’, namely ‘xs’
+      In the expression: f1 x xs
+      In an equation for ‘fnFirst2’: fnFirst2 (x : xs) f1 f2 = f1 x xs
+    • Relevant bindings include
+        f2 :: a -> a -> b (bound at lab7-sol.hs:18:20)
+        f1 :: a -> a -> b (bound at lab7-sol.hs:18:17)
+        xs :: [a] (bound at lab7-sol.hs:18:13)
+        x :: a (bound at lab7-sol.hs:18:11)
+        fnFirst2 :: [a] -> (a -> a -> b) -> (a -> a -> b) -> b
+          (bound at lab7-sol.hs:17:1)[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m18 |[0m[0m fnFirst2 (x:xs) f1 f2 = f1 x [;1m[31mxs[0m[0m
+[;1m[34m   |[0m[0m[;1m[31m                              ^^[0m[0m
+[0m[0m[0mFailed, no modules loaded.
+[?1h=Prelude> :r
+[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+
+[;1mlab7-sol.hs:18:31: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Occurs check: cannot construct the infinite type: a ~ [a]
+    • In the second argument of ‘f1’, namely ‘xs’
+      In the expression: (f1 x xs)
+      In an equation for ‘fnFirst2’: fnFirst2 (x : xs) f1 f2 = (f1 x xs)
+    • Relevant bindings include
+        f2 :: a -> a -> b (bound at lab7-sol.hs:18:20)
+        f1 :: a -> a -> b (bound at lab7-sol.hs:18:17)
+        xs :: [a] (bound at lab7-sol.hs:18:13)
+        x :: a (bound at lab7-sol.hs:18:11)
+        fnFirst2 :: [a] -> (a -> a -> b) -> (a -> a -> b) -> b
+          (bound at lab7-sol.hs:17:1)[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m18 |[0m[0m fnFirst2 (x:xs) f1 f2 = (f1 x [;1m[31mxs[0m[0m)
+[;1m[34m   |[0m[0m[;1m[31m                               ^^[0m[0m
+[0m[0m[0mFailed, no modules loaded.
+[?1h=Prelude> :r
+[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+Ok, one module loaded.
+[?1h=*Main> :r[2DfnFirst2 [3,4] (+) (*)
+[?1l>
+[;1m<interactive>:56:16: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Occurs check: cannot construct the infinite type: t ~ [t]
+      Expected type: t -> [t] -> [t]
+        Actual type: [t] -> [t] -> [t]
+    • In the second argument of ‘fnFirst2’, namely ‘(+)’
+      In the expression: fnFirst2 [3, 4] (+) (*)
+      In an equation for ‘it’: it = fnFirst2 [3, 4] (+) (*)
+    • Relevant bindings include it :: [t] (bound at <interactive>:56:1)[0m[0m
+[0m[0m[0m[?1h=*Main> fnFirst2 [3,4] (+) (*)[22D:r[K
+[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+
+[;1mlab7-sol.hs:17:30: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Occurs check: cannot construct the infinite type: a ~ [a]
+    • In the second argument of ‘f1’, namely ‘xs’
+      In the expression: f1 x xs
+      In an equation for ‘fnFirst2’: fnFirst2 (x : xs) f1 f2 = f1 x xs
+    • Relevant bindings include
+        f2 :: a -> a -> b (bound at lab7-sol.hs:17:20)
+        f1 :: a -> a -> b (bound at lab7-sol.hs:17:17)
+        xs :: [a] (bound at lab7-sol.hs:17:13)
+        x :: a (bound at lab7-sol.hs:17:11)
+        fnFirst2 :: [a] -> (a -> a -> b) -> (a -> a -> b) -> b
+          (bound at lab7-sol.hs:16:1)[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m17 |[0m[0m fnFirst2 (x:xs) f1 f2 = f1 x [;1m[31mxs[0m[0m
+[;1m[34m   |[0m[0m[;1m[31m                              ^^[0m[0m
+[0m[0m[0mFailed, no modules loaded.
+[?1h=Prelude> :r[2D[K:r
+[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+Ok, one module loaded.
+[?1h=*Main> :r[2DfnFirst2 [3,4] (+) (*)
+[?1l>
+[;1m<interactive>:59:16: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Occurs check: cannot construct the infinite type: t ~ [t]
+      Expected type: t -> [t] -> [t]
+        Actual type: [t] -> [t] -> [t]
+    • In the second argument of ‘fnFirst2’, namely ‘(+)’
+      In the expression: fnFirst2 [3, 4] (+) (*)
+      In an equation for ‘it’: it = fnFirst2 [3, 4] (+) (*)
+    • Relevant bindings include it :: [t] (bound at <interactive>:59:1)[0m[0m
+[0m[0m[0m[?1h=*Main> fnFirst2 [3,4] (+) (*),] (+) (*)[9D5] (+) (*)[9D
+[?1l>
+[;1m<interactive>:60:18: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Occurs check: cannot construct the infinite type: t ~ [t]
+      Expected type: t -> [t] -> [t]
+        Actual type: [t] -> [t] -> [t]
+    • In the second argument of ‘fnFirst2’, namely ‘(+)’
+      In the expression: fnFirst2 [3, 4, 5] (+) (*)
+      In an equation for ‘it’: it = fnFirst2 [3, 4, 5] (+) (*)
+    • Relevant bindings include it :: [t] (bound at <interactive>:60:1)[0m[0m
+[0m[0m[0m[?1h=*Main> fnFirst2 [3,4,5] (+) (*)[11D] (+) (*)[K[22D:r[K
+[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+
+[;1mlab7-sol.hs:18:1: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Woverlapping-patterns[0m[0m[;1m][0m[0m[;1m
+    Pattern match is redundant
+    In an equation for ‘fnFirst2’: fnFirst2 (x : xs) f1 f2 = ...[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m18 |[0m[0m [;1m[35mfnFirst2 (x:xs) f1 f2 = f1 x xs[0m[0m
+[;1m[34m   |[0m[0m[;1m[35m ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0mOk, one module loaded.
+[?1h=*Main> :r
+[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+
+[;1mlab7-sol.hs:18:1: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Woverlapping-patterns[0m[0m[;1m][0m[0m[;1m
+    Pattern match is redundant
+    In an equation for ‘fnFirst2’: fnFirst2 [x : xs] f1 f2 = ...[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m18 |[0m[0m [;1m[35mfnFirst2 [x:xs] f1 f2 = f1 x xs[0m[0m
+[;1m[34m   |[0m[0m[;1m[35m ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0mOk, one module loaded.
+[?1h=*Main> :r
+[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+Ok, one module loaded.
+[?1h=*Main> :r[2DfnFirst2 [3,4,5] (+) (*)
+[?1l>
+[;1m<interactive>:64:18: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Occurs check: cannot construct the infinite type: t ~ [t]
+      Expected type: t -> [t] -> [t]
+        Actual type: [t] -> [t] -> [t]
+    • In the second argument of ‘fnFirst2’, namely ‘(+)’
+      In the expression: fnFirst2 [3, 4, 5] (+) (*)
+      In an equation for ‘it’: it = fnFirst2 [3, 4, 5] (+) (*)
+    • Relevant bindings include it :: [t] (bound at <interactive>:64:1)[0m[0m
+[0m[0m[0m[?1h=*Main> fnFirst2 [3,4,5] (+) (*)[C] (+) (*)[K[9D] (+) (*)[K[9D
+[?1l>
+[;1m<interactive>:65:16: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Occurs check: cannot construct the infinite type: t ~ [t]
+      Expected type: t -> [t] -> [t]
+        Actual type: [t] -> [t] -> [t]
+    • In the second argument of ‘fnFirst2’, namely ‘(+)’
+      In the expression: fnFirst2 [3, 4] (+) (*)
+      In an equation for ‘it’: it = fnFirst2 [3, 4] (+) (*)
+    • Relevant bindings include it :: [t] (bound at <interactive>:65:1)[0m[0m
+[0m[0m[0m[?1h=*Main> 
+[?1l>[?1h=*Main> fnFirst2 [3,4] (+) (*)[9D,5] (+) (*)[24D:r[K
+[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+
+[;1mlab7-sol.hs:17:10: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m Parse error in pattern: [x | xs][0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m17 |[0m[0m fnFirst2 [;1m[31m[x|xs][0m[0m f1 f2 = f1 x xs
+[;1m[34m   |[0m[0m[;1m[31m          ^^^^^^[0m[0m
+[0m[0m[0mFailed, no modules loaded.
+[?1h=Prelude> fnFirst2 :: [a] -> (a -> a -> b) -> (a -> a -> b) -> b[54D:r[K[2DfnFirst2 [3,4] (+) (*)[22D:r[K
+[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+Ok, one module loaded.
+[?1h=*Main> :r[2DfnFirst2 [3,4] (+) (*)
+[?1l>
+[;1m<interactive>:69:16: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Occurs check: cannot construct the infinite type: t ~ [t]
+      Expected type: t -> [t] -> [t]
+        Actual type: [t] -> [t] -> [t]
+    • In the second argument of ‘fnFirst2’, namely ‘(+)’
+      In the expression: fnFirst2 [3, 4] (+) (*)
+      In an equation for ‘it’: it = fnFirst2 [3, 4] (+) (*)
+    • Relevant bindings include it :: [t] (bound at <interactive>:69:1)[0m[0m
+[0m[0m[0m[?1h=*Main> clear
+[?1l>
+[;1m<interactive>:70:1: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m Variable not in scope: clear[0m[0m
+[0m[0m[0m[?1h=*Main> clear[5DfnFirst2 [3,4] (+) (*)[22D:r[K
+[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+Ok, one module loaded.
+[?1h=*Main> :r[2Dclear[5DfnFirst2 [3,4] (+) (*)
+[?1l>
+[;1m<interactive>:72:16: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Occurs check: cannot construct the infinite type: t ~ [t]
+      Expected type: t -> [t] -> [t]
+        Actual type: [t] -> [t] -> [t]
+    • In the second argument of ‘fnFirst2’, namely ‘(+)’
+      In the expression: fnFirst2 [3, 4] (+) (*)
+      In an equation for ‘it’: it = fnFirst2 [3, 4] (+) (*)
+    • Relevant bindings include it :: [t] (bound at <interactive>:72:1)[0m[0m
+[0m[0m[0m[?1h=*Main> 
+[?1l>[?1h=*Main> 
+[?1l>Leaving GHCi.
+[?2004hrgeary1@remote04:~/i471a/submit/lab7$ [?2004l
+exit
+
+Script done on 2022-04-06 13:43:14-04:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2022-04-07 22:55:51-04:00 [TERM="xterm-256color" TTY="/dev/pts/6" COLUMNS="106" LINES="27"]
+[?2004hrgeary1@remote06:~/i471a/submit/lab7$ ghcr
+[?2004lbash: ghcr: command not found
+[?2004hrgeary1@remote06:~/i471a/submit/lab7$ ghcr[C[1Pr[1Prcrhr
+[?2004lbash: gchr: command not found
+[?2004hrgeary1@remote06:~/i471a/submit/lab7$ gchr[Ki
+[?2004lbash: gchi: command not found
+[?2004hrgeary1@remote06:~/i471a/submit/lab7$ gchi[1Pi[1Pihici
+[?2004lGHCi, version 8.8.4: https://www.haskell.org/ghc/  :? for help
+[?1h=Prelude> :r
+[?1l>Ok, no modules loaded.
+[?1h=Prelude> :l k[Klab7-sol.hs 
+[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+Ok, one module loaded.
+[?1h=*Main> fnFirst2 [3,4] (+) (*)
+[?1l>
+[;1m<interactive>:3:16: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Occurs check: cannot construct the infinite type: t ~ [t]
+      Expected type: t -> [t] -> [t]
+        Actual type: [t] -> [t] -> [t]
+    • In the second argument of ‘fnFirst2’, namely ‘(+)’
+      In the expression: fnFirst2 [3, 4] (+) (*)
+      In an equation for ‘it’: it = fnFirst2 [3, 4] (+) (*)
+    • Relevant bindings include it :: [t] (bound at <interactive>:3:1)[0m[0m
+[0m[0m[0m[?1h=*Main> :r
+[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+
+[;1mlab7-sol.hs:16:1: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Woverlapping-patterns[0m[0m[;1m][0m[0m[;1m
+    Pattern match has inaccessible right hand side
+    In an equation for ‘fnFirst2’:
+        fnFirst2 [x : xs : ys : _] f1 f2 = ...[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m16 |[0m[0m [;1m[35mfnFirst2 [x:xs:ys:_] f1 f2 = f2 x xs[0m[0m
+[;1m[34m   |[0m[0m[;1m[35m ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0mOk, one module loaded.
+[?1h=*Main> :r
+[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+Ok, one module loaded.
+[?1h=*Main> :r[2DfnFirst2 [3,4] (+) (*)
+[?1l>
+[;1m<interactive>:6:16: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Occurs check: cannot construct the infinite type: t ~ [t]
+      Expected type: t -> [t] -> [t]
+        Actual type: [t] -> [t] -> [t]
+    • In the second argument of ‘fnFirst2’, namely ‘(+)’
+      In the expression: fnFirst2 [3, 4] (+) (*)
+      In an equation for ‘it’: it = fnFirst2 [3, 4] (+) (*)
+    • Relevant bindings include it :: [t] (bound at <interactive>:6:1)[0m[0m
+[0m[0m[0m[?1h=*Main> 0fnFirst2 [3,4] (+) (*)
+[?1l>
+[;1m<interactive>:7:16: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Occurs check: cannot construct the infinite type: t ~ [t]
+      Expected type: t -> [t] -> [t]
+        Actual type: [t] -> [t] -> [t]
+    • In the second argument of ‘fnFirst2’, namely ‘(+)’
+      In the expression: fnFirst2 [3, 4] (+) (*)
+      In an equation for ‘it’: it = fnFirst2 [3, 4] (+) (*)
+    • Relevant bindings include it :: [t] (bound at <interactive>:7:1)[0m[0m
+[0m[0m[0m[?1h=*Main> fnFirst2 [3,4] (+) (*)[22D:r[K
+[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+Ok, one module loaded.
+[?1h=*Main> :r[2DfnFirst2 [3,4] (+) (*)
+[?1l>
+[;1m<interactive>:9:16: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Occurs check: cannot construct the infinite type: t ~ [t]
+      Expected type: t -> [t] -> [t]
+        Actual type: [t] -> [t] -> [t]
+    • In the second argument of ‘fnFirst2’, namely ‘(+)’
+      In the expression: fnFirst2 [3, 4] (+) (*)
+      In an equation for ‘it’: it = fnFirst2 [3, 4] (+) (*)
+    • Relevant bindings include it :: [t] (bound at <interactive>:9:1)[0m[0m
+[0m[0m[0m[?1h=*Main> fnFirst2 [3,4] (+) (*)
+[?1l>
+[;1m<interactive>:10:16: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Occurs check: cannot construct the infinite type: t ~ [t]
+      Expected type: t -> [t] -> [t]
+        Actual type: [t] -> [t] -> [t]
+    • In the second argument of ‘fnFirst2’, namely ‘(+)’
+      In the expression: fnFirst2 [3, 4] (+) (*)
+      In an equation for ‘it’: it = fnFirst2 [3, 4] (+) (*)
+    • Relevant bindings include it :: [t] (bound at <interactive>:10:1)[0m[0m
+[0m[0m[0m[?1h=*Main> :r
+[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+
+[;1mlab7-sol.hs:17:30: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Occurs check: cannot construct the infinite type: a ~ [a]
+    • In the second argument of ‘f1’, namely ‘xs’
+      In the expression: f1 x xs
+      In an equation for ‘fnFirst2’: fnFirst2 (x : xs) f1 f2 = f1 x xs
+    • Relevant bindings include
+        f2 :: a -> a -> b (bound at lab7-sol.hs:17:20)
+        f1 :: a -> a -> b (bound at lab7-sol.hs:17:17)
+        xs :: [a] (bound at lab7-sol.hs:17:13)
+        x :: a (bound at lab7-sol.hs:17:11)
+        fnFirst2 :: [a] -> (a -> a -> b) -> (a -> a -> b) -> b
+          (bound at lab7-sol.hs:16:1)[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m17 |[0m[0m fnFirst2 (x:xs) f1 f2 = f1 x [;1m[31mxs[0m[0m
+[;1m[34m   |[0m[0m[;1m[31m                              ^^[0m[0m
+[0m[0m[0mFailed, no modules loaded.
+[?1h=Prelude> :r
+[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+
+[;1mlab7-sol.hs:16:23: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m Variable not in scope: x[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m16 |[0m[0m fnFirst2 a f1 f2 = f2 [;1m[31mx[0m[0m xs
+[;1m[34m   |[0m[0m[;1m[31m                       ^[0m[0m
+[0m[0m[0m
+[;1mlab7-sol.hs:16:25: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m Variable not in scope: xs[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m16 |[0m[0m fnFirst2 a f1 f2 = f2 x [;1m[31mxs[0m[0m
+[;1m[34m   |[0m[0m[;1m[31m                         ^^[0m[0m
+[0m[0m[0m
+[;1mlab7-sol.hs:17:23: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m Variable not in scope: x[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m17 |[0m[0m fnFirst2 a f1 f2 = f1 [;1m[31mx[0m[0m xs
+[;1m[34m   |[0m[0m[;1m[31m                       ^[0m[0m
+[0m[0m[0m
+[;1mlab7-sol.hs:17:25: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m Variable not in scope: xs[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m17 |[0m[0m fnFirst2 a f1 f2 = f1 x [;1m[31mxs[0m[0m
+[;1m[34m   |[0m[0m[;1m[31m                         ^^[0m[0m
+[0m[0m[0mFailed, no modules loaded.
+[?1h=Prelude> :r
+[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+Ok, one module loaded.
+[?1h=*Main> :r[2DfnFirst2 [3,4] (+) (*)
+[?1l>12
+[?1h=*Main> fnFirst2 [3,4] (+) (*)[22D:r[K[2DfnFirst2 [3,4] (+) (*)[C[C[C[C,] (+) (*)[9D5] (+) (*)[9D
+[?1l>12
+[?1h=*Main> :r
+[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+Ok, one module loaded.
+[?1h=*Main> :r[2DfnFirst2 [3,4,5] (+) (*)
+[?1l>12
+[?1h=*Main> fnFirst2 [3,4,5] (+) (*)] (+) (*)[K[9D] (+) (*)[K[9D
+[?1l>7
+[?1h=*Main> fnFirst2 [3,4] (+) (*)[9D,5] (+) (*),] (+) (*)[9D ] (+) (*)[9D6] (+) (*)[9D
+[?1l>*** Exception: lab7-sol.hs:(16,1)-(17,32): Non-exhaustive patterns in function fnFirst2
+
+[?1h=*Main> fnFirst2 [3,4,5, 6] (+) (*)
+[?1l>*** Exception: lab7-sol.hs:(16,1)-(17,32): Non-exhaustive patterns in function fnFirst2
+
+[?1h=*Main> :r
+[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+Ok, one module loaded.
+[?1h=*Main> \:r[2DfnFirst2 [3,4,5, 6] (+) (*)
+[?1l>20
+[?1h=*Main> :r
+[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+Ok, one module loaded.
+[?1h=*Main> :r[2DfnFirst2 [3,4,5, 6] (+) (*)
+[?1l>20
+[?1h=*Main> :r
+[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+Ok, one module loaded.
+[?1h=*Main> :r[2DfnFirst2 [3,4,5, 6] (+) (*)
+[?1l>12
+[?1h=*Main> :r
+[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+Ok, one module loaded.
+[?1h=*Main> cartesian [KProdiuc[K[K[Kuct [1..4] [2..4]
+[?1l>[(1,2),(1,3),(1,4),(2,2),(2,3),(2,4),(3,2),(3,3),(3,4),(4,2),(4,3),(4,4)]
+[?1h=*Main> cartesianProduct [1..4] [2..4][CI [1..4] [2..4][14Df [1..4] [2..4][14D[C[C[C[C[C[C[C[C[C[C[C[C[C[C (>)
+[?1l>[(3,2),(4,2),(4,3)]
+[?1h=*Main> [(x,y) | x < [K- [1.10[K[K[K..10], y = 3 * x ^ 2 + 2 * x + 1 ]
+[?1l>
+[;1m<interactive>:30:26: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m parse error on input ‘=’[0m[0m
+[0m[0m[0m[?1h=*Main> [(x,y) | x <- [1..10], y = 3 * x ^ 2 + 2 * x + 1 ] 3 * x ^ 2 + 2 * x + 1 ][K[24D 3 * x ^ 2 + 2 * x + 1 ][K[24D 3 * x ^ 2 + 2 * x + 1 ][K[24D
+[?1l>
+[;1m<interactive>:31:5: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m Variable not in scope: y[0m[0m
+[0m[0m[0m[?1h=*Main> [(x,y) | x <- [1..10],  3 * x ^ 2 + 2 * x + 1 ]y3 * x ^ 2 + 2 * x + 1 ][23D 3 * x ^ 2 + 2 * x + 1 ][23D<3 * x ^ 2 + 2 * x + 1 ][23D-3 * x ^ 2 + 2 * x + 1 ][23D
+[?1l>
+[;1m<interactive>:32:1: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Non type-variable argument in the constraint: Num [b]
+      (Use FlexibleContexts to permit this)
+    • When checking the inferred type
+        it :: forall b. (Num [b], Enum [b]) => [([b], b)][0m[0m
+[0m[0m[0m[?1h=*Main> [(x,y) | x <- [1..10],  y <-3 * x ^ 2 + 2 * x + 1 ][C(3 * x ^ 2 + 2 * x + 1 ][23D[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C) ][2D
+[?1l>
+[;1m<interactive>:33:1: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Non type-variable argument in the constraint: Num [b]
+      (Use FlexibleContexts to permit this)
+    • When checking the inferred type
+        it :: forall b. (Num [b], Enum [b]) => [([b], b)][0m[0m
+[0m[0m[0m[?1h=*Main> [(x,y) | x <- [1..10],  y <-(3 * x ^ 2 + 2 * x + 1) ]l y <-(3 * x ^ 2 + 2 * x + 1) ][30De y <-(3 * x ^ 2 + 2 * x + 1) ][30Dy y <-(3 * x ^ 2 + 2 * x + 1) ][30D  y <-(3 * x ^ 2 + 2 * x + 1) ][30D y <-(3 * x ^ 2 + 2 * x + 1) ][K[30D y <-(3 * x ^ 2 + 2 * x + 1) ][K[30Dt y <-(3 * x ^ 2 + 2 * x + 1) ][30D  y <-(3 * x ^ 2 + 2 * x + 1) ][30D[C[C[C[C[C(3 * x ^ 2 + 2 * x + 1) ][K[25D(3 * x ^ 2 + 2 * x + 1) ][K[25D=(3 * x ^ 2 + 2 * x + 1) ][25D (3 * x ^ 2 + 2 * x + 1) ][25D
+[?1l>[(1,6),(2,17),(3,34),(4,57),(5,86),(6,121),(7,162),(8,209),(9,262),(10,321)]
+[?1h=*Main> [(x,y) | x <- [1..10], let  y = (3 * x ^ 2 + 2 * x + 1) ], ][2D  ][2Dy ][2D  ][2D ][K[2D ][K[2Dr ][2De ][2Dm ][2D  ][2D(rem  ][6D[C[C[C[Cy ][2D  ][2D3 ][2D) ][2D  ][2D= ][2D= ][2D  ][2D ][K[2D ][K[2D  ][2D0 ][2D
+[?1l>
+[;1m<interactive>:35:68: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m parse error on input ‘=’[0m[0m
+[0m[0m[0m[?1h=*Main> [(x,y) | x <- [1..10], let  y = (3 * x ^ 2 + 2 * x + 1), (rem y 3) = 0 ]= 0 ][4D
+[?1l>[(1,6),(4,57),(7,162),(10,321)]
+[?1h=*Main> :r
+[?1l>[1 of 1] Compiling Main             ( lab7-sol.hs, interpreted )
+Ok, one module loaded.
+[?1h=*Main> oddEvenPairs 5
+[?1l>[(1,2),(1,4),(3,2),(3,4),(5,2),(5,4)]
+[?1h=*Main> oddEvenPairs 5[K7
+[?1l>[(1,2),(1,4),(1,6),(3,2),(3,4),(3,6),(5,2),(5,4),(5,6),(7,2),(7,4),(7,6)]
+[?1h=*Main> oddEvenPairs 75
+[?1l>[(1,2),(1,4),(3,2),(3,4),(5,2),(5,4)]
+[?1h=*Main> oddEvenPairs 57
+[?1l>[(1,2),(1,4),(1,6),(3,2),(3,4),(3,6),(5,2),(5,4),(5,6),(7,2),(7,4),(7,6)]
+[?1h=*Main> 
+[?1l>[?1h=*Main> 
+[?1l>Leaving GHCi.
+[?2004hrgeary1@remote06:~/i471a/submit/lab7$ [?2004l
+exit
+
+Script done on 2022-04-07 23:18:03-04:00 [COMMAND_EXIT_CODE="0"]
