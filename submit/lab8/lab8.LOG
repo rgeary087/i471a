@@ -1,0 +1,227 @@
+Script started on 2022-04-27 13:15:21-04:00 [TERM="xterm-256color" TTY="/dev/pts/8" COLUMNS="116" LINES="17"]
+[?2004hrgeary1@remote00:~/i471a/submit/lab8$ ls
+[?2004llab8.LOG  lab8_sol.erl
+[?2004hrgeary1@remote00:~/i471a/submit/lab8$ erl
+[?2004lErlang/OTP 23 [erts-11.1.8] [source] [64-bit] [smp:8:8] [ds:8:8:10] [async-threads:1]
+
+Eshell V11.1.8  (abort with ^G)
+1> c(lab8)[C[C[C[C[C[C
+1> X = 123
+1> 123 = X
+1> X
+1> 123 = Y
+1> 
+User switch command
+ --> 
+ --> 
+ --> 
+ --> 
+ --> 
+ --> 
+BREAK: (a)bort (A)bort with dump (c)ontinue (p)roc info (i)nfo
+       (l)oaded (v)ersion (k)ill (D)b-tables (d)istribution
+a
+[?2004hrgeary1@remote00:~/i471a/submit/lab8$ erl
+[?2004lErlang/OTP 23 [erts-11.1.8] [source] [64-bit] [smp:8:8] [ds:8:8:10] [async-threads:1]
+
+Eshell V11.1.8  (abort with ^G)
+1> c(lab8)[C[C[C[C[C[C.
+{error,non_existing}
+2>    2> c(lab8)._).s).o).l).[C[C
+lab8_sol.erl:6: Warning: export_all flag enabled - all functions will be exported
+{ok,lab8_sol}
+3> X=123
+3> .
+123
+4> 123 = X.
+123
+5> 123 = Y.
+* 1: variable 'Y' is unbound
+6> Shapes = [ { square, 2 }, { circle, 1 }, { square, 4 } ].
+[{square,2},{circle,1},{square,4}]
+7> [{_, Side1}, _, {_, Side3}|_] = Shapes.
+[{square,2},{circle,1},{square,4}]
+8> Sidd e1
+8> .
+2
+9> Side3.
+4
+10> Sides = [ Side1, Side3 ].
+[2,4]
+11> Sides.
+[2,4]
+12> Grades = [ {bill, 82}, {sue, 95}, { john, 85} ].
+[{bill,82},{sue,95},{john,85}]
+13> Grade3 = [_,_,{ = [_,_,{ s = [_,_,{[C[C[C[C[C[C[C[C[CGrade3}[C[C[C[C[C[C[C[C][C[C[C[C[C[C[C[C[C[C[C[C[C[C.
+* 1: variable '_' is unbound
+14>     14> Grades = [_,_,{Grade3}].|]._].[C[C
+* 1: variable '_' is unbound
+15>     15> Grades = [_,_,{Grade3}|_].[_,_,{Grade3}|_]. [_,_,{Grade3}|_]. [_,_,{Grade3}|_]. [_,_,{Grade3}|_]. [_,_,{Grade3}|_]. [_,_,{Grade3}|_]. [_,_,{Grade3}|_]. [_,_,{Grade3}|_]. [_,_,{Grade3}|_]. [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C .=. .G.r.a.d.e.s.[C
+** exception error: no match of right hand side value [{bill,82},{sue,95},{john,85}]
+16>     16> [_,_,{Grade3}|_] = Grades.] = Grades. ] = Grades. [C[C[C[C[C[C[C[C[C[C[C
+** exception error: no match of right hand side value [{bill,82},{sue,95},{john,85}]
+17>     17> [_,_,{Grade3}] = Grades.] = Grades. Grade3] = Grades. [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[{bill,82},{sue,95},{john,85}]
+18> Grade3.
+{john,85}
+19> {[_, Point1}, {_, Point2}[C[C[C[C[C[C[C[C[C[C[C, {[C[C_, Point1}, {_, Point2}, { _, Point1}, {_, Point2}, { [_, Point1}, {_, Point2}, {{_, Point1}, {_, Point2}, {[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C_, Point3}[C[C[C[C[C[C[C[C[C[C[C][C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C = Grades.
+[{bill,82},{sue,95},{john,85}]
+20> Points = [{ Point1, Point1, 2  2, Point3][C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.
+"R_U"
+21> Points.
+"R_U"
+22>     22> Points.           22> Points = [Point1, Point2, Point3].                                      22> [{_, Point1}, {_, Point2}, {_, Point3}] = Grades.}] = Grades. }] = Grades. }] = Grades. }] = Grades. }] = Grades. }] = Grades. }] = Grades. }] = Grades. }] = Grades. P}] = Grades.o}] = Grades.i}] = Grades.n}] = Grades.t}] = Grades.3}] = Grades.,}] = Grades. }] = Grades._}] = Grades.}, {Point3, _}] = Grades. }, {Point3, _}] = Grades. }, {Point3, _}] = Grades. }, {Point3, _}] = Grades. }, {Point3, _}] = Grades. }, {Point3, _}] = Grades. }, {Point3, _}] = Grades. }, {Point3, _}] = Grades. }, {Point3, _}] = Grades. P}, {Point3, _}] = Grades.o}, {Point3, _}] = Grades.i}, {Point3, _}] = Grades.n}, {Point3, _}] = Grades.t}, {Point3, _}] = Grades.2}, {Point3, _}] = Grades.,}, {Point3, _}] = Grades. }, {Point3, _}] = Grades._}, {Point3, _}] = Grades.[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C                                                 iio  o:format("~w~n", [Points][C[C[C[C[C[C[C[C}.
+* 1: syntax error before: '}'
+22>     22> io:format("~w~n", [Points]}.. ).[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[82,95,85]
+ok
+23> Grades  2 =           Grade1 =       2 = S Grades.
+[{bill,82},{sue,95},{john,85}]
+24> graed d e     Grade2 = {_,87              Grade2 = {[bill,       _, _+2][C[C[C[C[C[C[C[C }_, _+2} _, _+2} {_, _+2}[_, _+2}_, _+2} _, _+2} [_, _+2}{_, _+2}[C[C[C[C[C[C[C, {_, _+2}[C[C[C[C[C[C[C[C, {_, _+2}[C[C[C[C[C[C[C[C][C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.
+* 1: variable '_' is unbound
+25>     25> Grade2 = [{_, _+2}, {_, _+2}, {_, _+2}].                                        Point12 =               25> Grade2 = Grades.                    25> io:format("~w~n", [Points]).                                25> io:format("~w~n", [Points]}.                                25> io:format("~w~n", [Points]).                                25> Grade2 = Grades.                    25>     25> Grades2 = [ {bill, 84}, {sue, 97}, { john, 87} ].
+[{bill,84},{sue,97},{john,87}]
+26>     26> Grades2 = [ {bill, 84}, {sue, 97}, { john, 87} ].[C[C[C[C[C[C[C                                                     26> c(lab8_sol)[C[C[C[C[C[C[C[C[C[C.
+lab8_sol.erl:6: Warning: export_all flag enabled - all functions will be exported
+{ok,lab8_sol}
+27> persistent_term:
+erase/1        get/0          get/1          get/2          info/0         
+module_info/0  module_info/1  put/2          
+27> persistent_term:                lab8_sol:perimeter({circle, Script started on 2022-04-27 14:31:50-04:00 [TERM="xterm-256color" TTY="/dev/pts/25" COLUMNS="116" LINES="17"]
+[?2004hrgeary1@remote03:~/i471a/submit/lab8$ erl
+[?2004lErlang/OTP 23 [erts-11.1.8] [source] [64-bit] [smp:8:8] [ds:8:8:10] [async-threads:1]
+
+Eshell V11.1.8  (abort with ^G)
+1> c(lab8_sol)[C[C[C[C[C[C[C[C[C[C.
+lab8_sol.erl:6: Warning: export_all flag enabled - all functions will be exported
+{ok,lab8_sol}
+2> Shapes = lab8_sol:s
+shapes_data/0        start_data_server/1  stop_data_server/1   
+
+2> Shapes = lab8_sol:shapes_data()[C[C
+2> PID! =     1=    = lab8_sol:s
+shapes_data/0        start_data_server/1  stop_data_server/1   
+
+2> PID1 = lab8_sol:st
+start_data_server/1  stop_data_server/1   
+2> PID1 = lab8_sol:start_data_server(Shapes)[C[C[C[C[C[C[C[C.
+* 2: syntax error before: PID1
+2> Shapes = l
+lab8_sol                  lcnt                      leex                      
+lists                     local_tcp                 local_udp                 
+log_mf_h                  logger                    logger_backend            
+logger_config             logger_disk_log_h         logger_filters            
+logger_formatter          logger_h_common           logger_handler_watcher    
+logger_olp                logger_proxy              logger_server             
+logger_simple_h           logger_std_h              logger_sup                
+
+2> Shapes = lab8_sol:s
+shapes_data/0        start_data_server/1  stop_data_server/1   
+
+2> Shapes = lab8_sol:shp apes_data()[C[C.
+[{square,2},
+ {circle,1},
+ {square,1},
+ {square,3},
+ {circle,2},
+ {square,4}]
+3> PID1 = lab8_sol:st
+start_data_server/1  stop_data_server/1   
+3> PID1 = lab8_sol:start_data_server(Shapes)[C[C[C[C[C[C[C[C.
+<0.89.0>
+4> lab8_sol:data_client(PID1, fun (x)[C[C[C -> X end)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.
+* 1: variable 'X' is unbound
+5>    5> lab8_sol:data_client(PID1, fun (x) -> X end).) -> X end). X) -> X end).[C[C[C[C[C[C[C[C[C[C[C[C
+[{square,2},
+ {circle,1},
+ {square,1},
+ {square,3},
+ {circle,2},
+ {square,4}]
+6> F = fun({T,S}[C[C[C[C[C)[C[C[C[C[C[C[C -> {  T, S83  *3}[C[C[C[C[C[C[C[C end.
+#Fun<erl_eval.44.79398840>
+7> lab8_sol:data_client(PID1, fun (Shae pes)[C[C[C[C[C[C[C[C -> la ists:ma
+map/2       mapfoldl/3  mapfoldr/3  max/1       
+7> lab8_sol:data_client(PID1, fun (Shapes) -> lists:map
+map/2       mapfoldl/3  mapfoldr/3  
+7> lab8_sol:data_client(PID1, fun (Shapes) -> lists:map(F, Shapes)[C[C[C[C[C[C[C[C[C[C[C,    end)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.
+[{square,6},
+ {circle,3},
+ {square,3},
+ {square,9},
+ {circle,6},
+ {square,12}]
+8> lab8_sol:s
+shapes_data/0        start_data_server/1  stop_data_server/1   
+
+8> lab8_sol:stop_data_server(PID1)[C[C[C[C[C[C.
+stop
+9> F2 ->      ( = fun({T,S}[C[C[C[C[C)[C[C[C[C[C[C[C -> l
+lab8_sol                  lcnt                      leex                      
+lists                     local_tcp                 local_udp                 
+log_mf_h                  logger                    logger_backend            
+logger_config             logger_disk_log_h         logger_filters            
+logger_formatter          logger_h_common           logger_handler_watcher    
+logger_olp                logger_proxy              logger_server             
+logger_simple_h           logger_std_h              logger_sup                
+
+9> F2 = fun({T,S}) -> lab 8 b8_sol:letter_grade(S)[C[C[C[C,S}) -> lab8_sol:letter_grade(S) _,S}) -> lab8_sol:letter_grade(S)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C end.
+#Fun<erl_eval.44.79398840>
+10> Grades = gra   lab8_sol:g
+grades_data/0      guard_perimeter/1  
+10> Grades = lab8_sol:grades_data()[C[C.
+[{bill,82.0},{sue,95},{john,85},{joe,73},{mary,65},{tom,55}]
+11> PID1 = lab8_sol:s
+shapes_data/0        start_data_server/1  stop_data_server/1   
+
+11> PID1 = lab8_sol:start_data_server(Grades)[C[C[C[C[C[C[C[C.
+** exception error: no match of right hand side value <0.98.0>
+12>     12> PID1 = lab8_sol:start_data_server(Grades).= lab8_sol:start_data_server(Grades). 2= lab8_sol:start_data_server(Grades).[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+<0.101.0>
+13> lab8_sol:data_client(PID2, fun(X)[C[C[C -> X end)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.
+* 1: variable 'PID2' is unbound
+14>     14> lab8_sol:data_client(PID2, fun(X) -> X end).[C[C , fun(X) -> X end).[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+* 1: variable 'PID2' is unbound
+15> PID2
+15> .
+* 1: variable 'PID2' is unbound
+16>     16> .     16> PID2.
+* 1: variable 'PID2' is unbound
+17>     17> PID2.         17> .     17> PID2        17> lab8_sol:data_client(PID2 , fun(X) -> X end).                                                 17> lab8_sol:data_client(PID2, fun(X) -> X end).                                                17> PID12= lab8_sol:start_data_server(Grades).                                              17> lab8_sol:data_client(PID2, fun(X) -> X end).                                                17> lab8_sol:data_client(PID2 , fun(X) -> X end).                                                 17> PID2        17> .     17> PID2.12.[C[C
+<0.101.0>
+18>     18> PID12.          18> PID2.         18> .     18> PID2        18> lab8_sol:data_client(PID2 , fun(X) -> X end).[C12 , fun(X) -> X end).[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[{bill,82.0},{sue,95},{john,85},{joe,73},{mary,65},{tom,55}]
+19> lab8_sol:data_client(PID12, fun (Grades_ ->  ->  ) -> [C[C[C[C[C[C[C[C[C[C[C  l i s t s : m a p ( F 2 ,   G r a d e s ) [C[C[C[C[C[C[C[C[C[C[C[C  e n d ) [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C. [C
+['B','A','B','C','D','F']
+20> 
+20>     20> lab8_sol:data_client(PID12, fun (Grades) -> lists:map(F2, Grades) end). [C[C[C[C[C[C[C[C[C[C[C[C[C                                                                            20> lab8_sol:data_client(PID12 , fun(X) -> X end).                                                  20> PID12.          20> PID2.         20> .     20> PID2        20> lab8_sol:data_client(PID2 , fun(X) -> X end).                                                 20> lab8_sol:data_client(PID2, fun(X) -> X end).                                                20> PID12= lab8_sol:start_data_server(Grades).                                              20> PID1 = lab8_sol:start_data_server(Grades).                                              20> Grades = lab8_sol:grades_data().                                    20> F2 = fun({_,S}) -> lab8_sol:letter_grade(S) end.[C,S}) -> lab8_sol:letter_grade(S) end. T,S}) -> lab8_sol:letter_grade(S) end.[C[C[C[C[C[C[C[C{lab8_sol:letter_grade(S) end.Tlab8_sol:letter_grade(S) end.,lab8_sol:letter_grade(S) end. lab8_sol:letter_grade(S) end.[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C} end.[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+** exception error: no match of right hand side value #Fun<erl_eval.44.79398840>
+21>     21> F2 = fun({T,S}) -> {T, lab8_sol:letter_grade(S)} end.[C2 = fun({T,S}) -> {T, lab8_sol:letter_grade(S)} end. 32 = fun({T,S}) -> {T, lab8_sol:letter_grade(S)} end.[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+** exception error: no match of right hand side value #Fun<erl_eval.44.79398840>
+22>     22> 32 = fun({T,S}) -> {T, lab8_sol:letter_grade(S)} end.                                                         22> F2 = fun({T,S}) -> {T, lab8_sol:letter_grade(S)} end.                                                         22> 32 = fun({T,S}) -> {T, lab8_sol:letter_grade(S)} end.[C2 = fun({T,S}) -> {T, lab8_sol:letter_grade(S)} end. [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+** exception error: no match of right hand side value #Fun<erl_eval.44.79398840>
+23>     23> 2 = fun({T,S}) -> {T, lab8_sol:letter_grade(S)} end.                                                        23>     23> 2 = fun({T,S}) -> {T, lab8_sol:letter_grade(S)} end.                                                        23> 32 = fun({T,S}) -> {T, lab8_sol:letter_grade(S)} end.                                                         23> F2 = fun({T,S}) -> {T, lab8_sol:letter_grade(S)} end.[C32 = fun({T,S}) -> {T, lab8_sol:letter_grade(S)} end.[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+#Fun<erl_eval.44.79398840>
+24>     24> F32 = fun({T,S}) -> {T, lab8_sol:letter_grade(S)} end.                                                          24> 2 = fun({T,S}) -> {T, lab8_sol:letter_grade(S)} end.                                                        24> 32 = fun({T,S}) -> {T, lab8_sol:letter_grade(S)} end.                                                         24> F2 = fun({T,S}) -> {T, lab8_sol:letter_grade(S)} end.                                                         24> lab8_sol:data_client(PID12, fun (Grades) -> lists:map(F2, Grades) end). [C32, Grades) end). [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[{bill,'B'},
+ {sue,'A'},
+ {john,'B'},
+ {joe,'C'},
+ {mary,'D'},
+ {tom,'F'}]
+25> 
+25> 
+25> lab8_sol:s
+shapes_data/0        start_data_server/1  stop_data_server/1   
+
+25> lab8_sol:stop_data_server(PID12)[C[C[C[C[C[C[C
+25> .
+stop
+26> 
+BREAK: (a)bort (A)bort with dump (c)ontinue (p)roc info (i)nfo
+       (l)oaded (v)ersion (k)ill (D)b-tables (d)istribution
+a
+[?2004hrgeary1@remote03:~/i471a/submit/lab8$ [?2004l
+exit
+
+Script done on 2022-04-27 14:42:57-04:00 [COMMAND_EXIT_CODE="0"]
